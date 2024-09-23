@@ -4,7 +4,7 @@
 
 Starting with `v4.0`, you can access WGDashboards on other server through one WGDashboard with API Keys
 
-![Cross Server Example](https://donaldzou.nyc3.cdn.digitaloceanspaces.com/wgdashboard-images/cross-server.gif)
+![Cross Server Example](cross-server.gif)
 
 ### Desktop App
 
@@ -13,4 +13,4 @@ advantage of combining ElectronJS and Vue.js to create a Desktop version of WGDa
 
 To download the app, please visit the [latest release](https://github.com/donaldzou/WGDashboard/releases).
 
-![ElectronJS App Demo](https://donaldzou.nyc3.cdn.digitaloceanspaces.com/wgdashboard-images/electronjs-app.gif)
+![ElectronJS App Demo](electronjs-app.gif)
