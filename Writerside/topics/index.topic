@@ -3,10 +3,10 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Home" id="Home">
+       title="Home" id="index" help-id="Home">
 
     <section-starting-page>
-        <title>Welcome to WGDashboard Documentation</title>
+        <title>🏠 Welcome to WGDashboard Documentation</title>
         <description>
             I'll try my best to keep this up-to-date :smile:
         </description>
