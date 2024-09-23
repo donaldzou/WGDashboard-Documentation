@@ -4,8 +4,9 @@
 
 <instance-profile id="wd"
                  name="WGDashboard Documentation"
-                 start-page="overview.md">
+                 start-page="Home.topic">
 
+    <toc-element topic="Home.topic"/>
     <toc-element topic="overview.md"/>
     <toc-element topic="Features.md"/>
     <toc-element topic="📝-Requirements.md"/>

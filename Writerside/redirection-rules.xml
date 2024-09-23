@@ -22,4 +22,8 @@
         <description>Created after removal of "Get Started" from WGDashboard Documentation</description>
         <accepts>Get-Started.html</accepts>
     </rule>
+    <rule id="12418497">
+        <description>Created after removal of "Home" from WGDashboard Documentation</description>
+        <accepts>Home.html</accepts>
+    </rule>
 </rules>
