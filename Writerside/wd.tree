@@ -33,4 +33,16 @@
         </toc-element>
     </toc-element>
     <toc-element topic="🔍-Screenshot.md"/>
+    <toc-element topic="🕰️-Changelogs.md">
+        <toc-element topic="v3-0-0-v3-0-6-2.md"/>
+        <toc-element topic="v2-3-1.md"/>
+        <toc-element topic="v2-3.md"/>
+        <toc-element topic="v2-2-1.md"/>
+        <toc-element topic="v2-2.md"/>
+        <toc-element topic="v2-1.md"/>
+        <toc-element topic="v2-0.md"/>
+        <toc-element topic="v1-1-2.md"/>
+        <toc-element topic="v-1-1-1.md"/>
+        <toc-element topic="v1-0.md"/>
+    </toc-element>
 </instance-profile>
