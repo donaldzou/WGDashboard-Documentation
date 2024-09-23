@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="86629bd">
+        <description>Created after removal of "📖 API Documentation" from WGDashboard Documentation</description>
+        <accepts>📖-API-Documentation.html</accepts>
+    </rule>
+    <rule id="1894347b">
+        <description>Created after removal of "🔑 How to use API Key?" from WGDashboard Documentation</description>
+        <accepts>🔑-How-to-use-API-Key.html</accepts>
+    </rule>
+    <rule id="23434bfa">
+        <description>Created after removal of "📖 API Documentation" from WGDashboard Documentation</description>
+        <accepts>API.html</accepts>
+    </rule>
+    <rule id="1b56f1bb">
+        <description>Created after removal of "Get Started" from WGDashboard Documentation</description>
+        <accepts>Get-Started.html</accepts>
+    </rule>
+</rules>
