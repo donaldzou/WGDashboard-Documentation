@@ -15,6 +15,7 @@
     <toc-element topic="✂️-Dashboard-Configuration.md"/>
     <toc-element topic="❓-Update.md"/>
     <toc-element topic="🐬-Docker-Solutions.md"/>
+    <toc-element topic="🥘-Experimental-Features.md"/>
     <toc-element topic="📖-API-Documentation.md">
         <toc-element topic="API-Endpoints.md">
             <toc-element topic="Handshake-to-Server.md"/>
