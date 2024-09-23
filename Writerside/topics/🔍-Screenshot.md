@@ -1,12 +1,12 @@
 # 🔍 Screenshot
 
-![Sign In](sign-in.png)
-![Cross Server](cross-server.gif)
-![Index](index.png)
-![New Configuration](new-configuration.png)
-![Settings](settings.png)
-![Light-Dark Mode](light-dark.png)
-![Configuration](configuration.png)
-![Add Peers](add-peers.png)
-![Ping](ping.png)
-![Traceroute](traceroute.png)
+<img src="sign-in.png" alt="" style="block"/>
+<img src="cross-server.gif" alt="" style="block"/>
+<img src="index.png" alt="" style="block"/>
+<img src="new-configuration.png" alt="" style="block"/>
+<img src="settings.png" alt="" style="block" />
+<img src="light-dark.png" alt="" style="block" />
+<img src="configuration.png" alt="" style="block" />
+<img src="add-peers.png" alt="" style="block" />
+<img src="ping.png" alt="" style="block" />
+<img src="traceroute.png" alt="" style="block" />

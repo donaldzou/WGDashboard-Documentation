@@ -26,4 +26,4 @@
 ## 🥘 New Experimental Features
 - **Cross-Server Access**: Now you can access other servers that installed `v4` of WGDashboard through API key.
 - **Desktop App**: Thanks to **Cross-Server Access**, you can now download an ElectronJS based desktop app of WGDashboard, and use that to access WGDashboard on different servers.
-- > For more information, please visit [](ex)
+- > For more information, please visit [](🥘-Experimental-Features.md)
