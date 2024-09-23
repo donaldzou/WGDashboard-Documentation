@@ -11,3 +11,12 @@
     - Schedule jobs to delete / restrict peer when conditions are met
 - View real time peer status
 - Testing tool: Ping and Traceroute to your peer
+- Multi-language support:
+  - English
+  - Chinese (Simplified)
+  - Chinese (Traditional)
+  - Ukrainian
+  - Russian
+  - German
+  - Spanish
+  - Portuguese 
