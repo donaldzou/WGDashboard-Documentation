@@ -22,11 +22,11 @@ Create a URL to share peer's configuration file and QR Code
 }
 ```
 
-| Parameter       | Type   |                                                                     |
-|-----------------|--------|---------------------------------------------------------------------|
-| `Configuration` | string | The config name of the peer is in                                   |
-| `Peer`          | string | The peer you want to share                                          |
-| `ExpireDate`    | string | Expire date for the URL, format is `YYYY-MM-DD hh:mm:ss` (24-hours) |	
+| Parameter       | Type   |                                                                                                  |
+|-----------------|--------|--------------------------------------------------------------------------------------------------|
+| `Configuration` | string | The config name of the peer is in                                                                |
+| `Peer`          | string | The peer you want to share                                                                       |
+| `ExpireDate`    | string | Expire date for the URL, format is `YYYY-MM-DD hh\:mm:ss` (24-hours). This field is **optional** |	
 
 ## Response
 
