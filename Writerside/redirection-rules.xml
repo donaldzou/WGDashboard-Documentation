@@ -26,4 +26,9 @@
         <description>Created after removal of "Home" from WGDashboard Documentation</description>
         <accepts>Home.html</accepts>
     </rule>
+    <rule id="38244926">
+        <description>Created after removal of "Writerside_Endpoint-Template" from WGDashboard Documentation
+        </description>
+        <accepts>Writerside-Endpoint-Template.html</accepts>
+    </rule>
 </rules>

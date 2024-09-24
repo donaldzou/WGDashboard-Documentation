@@ -23,13 +23,20 @@
             </toc-element>
             <toc-element topic="Authenticate.md"/>
             <toc-element topic="Sign-Out.md"/>
+            <toc-element topic="Get-WGDashboard-Configuration.md"/>
+            <toc-element topic="Update-WGDashboard-Configuration-Item.md"/>
             <toc-element topic="Get-WireGuard-Configurations.md"/>
             <toc-element topic="Add-WireGuard-Configuration.md"/>
             <toc-element topic="Toggle-WireGuard-Configuration.md"/>
-            <toc-element topic="Get-WGDashboard-Configuration.md"/>
-            <toc-element topic="Update-WGDashboard-Configuration-Item.md"/>
             <toc-element topic="Get-WGDashboard-API-Keys.md"/>
             <toc-element topic="Add-WGDashboard-API-Key.md"/>
+            <toc-element topic="Delete-WGDashboard-API-Key.md"/>
+            <toc-element topic="Update-Peer-Settings.md"/>
+            <toc-element topic="Reset-Peer-Data-Usage.md"/>
+            <toc-element topic="Delete-Peers.md"/>
+            <toc-element topic="Restrict-Peers.md"/>
+            <toc-element topic="Create-Share-Peer-URL.md"/>
+            <toc-element topic="Endpoint-Template.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="🔍-Screenshot.md"/>

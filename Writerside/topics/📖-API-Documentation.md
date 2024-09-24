@@ -15,7 +15,9 @@ To use the REST API of your WGDashboard, you need to obtain an API Key.
 
 - Simply add `wg-dashboard-apikey` with the value of your API key into the HTTP Header.
 
-```javascript
+<tabs>
+<tab title="Default">
+<code-block lang="javascript">
 fetch('http://server:10086/api/handshake', {
     headers: {
        'content-type': 'application/json',
@@ -23,7 +25,28 @@ fetch('http://server:10086/api/handshake', {
     },
     method: "GET"
 })
-```
+</code-block>
+</tab>
+<tab title="With APP_PREFIX set">
+
+<note>
+For more information, please visit <a href="✂️-Dashboard-Configuration.md"/>
+</note>
+<br/>
+
+<code-block lang="javascript">
+fetch('http://server:10086/[app_prefix]/api/handshake', {
+    headers: {
+       'content-type': 'application/json',
+        'wg-dashboard-apikey': 'insert your api key here'
+    },
+    method: "GET"
+})
+</code-block>
+</tab>
+</tabs>
+
+
 
 ## Now you're ready
 
