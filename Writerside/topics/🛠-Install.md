@@ -123,16 +123,15 @@ Please make sure you understand these commands before you run them.
     <tab title="Alpine Linux">
 		<chapter title="3.20.2">
 			<code-block lang="shell">
-				sudo yum install wireguard-tools net-tools git -y && \
-				git clone https://github.com/donaldzou/WGDashboard.git && \
-				cd ./WGDashboard/src && \
-				chmod +x ./wgd.sh && \
-				./wgd.sh install && \
-				sudo echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf && \
-				sudo sysctl -p /etc/sysctl.conf && \
-				firewall-cmd --add-port=10086/tcp --permanent && \
-				firewall-cmd --add-port=51820/udp --permanent && \
-				firewall-cmd --reload
+               setup-interfaces -a ; \
+               rc-service networking --quiet start ; \
+               printf "https://mirrors.aliyun.com/alpine/latest-stable/main\nhttps://mirrors.aliyun.com/alpine/latest-stable/community" > /etc/apk/repositories ; \
+               apk update ; \
+               apk add wireguard-tools python3 python3-dev git iptables net-tools gcc musl-dev linux-headers sudo ; \
+               git clone -b v4.0-alpine-linux https://github.com/donaldzou/WGDashboard.git ; \
+               cd ./WGDashboard/src ; \
+               chmod +x ./wgd.sh ; \
+               ./wgd.sh install
 			</code-block>
 		</chapter>
     </tab>
