@@ -9,6 +9,10 @@
         <custom-favicons>
             favicon.png
         </custom-favicons>
+        <analytics-head-script-file>
+            ga.html
+        </analytics-head-script-file>
+
     </variables>
     <build-profile instance="wd">
         <variables>
