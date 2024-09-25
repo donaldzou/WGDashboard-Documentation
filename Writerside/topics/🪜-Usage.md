@@ -148,3 +148,21 @@ In the `src` folder, it contained a file called `wg-dashboard.service`, we can u
    ```
 
 8. **And now you can reboot your system, and use the command at step 6 to see if it will auto start after the reboot, or just simply access the dashboard through your browser. If you have any questions or problem, please report it in the issue page.**
+
+### Enable WireGuard configuration when WGDashboard start
+
+> Thanks to the solution from [@opit7](https://github.com/donaldzou/WGDashboard/issues/360#issuecomment-2374004622)
+
+You can add this in the service file. For example you want to enable `wg0` when WGDashboard start
+
+```ini
+...
+
+[Service]
+...
+ExecStartPre=wg-quick up wg0
+
+...
+```
+
+So now `wg0` will start before WGDashboard starts.
