@@ -13,7 +13,7 @@
             ga.html
         </analytics-head-script-file>
         <algolia-id>I5B701TD0E</algolia-id>
-        <algolia-index>wgdashboard_doc_index</algolia-index>
+        <algolia-index>MY_INDEX</algolia-index>
         <algolia-api-key>3cacfa831852e984c04ccc1bdc1c5d60</algolia-api-key>
 
     </variables>
