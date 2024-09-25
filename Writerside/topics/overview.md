@@ -11,8 +11,8 @@
 - **Logging**: Dashboard will now log all activity on the dashboard and API requests.
 - **Time-Based One-Time Password (TOTP)**: You can enable this function to add one more layer of security, and generate the TOTP with your choice of authenticator.
 - **Designs**
-    - **Real-time Graphs**: You can view real-time data changes with graphs in each configuration.
-    - **Night mode**: You know what that means, it avoids bugs ;)
+	- **Real-time Graphs**: You can view real-time data changes with graphs in each configuration.
+	- **Night mode**: You know what that means, it avoids bugs ;)
 - **Enforce Python Virtual Environment**: I noticed newer Python version (3.12) does not allow to install packages globally, and plus I think is a good idea to use venv.
 
 ## 🧐 Other Changes

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/index.topic" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/index.topic" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="InstanceColorv3">
+    <option name="map">
+      <map>
+        <entry key="$PROJECT_DIR$/Writerside/wd.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="1" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="60" />
+                  <option name="darkBlue" value="60" />
+                  <option name="darkGreen" value="68" />
+                  <option name="darkRed" value="206" />
+                  <option name="green" value="68" />
+                  <option name="red" value="206" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="65" />
+                  <option name="darkBlue" value="65" />
+                  <option name="darkGreen" value="126" />
+                  <option name="darkRed" value="231" />
+                  <option name="green" value="126" />
+                  <option name="red" value="231" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2mStwIfEyWniv4LBcBrf5mCA22w" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Writerside.PDF (wd).executor&quot;: &quot;Run&quot;,
+    &quot;Writerside.Web Archive (wd).executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;writerside.last.selected.productWGDashboard-Documentation&quot;: &quot;wd&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
+      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Features.md&quot;,
+      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/overview.md&quot;,
+      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/❓-Update.md&quot;,
+      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/📝-Requirements.md&quot;,
+      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/🪜-Usage.md&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Writerside/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Writerside/images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Writerside.Web Archive (wd)">
+    <configuration name="PDF (wd)" type="StardustRunConfiguration" factoryName="build-pdf">
+      <option name="addCover" value="true" />
+      <option name="copyright" />
+      <option name="description" />
+      <option name="folderPath" value="$PROJECT_DIR$" />
+      <option name="footer" />
+      <option name="header" />
+      <option name="instanceId" value="wd" />
+      <option name="instanceName" value="WGDashboard Documentation" />
+      <option name="layout" />
+      <option name="logoPath" value="$PROJECT_DIR$/Writerside/images/favicon.png" />
+      <option name="title" value="WGDashboard Documentation" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Web Archive (wd)" type="StardustRunConfiguration" factoryName="save-as-zip">
+      <option name="folderPath" value="$USER_HOME$/Downloads" />
+      <option name="instanceId" value="wd" />
+      <option name="instanceName" value="WGDashboard Documentation" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update workflow" />
+    <MESSAGE value="Upload images" />
+    <MESSAGE value="Added languages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added languages" />
+  </component>
+</project>
