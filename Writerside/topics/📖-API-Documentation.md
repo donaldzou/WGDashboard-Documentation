@@ -1,6 +1,6 @@
 # 📖 API Documentation
 
-I will try my best to keep this up-to-date :smile:
+I'm still updating this documentation. If you have any questions, please don't hesitate to contact me :)
 
 ## Get Started
 
