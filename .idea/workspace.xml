@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/v4-0-1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/v4-0-2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/v4-0.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/-Usage.md" beforePathEscaped="$PROJECT_DIR$/Writerside/topics/🪜-Usage.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/-Usage.md" afterPathEscaped="$PROJECT_DIR$/Writerside/topics/🪜-Usage.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/overview.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/wd.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/wd.tree" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -41,6 +41,11 @@
     </toc-element>
     <toc-element topic="🔍-Screenshot.md"/>
     <toc-element topic="🕰️-Changelogs.md">
+        <toc-element topic="v4-0-4.md"/>
+        <toc-element topic="v4-0-3.md"/>
+        <toc-element topic="v4-0-2.md"/>
+        <toc-element topic="v4-0-1.md"/>
+        <toc-element topic="v4-0.md"/>
         <toc-element topic="v3-0-0-v3-0-6-2.md"/>
         <toc-element topic="v2-3-1.md"/>
         <toc-element topic="v2-3.md"/>
