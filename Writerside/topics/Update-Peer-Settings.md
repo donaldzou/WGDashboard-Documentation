@@ -6,12 +6,6 @@ Update different settings of existing peer
 
 `POST /api/updatePeerSettings/<configName>`
 
-### URL Parameter
-
-| Parameter    | Type   |                                   |
-|--------------|--------|-----------------------------------|
-| `configName` | string | The config name of the peer is in |
-
 ### Body Parameter
 
 ```json
@@ -61,6 +55,8 @@ Update different settings of existing peer
 ```
 
 ## Response
+
+`200 - OK`
 
 <note>Request Success</note>
 

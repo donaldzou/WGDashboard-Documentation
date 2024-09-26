@@ -31,4 +31,8 @@
         </description>
         <accepts>Writerside-Endpoint-Template.html</accepts>
     </rule>
+    <rule id="64ae03fb">
+        <description>Created after removal of "API Request Method" from WGDashboard Documentation</description>
+        <accepts>API-Request-Method.html</accepts>
+    </rule>
 </rules>

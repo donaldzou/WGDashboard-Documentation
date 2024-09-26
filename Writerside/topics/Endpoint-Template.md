@@ -27,6 +27,8 @@ Description
 
 ## Response
 
+`200 - OK`
+
 <note>Request Success</note>
 
 Description

@@ -4,12 +4,14 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="🏠 Welcome to WGDashboard Documentation" id="index" help-id="Home">
-
     <section-starting-page>
-        <title>🏠 Welcome to WGDashboard Documentation</title>
+        <title>
+            🏠 Welcome to WGDashboard Documentation
+        </title>
         <description>
-            I'll try my best to keep this up-to-date :smile:
+            I'll be my best to keep this up-to-date :smile:
         </description>
+
         <spotlight>
             <a href="Features.md" summary="What is WGDashboard?"/>
             <a href="overview.md" summary="Check out what's changed in the latest version" />
@@ -27,7 +29,7 @@
             <a href="🐬-Docker-Solutions.md" summary="Customize your WGDashboard"/>
             <a href="📖-API-Documentation.md" summary="Want to integrate WGDashboard with other tools? Check this out!"/>
             <a href="🔍-Screenshot.md" summary="Take a peek of what WGDashboard looks like"/>
-            <a href="https://github.com/donaldzou/WGDashboard/issues/new/choose" summary="Raise a GitHub ticket and I'll be on my way">Need help?</a>
+            <a href="https://github.com/donaldzou/WGDashboard/issues/new/choose" summary="Click here to raise a GitHub ticket and I'll be on my way ;)">Need help?</a>
         </secondary>
     </section-starting-page>
 

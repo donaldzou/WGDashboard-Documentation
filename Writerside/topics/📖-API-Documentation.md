@@ -46,6 +46,19 @@ fetch('http://server:10086/[app_prefix]/api/handshake', {
 </tab>
 </tabs>
 
+### Request Method
+
+It will only be `POST` or `GET`
+
+### Endpoint URL Format
+
+There are 2 types of URL format
+
+1. Regular URL
+   	- For example: `/api/getWireguardConfigurations`
+2. Regular URL with a parameter in the path
+   	- For example: `/api/deletePeers/<configName>`.
+	- **Currently, `configName` is the only URL parameter. To use it, simply replace it with an existing WireGuard configuration name. Such as `wg0`**
 
 
 ## Now you're ready

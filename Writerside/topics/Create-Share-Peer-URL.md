@@ -6,12 +6,6 @@ Create a URL to share peer's configuration file and QR Code
 
 `POST /api/sharePeer/create`
 
-### URL Parameter
-
-| Parameter | Type   |                                   |
-|-----------|--------|-----------------------------------|
-| ``        | string | The config name of the peer is in |
-
 ### Body Parameter
 
 ```json
@@ -29,6 +23,8 @@ Create a URL to share peer's configuration file and QR Code
 | `ExpireDate`    | string | Expire date for the URL, format is `YYYY-MM-DD hh\:mm:ss` (24-hours). This field is **optional** |	
 
 ## Response
+
+`200 - OK`
 
 <note>Request Success</note>
 

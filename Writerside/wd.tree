@@ -36,6 +36,8 @@
             <toc-element topic="Delete-Peers.md"/>
             <toc-element topic="Restrict-Peers.md"/>
             <toc-element topic="Create-Share-Peer-URL.md"/>
+            <toc-element topic="Update-Share-Peer-URL.md"/>
+            <toc-element topic="Get-Share-Peer-URL.md"/>
             <toc-element topic="Endpoint-Template.md"/>
         </toc-element>
     </toc-element>

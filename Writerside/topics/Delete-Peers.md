@@ -6,12 +6,6 @@ To delete peers individually or in bulk
 
 `POST /api/deletePeers/<configName>`
 
-### URL Parameter
-
-| Parameter    | Type   |                                      |
-|--------------|--------|--------------------------------------|
-| `configName` | string | The config name of the peer(s) is in |
-
 ### Body Parameter
 
 ```json
@@ -29,6 +23,8 @@ To delete peers individually or in bulk
 | `peers`   | list[string] | List of strings contain public key(s) you want to delete |
 
 ## Response
+
+`200 - OK`
 
 <note>Request Success</note>
 
