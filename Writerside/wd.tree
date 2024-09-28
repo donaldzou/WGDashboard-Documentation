@@ -33,8 +33,10 @@
             <toc-element topic="Delete-WGDashboard-API-Key.md"/>
             <toc-element topic="Update-Peer-Settings.md"/>
             <toc-element topic="Reset-Peer-Data-Usage.md"/>
+            <toc-element topic="Add-Peers.md"/>
             <toc-element topic="Delete-Peers.md"/>
             <toc-element topic="Restrict-Peers.md"/>
+            <toc-element topic="Allow-Access-Peers.md"/>
             <toc-element topic="Create-Share-Peer-URL.md"/>
             <toc-element topic="Update-Share-Peer-URL.md"/>
             <toc-element topic="Get-Share-Peer-URL.md"/>

@@ -4,3 +4,7 @@
     border-radius: 0.5rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
+
+.code-block__wrapper{
+    max-width: 100% !important;
+}
