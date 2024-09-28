@@ -28,6 +28,7 @@
             <toc-element topic="Get-WireGuard-Configurations.md"/>
             <toc-element topic="Add-WireGuard-Configuration.md"/>
             <toc-element topic="Toggle-WireGuard-Configuration.md"/>
+            <toc-element topic="Get-WireGuard-Configuration-Available-IPs.md"/>
             <toc-element topic="Get-WGDashboard-API-Keys.md"/>
             <toc-element topic="Add-WGDashboard-API-Key.md"/>
             <toc-element topic="Delete-WGDashboard-API-Key.md"/>
@@ -36,6 +37,8 @@
             <toc-element topic="Add-Peers.md"/>
             <toc-element topic="Delete-Peers.md"/>
             <toc-element topic="Restrict-Peers.md"/>
+            <toc-element topic="Download-Peer.md"/>
+            <toc-element topic="Download-All-Peers.md"/>
             <toc-element topic="Allow-Access-Peers.md"/>
             <toc-element topic="Create-Share-Peer-URL.md"/>
             <toc-element topic="Update-Share-Peer-URL.md"/>
