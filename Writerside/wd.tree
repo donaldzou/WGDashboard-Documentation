@@ -23,12 +23,14 @@
             </toc-element>
             <toc-element topic="Authenticate.md"/>
             <toc-element topic="Sign-Out.md"/>
-            <toc-element topic="Get-WGDashboard-Configuration.md"/>
             <toc-element topic="Update-WGDashboard-Configuration-Item.md"/>
+            <toc-element topic="Get-WGDashboard-Configuration.md"/>
+            <toc-element topic="Get-WGDashboard-Theme.md"/>
             <toc-element topic="Get-WireGuard-Configurations.md"/>
             <toc-element topic="Add-WireGuard-Configuration.md"/>
             <toc-element topic="Toggle-WireGuard-Configuration.md"/>
             <toc-element topic="Get-WireGuard-Configuration-Available-IPs.md"/>
+            <toc-element topic="Get-WireGuard-Configuration-Information.md"/>
             <toc-element topic="Get-WGDashboard-API-Keys.md"/>
             <toc-element topic="Add-WGDashboard-API-Key.md"/>
             <toc-element topic="Delete-WGDashboard-API-Key.md"/>
