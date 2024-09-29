@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/Sponsors.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Delete-Peer-Schedule-Job.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Get-Peer-Schedule-Job-Logs.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Get-WGDashboard-Update.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Get-WGDashboard-Version.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Ping.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Save-Peer-Schedule-Job.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Traceroute.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/index.topic" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/index.topic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/redirection-rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/redirection-rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/Endpoint-Template.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Writerside/wd.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/wd.tree" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

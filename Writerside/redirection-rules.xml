@@ -35,4 +35,8 @@
         <description>Created after removal of "API Request Method" from WGDashboard Documentation</description>
         <accepts>API-Request-Method.html</accepts>
     </rule>
+    <rule id="60a02833">
+        <description>Created after removal of "Endpoint Name" from WGDashboard Documentation</description>
+        <accepts>Endpoint-Template.html</accepts>
+    </rule>
 </rules>
