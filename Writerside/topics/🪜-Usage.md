@@ -116,16 +116,16 @@ In the `src` folder, it contained a file called `wg-dashboard.service`, we can u
     ● wg-dashboard.service
     Loaded: loaded (/etc/systemd/system/wg-dashboard.service; enabled; vendor preset: enabled)
     Active: active (running) since Wed 2024-08-14 22:21:47 EDT; 55s ago
-    Process: 494968 ExecStart=/home/donaldzou/Wireguard-Dashboard/src/wgd.sh start (code=exited, status=0/SUCCESS)
+    Process: 494968 ExecStart=/root/wgdashboard/src/wgd.sh start (code=exited, status=0/SUCCESS)
     Main PID: 495005 (gunicorn)
     Tasks: 5 (limit: 4523)
     Memory: 36.8M
     CPU: 789ms
     CGroup: /system.slice/wg-dashboard.service
-    ├─495005 /home/donaldzou/Wireguard-Dashboard/src/venv/bin/python3 ./venv/bin/gunicorn --config ./gunicorn.conf.py
-    └─495007 /home/donaldzou/Wireguard-Dashboard/src/venv/bin/python3 ./venv/bin/gunicorn --config ./gunicorn.conf.py
+    ├─495005 /root/wgdashboard/src/venv/bin/python3 ./venv/bin/gunicorn --config ./gunicorn.conf.py
+    └─495007 /root/wgdashboard/src/venv/bin/python3 ./venv/bin/gunicorn --config ./gunicorn.conf.py
     
-    Aug 14 22:21:40 wg sudo[494978]:     root : PWD=/home/donaldzou/Wireguard-Dashboard/src ; USER=root ; COMMAND=./venv/bin/gunicorn --config ./gunicorn.conf.py
+    Aug 14 22:21:40 wg sudo[494978]:     root : PWD=/root/wgdashboard/src ; USER=root ; COMMAND=./venv/bin/gunicorn --config ./gunicorn.conf.py
     Aug 14 22:21:40 wg sudo[494978]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
     Aug 14 22:21:40 wg wgd.sh[494979]: [WGDashboard] WGDashboard w/ Gunicorn will be running on 0.0.0.0:10086
     Aug 14 22:21:40 wg wgd.sh[494979]: [WGDashboard] Access log file is at ./log/access_2024_08_14_22_21_40.log
