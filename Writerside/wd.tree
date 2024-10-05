@@ -12,6 +12,11 @@
     <toc-element topic="📝-Requirements.md"/>
     <toc-element topic="🛠-Install.md"/>
     <toc-element topic="🪜-Usage.md"/>
+    <toc-element topic="User-Guides.md">
+        <toc-element topic="Sign-In.md">
+            <toc-element topic="Access-Remote-Server.md"/>
+        </toc-element>
+    </toc-element>
     <toc-element topic="✂️-Dashboard-Configuration.md"/>
     <toc-element topic="❓-Update.md"/>
     <toc-element topic="🐬-Docker-Solutions.md"/>

@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/Writerside/topics/index.topic" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/index.topic" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/Writerside/images/user-guides/access-remote-server.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/images/user-guides/enable-access-remote-server.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/images/user-guides/sign-in.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Access-Remote-Server.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Sign-In.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/User-Guides.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/wd.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/wd.tree" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +82,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
@@ -89,14 +101,36 @@
       &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/❓-Update.md&quot;,
       &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/📝-Requirements.md&quot;,
       &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/🪜-Usage.md&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Writerside.PDF (wd).executor": "Run",
+    "Writerside.Web Archive (wd).executor": "Run",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/user-guides",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "writerside.last.selected.productWGDashboard-Documentation": "wd"
+  },
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Access-Remote-Server.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Sign-In.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/User-Guides.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/✂️-Dashboard-Configuration.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/🪜-Usage.md"
+>>>>>>> Stashed changes
     ]
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Writerside/images/user-guides" />
       <recent name="$PROJECT_DIR$/Writerside/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Writerside/images/user-guides" />
       <recent name="$PROJECT_DIR$/Writerside/images" />
     </key>
   </component>
