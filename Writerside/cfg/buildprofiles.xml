@@ -16,6 +16,7 @@
         <algolia-index>wgdashboard_doc_index</algolia-index>
         <algolia-api-key>3cacfa831852e984c04ccc1bdc1c5d60</algolia-api-key>
         <custom-css>custom.css</custom-css>
+        <web-root>https://donaldzou.github.io/WGDashboard-Documentation</web-root>
     </variables>
     <build-profile instance="wd">
         <variables>
