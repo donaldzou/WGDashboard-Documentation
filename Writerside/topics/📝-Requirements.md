@@ -35,6 +35,11 @@
 			<li>9-Stream</li>
 		</list>
     </tab>
+	<tab title="AlmaLinux">
+        <list type="bullet">
+			<li>9.4 (Seafoam Ocelot)</li>
+		</list>
+    </tab>
     <tab title="Fedora">
         <list type="bullet">
 			<li>40</li>
