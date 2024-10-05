@@ -56,6 +56,14 @@
 
 > If you installed WGDashboard on other systems without any issues, please let me know. Thank you!
 
+### Are looking for server to configure WireGuard and WGDashboard?
+
+Click my referral button below and register with **DigitalOcean**, you will receive a **$200** credit for **60-days** to your server, and you can support this project too!
+
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=a84cb9aac585&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+#### How to support?
+When you choose to use the link above, and spent **\$25** after your credits, I will receive **$25 in credits** towards my servers on this project :) **Thanks in advance!**
+
 ## Existing WireGuard Configurations
 
 <note>
