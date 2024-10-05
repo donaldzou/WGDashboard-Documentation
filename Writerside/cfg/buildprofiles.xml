@@ -21,7 +21,7 @@
         <variables>
             <noindex-content>false</noindex-content>
         </variables>
-        <sitemap priority="0.35" change-frequency="monthly"/>
+        <sitemap priority="1" change-frequency="daily"/>
     </build-profile>
     <footer>
         <copyright>2021 - 2024 Donald Zou</copyright>

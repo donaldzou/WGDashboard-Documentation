@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/-Requirements.md" beforePathEscaped="$PROJECT_DIR$/Writerside/topics/📝-Requirements.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/-Requirements.md" afterPathEscaped="$PROJECT_DIR$/Writerside/topics/📝-Requirements.md" afterDir="false" />
-    </list>
+    <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
