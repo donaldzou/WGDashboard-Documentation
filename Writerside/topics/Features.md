@@ -1,5 +1,7 @@
 # 💡 Features
 
+<video src="https://www.youtube.com/watch?v=0mwzd5Gr2eU"/>
+
 - Automatically look for existing WireGuard configuration under `/etc/wireguard`
 - Easy to use interface, provided credential and TOTP protection to the dashboard
 - Manage peers and configuration

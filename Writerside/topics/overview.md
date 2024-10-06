@@ -1,6 +1,6 @@
 # 📣 What's New: v4.0
 
-[📹 Demo video on YouTube](https://www.youtube.com/watch?v=0mwzd5Gr2eU)
+<video src="https://www.youtube.com/watch?v=0mwzd5Gr2eU"/>
 
 ## 🎉 New Features
 - **Updated dashboard design**: Re-designed some of the section with more modern style and layout, the UI is faster and more responsive, it also uses less memory. But overall is still the same dashboard you're familiarized.
