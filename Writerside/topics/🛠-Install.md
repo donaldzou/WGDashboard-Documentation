@@ -1,6 +1,6 @@
 # 🛠 Install
 
-## Install Commands
+## Commands to install WGDashboard
 
 These commands are tested by myself in each OS. It contains commands to install WireGuard, Git, Net Tools, and even Python on some OS.
 
@@ -153,7 +153,7 @@ Please make sure you understand these commands before you run them.
     </tab>
 </tabs>
 
-## Manual Installation
+## Manually install WGDashboard
 
 > To ensure a smooth installation process, please make sure you have the following installed:
 > - Python 3.10 or above
