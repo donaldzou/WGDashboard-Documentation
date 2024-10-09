@@ -153,6 +153,7 @@ Please make sure you understand these commands before you run them.
     </tab>
 </tabs>
 
+
 ## Manually install WGDashboard
 
 > To ensure a smooth installation process, please make sure you have the following installed:
@@ -164,12 +165,12 @@ Please make sure you understand these commands before you run them.
 1. Download WGDashboard
 
    ```shell
-   git clone https://github.com/donaldzou/WGDashboard.git wgdashboard
+   git clone https://github.com/donaldzou/WGDashboard.git
 
 2. Open the WGDashboard folder
 
    ```shell
-   cd wgdashboard/src
+   cd WGDashboard/src
    ```
 
 3. Install WGDashboard
