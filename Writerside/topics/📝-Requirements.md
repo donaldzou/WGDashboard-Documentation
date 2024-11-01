@@ -52,6 +52,11 @@
 			<li>3.20.2</li>
 		</list>
     </tab>
+	<tab title="Rocky Linux">
+        <list type="bullet">
+			<li>9.4</li>
+		</list>
+    </tab>
 </tabs>
 
 > If you installed WGDashboard on other systems without any issues, please let me know. Thank you!
