@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/Delete-WireGuard-Configuration-Backup.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/Delete-WireGuard-Configuration.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/Get-All-WireGuard-Configuration-Backup.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/Get-WireGuard-Configuration-Backup.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/Update-WireGuard-Configuration.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-10-26,_1_56 p_m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-10-26__1_56p_m___Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/Add-WireGuard-Configuration.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Add-WireGuard-Configuration.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/wd.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/wd.tree" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
