@@ -167,6 +167,22 @@ Please make sure you understand these commands before you run them.
          </code-block>
       </chapter>
    </tab>
+   <tab title="Raspberry Pi OS">
+      <chapter title="Kernel Version: 6.6 w/ Debian 12 (Bookworm)">
+         <code-block lang="shell">
+             apt-get install sudo git iptables -y && \ 
+             sudo apt-get update && \
+             sudo apt install wireguard-tools net-tools && \
+             git clone https://github.com/donaldzou/WGDashboard.git && \
+             cd ./WGDashboard/src && \
+             chmod +x ./wgd.sh && \
+             ./wgd.sh install && \
+             sudo echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf && \
+             sudo sysctl -p /etc/sysctl.conf
+         </code-block>
+         <tip>Tested by our community member. Thank you!</tip>
+      </chapter>
+   </tab>
 </tabs>
 
 

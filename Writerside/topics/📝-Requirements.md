@@ -57,6 +57,11 @@
 			<li>9.4</li>
 		</list>
     </tab>
+	<tab title="Raspberry Pi OS">
+		<list type="bullet">
+			<li>Kernel Version: 6.6 w/ Debian 12 (Bookworm)</li>
+		</list>
+	</tab>
 </tabs>
 
 > If you installed WGDashboard on other systems without any issues, please let me know. Thank you!
