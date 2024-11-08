@@ -1,0 +1,90 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"32bed0ad-2b71-4d1a-8277-d63a8faa5c1b\" name=\"Changes\" comment=\"Added languages\">\n<<<<<<< Updated upstream\n      <change beforePath=\"$PROJECT_DIR$/Writerside/topics/index.topic\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Writerside/topics/index.topic\" afterDir=\"false\" />\n=======\n      <change afterPath=\"$PROJECT_DIR$/Writerside/images/user-guides/access-remote-server.png\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Writerside/images/user-guides/enable-access-remote-server.mp4\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Writerside/images/user-guides/sign-in.png\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Writerside/topics/Access-Remote-Server.md\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Writerside/topics/Sign-In.md\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/Writerside/topics/User-Guides.md\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Writerside/wd.tree\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Writerside/wd.tree\" afterDir=\"false\" />\n>>>>>>> Stashed changes\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"HTML File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"InstanceColorv3\">\n    <option name=\"map\">\n      <map>\n        <entry key=\"$PROJECT_DIR$/Writerside/wd.tree\">\n          <value>\n            <ColorState>\n              <option name=\"customOrder\" value=\"1\" />\n              <option name=\"first\">\n                <RgbState>\n                  <option name=\"blue\" value=\"60\" />\n                  <option name=\"darkBlue\" value=\"60\" />\n                  <option name=\"darkGreen\" value=\"68\" />\n                  <option name=\"darkRed\" value=\"206\" />\n                  <option name=\"green\" value=\"68\" />\n                  <option name=\"red\" value=\"206\" />\n                </RgbState>\n              </option>\n              <option name=\"second\">\n                <RgbState>\n                  <option name=\"blue\" value=\"65\" />\n                  <option name=\"darkBlue\" value=\"65\" />\n                  <option name=\"darkGreen\" value=\"126\" />\n                  <option name=\"darkRed\" value=\"231\" />\n                  <option name=\"green\" value=\"126\" />\n                  <option name=\"red\" value=\"231\" />\n                </RgbState>\n              </option>\n            </ColorState>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 1\n}</component>\n  <component name=\"ProjectId\" id=\"2mStwIfEyWniv4LBcBrf5mCA22w\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n<<<<<<< Updated upstream\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;Writerside.PDF (wd).executor&quot;: &quot;Run&quot;,\n    &quot;Writerside.Web Archive (wd).executor&quot;: &quot;Run&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,\n    &quot;writerside.last.selected.productWGDashboard-Documentation&quot;: &quot;wd&quot;\n  },\n  &quot;keyToStringList&quot;: {\n    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [\n      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Features.md&quot;,\n      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/overview.md&quot;,\n      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/❓-Update.md&quot;,\n      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/\uD83D\uDCDD-Requirements.md&quot;,\n      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/\uD83E\uDE9C-Usage.md&quot;\n=======\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"Writerside.PDF (wd).executor\": \"Run\",\n    \"Writerside.Web Archive (wd).executor\": \"Run\",\n    \"git-widget-placeholder\": \"main\",\n    \"last_opened_file_path\": \"/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/user-guides\",\n    \"settings.editor.selected.configurable\": \"fileTemplates\",\n    \"writerside.last.selected.productWGDashboard-Documentation\": \"wd\"\n  },\n  \"keyToStringList\": {\n    \"stardust.markdown.MarkdownSplitEditorSuppressor:keyList\": [\n      \"/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Access-Remote-Server.md\",\n      \"/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Sign-In.md\",\n      \"/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/User-Guides.md\",\n      \"/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/✂\uFE0F-Dashboard-Configuration.md\",\n      \"/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/\uD83E\uDE9C-Usage.md\"\n>>>>>>> Stashed changes\n    ]\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/Writerside/images/user-guides\" />\n      <recent name=\"$PROJECT_DIR$/Writerside/images\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/Writerside/images/user-guides\" />\n      <recent name=\"$PROJECT_DIR$/Writerside/images\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Writerside.Web Archive (wd)\">\n    <configuration name=\"PDF (wd)\" type=\"StardustRunConfiguration\" factoryName=\"build-pdf\">\n      <option name=\"addCover\" value=\"true\" />\n      <option name=\"copyright\" />\n      <option name=\"description\" />\n      <option name=\"folderPath\" value=\"$PROJECT_DIR$\" />\n      <option name=\"footer\" />\n      <option name=\"header\" />\n      <option name=\"instanceId\" value=\"wd\" />\n      <option name=\"instanceName\" value=\"WGDashboard Documentation\" />\n      <option name=\"layout\" />\n      <option name=\"logoPath\" value=\"$PROJECT_DIR$/Writerside/images/favicon.png\" />\n      <option name=\"title\" value=\"WGDashboard Documentation\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"Web Archive (wd)\" type=\"StardustRunConfiguration\" factoryName=\"save-as-zip\">\n      <option name=\"folderPath\" value=\"$USER_HOME$/Downloads\" />\n      <option name=\"instanceId\" value=\"wd\" />\n      <option name=\"instanceName\" value=\"WGDashboard Documentation\" />\n      <method v=\"2\" />\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Update workflow\" />\n    <MESSAGE value=\"Upload images\" />\n    <MESSAGE value=\"Added languages\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added languages\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 709963ac5cb89fc710ea8726e2f2a474f1f5ec21)
++++ b/.idea/workspace.xml	(date 1730474726468)
+@@ -5,18 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
+-<<<<<<< Updated upstream
+-      <change beforePath="$PROJECT_DIR$/Writerside/topics/index.topic" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/index.topic" afterDir="false" />
+-=======
+-      <change afterPath="$PROJECT_DIR$/Writerside/images/user-guides/access-remote-server.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Writerside/images/user-guides/enable-access-remote-server.mp4" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Writerside/images/user-guides/sign-in.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Writerside/topics/Access-Remote-Server.md" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Writerside/topics/Sign-In.md" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Writerside/topics/User-Guides.md" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Writerside/wd.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/wd.tree" afterDir="false" />
+->>>>>>> Stashed changes
++      <change beforePath="$PROJECT_DIR$/Writerside/topics/Sponsors.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Sponsors.md" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -82,7 +72,6 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-<<<<<<< Updated upstream
+   <component name="PropertiesComponent">{
+   &quot;keyToString&quot;: {
+     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+@@ -96,45 +85,27 @@
+   },
+   &quot;keyToStringList&quot;: {
+     &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
++      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Create-Share-Peer-URL.md&quot;,
++      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Delete-Peers.md&quot;,
+       &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Features.md&quot;,
++      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/User-Guides.md&quot;,
+       &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/overview.md&quot;,
+-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/❓-Update.md&quot;,
++      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/v3-0-0-v3-0-6-2.md&quot;,
++      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/✂️-Dashboard-Configuration.md&quot;,
+       &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/📝-Requirements.md&quot;,
+       &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/🪜-Usage.md&quot;
+-=======
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "DefaultHtmlFileTemplate": "HTML File",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "Writerside.PDF (wd).executor": "Run",
+-    "Writerside.Web Archive (wd).executor": "Run",
+-    "git-widget-placeholder": "main",
+-    "last_opened_file_path": "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/user-guides",
+-    "settings.editor.selected.configurable": "fileTemplates",
+-    "writerside.last.selected.productWGDashboard-Documentation": "wd"
+-  },
+-  "keyToStringList": {
+-    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [
+-      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Access-Remote-Server.md",
+-      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Sign-In.md",
+-      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/User-Guides.md",
+-      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/✂️-Dashboard-Configuration.md",
+-      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/🪜-Usage.md"
+->>>>>>> Stashed changes
+     ]
+   }
+ }</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+-      <recent name="$PROJECT_DIR$/Writerside/images/user-guides" />
+       <recent name="$PROJECT_DIR$/Writerside/images" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
+-      <recent name="$PROJECT_DIR$/Writerside/images/user-guides" />
+       <recent name="$PROJECT_DIR$/Writerside/images" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Writerside.Web Archive (wd)">
++  <component name="RunManager" selected="Writerside.PDF (wd)">
+     <configuration name="PDF (wd)" type="StardustRunConfiguration" factoryName="build-pdf">
+       <option name="addCover" value="true" />
+       <option name="copyright" />

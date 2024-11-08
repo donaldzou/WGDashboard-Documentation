@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/Sponsors.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Sponsors.md" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/overview.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/❓-Update.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/❓-Update.md" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +81,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Writerside.PDF (wd).executor&quot;: &quot;Run&quot;,
     &quot;Writerside.Web Archive (wd).executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;v4.1-dev&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
     &quot;writerside.last.selected.productWGDashboard-Documentation&quot;: &quot;wd&quot;
@@ -92,7 +95,7 @@
       <recent name="$PROJECT_DIR$/Writerside/images" />
     </key>
   </component>
-  <component name="RunManager" selected="Writerside.Web Archive (wd)">
+  <component name="RunManager" selected="Writerside.PDF (wd)">
     <configuration name="PDF (wd)" type="StardustRunConfiguration" factoryName="build-pdf">
       <option name="addCover" value="true" />
       <option name="copyright" />

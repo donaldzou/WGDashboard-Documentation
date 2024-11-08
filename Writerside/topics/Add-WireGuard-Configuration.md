@@ -23,19 +23,6 @@ Add a new WireGuard Configuration
 }
 ```
 
-| Parameter           | Type   |
-|---------------------|--------|
-| `ConfigurationName` | string |
-| `Address`           | string |
-| `ListenPort`        | int    |
-| `PrivateKey`        | string |
-| `PublicKey`         | string |
-| `PresharedKey`      | string |
-| `PreUp`             | string |
-| `PreDown`           | string |
-| `PostUp`            | string |
-| `PostDown`          | string |
-
 ## Response
 
 `200 - OK`
