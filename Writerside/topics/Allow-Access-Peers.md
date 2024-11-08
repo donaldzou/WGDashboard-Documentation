@@ -1,26 +1,26 @@
-# Delete Peers
+# Allow Access Peers
 
-To delete peers individually or in bulk
+Description
 
 ## Request
 
-`POST /api/deletePeers/<configName>`
+`POST /api/allowAccessPeers/<configName>`
 
 ### Body Parameter
 
 ```json
 {
-  "peers": [
-    "mCP70rKd4iumKptwTgzvAR3g8/D74ZDkwR0EuI10uk4=",
-    "lKptwTgzvAR3gmCP70rKd4iu8/D74ZDkwR0EuI10uk4=",
-    "pCP70rKd4iumK0uk4ptwTgzvAR3g8/D74ZDkwR0EuI1="
-  ]
+  	"peers": [
+      "mCP70rKd4iumKptwTgzvAR3g8/D74ZDkwR0EuI10uk4=",
+      "lKptwTgzvAR3gmCP70rKd4iu8/D74ZDkwR0EuI10uk4=",
+      "pCP70rKd4iumK0uk4ptwTgzvAR3g8/D74ZDkwR0EuI1="
+	]
 }
 ```
 
-| Parameter | Type         |                                                          |
-|-----------|--------------|----------------------------------------------------------|
-| `peers`   | list[string] | List of strings contain public key(s) you want to delete |
+| Parameter | Type           |                                                          |
+|-----------|----------------|----------------------------------------------------------|
+| `peers`   | `list[string]` | List of strings contain public key(s) you want to delete |
 
 ## Response
 
@@ -31,7 +31,7 @@ To delete peers individually or in bulk
 ```json
 {
   "data": null,
-  "message": "Deleted 3 peer(s)",
+  "message": "Allow access successfully!",
   "status": true
 }
 ```
@@ -68,12 +68,12 @@ If failed to save to WireGuard
 }
 ```
 
-If failed delete some of the peers
+If failed restrict some of the peers
 
 ```json
 {
   "data": null,
-  "message": "Deleted 3 peer(s) successfully. Failed to delete 1 peer(s)",
+  "message": "Failed to allow access of peer id",
   "status": false
 }
 ```

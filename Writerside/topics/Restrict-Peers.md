@@ -6,12 +6,6 @@ Description
 
 `POST /api/restrictPeers/<configName>'`
 
-### URL Parameter
-
-| Parameter    | Type   |                                   |
-|--------------|--------|-----------------------------------|
-| `configName` | string | The config name of the peer is in |
-
 ### Body Parameter
 
 ```json
@@ -29,6 +23,8 @@ Description
 | `peers`   | list[string] | List of strings contain public key(s) you want to delete |
 
 ## Response
+
+`200 - OK`
 
 <note>Request Success</note>
 

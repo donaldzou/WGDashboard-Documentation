@@ -29,7 +29,9 @@
             <toc-element topic="Authenticate.md"/>
             <toc-element topic="Sign-Out.md"/>
             <toc-element topic="Get-WGDashboard-Configuration.md"/>
-            <toc-element topic="Update-WGDashboard-Configuration-Item.md"/>
+            <toc-element topic="Get-WGDashboard-Theme.md"/>
+            <toc-element topic="Get-WGDashboard-Version.md"/>
+            <toc-element topic="Get-WGDashboard-Update.md"/>
             <toc-element topic="Get-WireGuard-Configurations.md"/>
             <toc-element topic="Add-WireGuard-Configuration.md"/>
             <toc-element topic="Toggle-WireGuard-Configuration.md"/>
@@ -43,14 +45,29 @@
             <toc-element topic="Delete-WGDashboard-API-Key.md"/>
             <toc-element topic="Update-Peer-Settings.md"/>
             <toc-element topic="Reset-Peer-Data-Usage.md"/>
+            <toc-element topic="Add-Peers.md"/>
             <toc-element topic="Delete-Peers.md"/>
             <toc-element topic="Restrict-Peers.md"/>
+            <toc-element topic="Download-Peer.md"/>
+            <toc-element topic="Download-All-Peers.md"/>
+            <toc-element topic="Allow-Access-Peers.md"/>
             <toc-element topic="Create-Share-Peer-URL.md"/>
-            <toc-element topic="Endpoint-Template.md"/>
+            <toc-element topic="Update-Share-Peer-URL.md"/>
+            <toc-element topic="Get-Share-Peer-URL.md"/>
+            <toc-element topic="Save-Peer-Schedule-Job.md"/>
+            <toc-element topic="Delete-Peer-Schedule-Job.md"/>
+            <toc-element topic="Get-Peer-Schedule-Job-Logs.md"/>
+            <toc-element topic="Ping.md"/>
+            <toc-element topic="Traceroute.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="🔍-Screenshot.md"/>
     <toc-element topic="🕰️-Changelogs.md">
+        <toc-element topic="v4-0-4.md"/>
+        <toc-element topic="v4-0-3.md"/>
+        <toc-element topic="v4-0-2.md"/>
+        <toc-element topic="v4-0-1.md"/>
+        <toc-element topic="v4-0.md"/>
         <toc-element topic="v3-0-0-v3-0-6-2.md"/>
         <toc-element topic="v2-3-1.md"/>
         <toc-element topic="v2-3.md"/>
@@ -62,4 +79,5 @@
         <toc-element topic="v-1-1-1.md"/>
         <toc-element topic="v1-0.md"/>
     </toc-element>
+    <toc-element topic="Sponsors.md"/>
 </instance-profile>

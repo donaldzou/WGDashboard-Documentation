@@ -1,6 +1,6 @@
 # 🪜 Usage
 
-> The following commands are assumed you're in `wgdashboard/src`
+> The following commands are assumed you're in `WGDashboard/src`
 
 ## Start
 
@@ -43,14 +43,14 @@ In the `src` folder, it contained a file called `wg-dashboard.service`, we can u
 1. Changing the directory to the dashboard's directory
 
    ```shell
-   cd wgdashboard/src
+   cd WGDashboard/src
    ```
 
 2. Get the full path of the dashboard's directory
 
    ```shell
    pwd
-   #Output: /root/wgdashboard/src
+   #Output: /root/WGDashboard/src
    ```
 
    For this example, the output is `/root/wireguard-dashboard/src`, your path might be different since it depends on where you downloaded the dashboard in the first place. **Copy the the output to somewhere, we will need this in the next step.**
@@ -71,11 +71,11 @@ In the `src` folder, it contained a file called `wg-dashboard.service`, we can u
    
    [Service]
    Type=forking
-   PIDFile=<absolute_path_of_wgdashboard_src>/gunicorn.pid
-   WorkingDirectory=<absolute_path_of_wgdashboard_src>
-   ExecStart=<absolute_path_of_wgdashboard_src>/wgd.sh start
-   ExecStop=<absolute_path_of_wgdashboard_src>/wgd.sh stop
-   ExecReload=<absolute_path_of_wgdashboard_src>/wgd.sh restart
+   PIDFile=<absolute_path_of_WGDashboard_src>/gunicorn.pid
+   WorkingDirectory=<absolute_path_of_WGDashboard_src>
+   ExecStart=<absolute_path_of_WGDashboard_src>/wgd.sh start
+   ExecStop=<absolute_path_of_WGDashboard_src>/wgd.sh stop
+   ExecReload=<absolute_path_of_WGDashboard_src>/wgd.sh restart
    TimeoutSec=120
    PrivateTmp=yes
    Restart=always
@@ -84,7 +84,7 @@ In the `src` folder, it contained a file called `wg-dashboard.service`, we can u
    WantedBy=multi-user.target
    ```
 
-   Now, we need to replace all `<absolute_path_of_wgdashboard_src>` to the one you just copied from step 2. After doing this, the file will become something like this, your file might be different:
+   Now, we need to replace all `<absolute_path_of_WGDashboard_src>` to the one you just copied from step 2. After doing this, the file will become something like this, your file might be different:
 
    **Be aware that after the value of `WorkingDirectory`, it does not have  a `/` (slash).** And then save the file after you edited it
 
@@ -116,16 +116,16 @@ In the `src` folder, it contained a file called `wg-dashboard.service`, we can u
     ● wg-dashboard.service
     Loaded: loaded (/etc/systemd/system/wg-dashboard.service; enabled; vendor preset: enabled)
     Active: active (running) since Wed 2024-08-14 22:21:47 EDT; 55s ago
-    Process: 494968 ExecStart=/home/donaldzou/Wireguard-Dashboard/src/wgd.sh start (code=exited, status=0/SUCCESS)
+    Process: 494968 ExecStart=/root/WGDashboard/src/wgd.sh start (code=exited, status=0/SUCCESS)
     Main PID: 495005 (gunicorn)
     Tasks: 5 (limit: 4523)
     Memory: 36.8M
     CPU: 789ms
     CGroup: /system.slice/wg-dashboard.service
-    ├─495005 /home/donaldzou/Wireguard-Dashboard/src/venv/bin/python3 ./venv/bin/gunicorn --config ./gunicorn.conf.py
-    └─495007 /home/donaldzou/Wireguard-Dashboard/src/venv/bin/python3 ./venv/bin/gunicorn --config ./gunicorn.conf.py
+    ├─495005 /root/WGDashboard/src/venv/bin/python3 ./venv/bin/gunicorn --config ./gunicorn.conf.py
+    └─495007 /root/WGDashboard/src/venv/bin/python3 ./venv/bin/gunicorn --config ./gunicorn.conf.py
     
-    Aug 14 22:21:40 wg sudo[494978]:     root : PWD=/home/donaldzou/Wireguard-Dashboard/src ; USER=root ; COMMAND=./venv/bin/gunicorn --config ./gunicorn.conf.py
+    Aug 14 22:21:40 wg sudo[494978]:     root : PWD=/root/WGDashboard/src ; USER=root ; COMMAND=./venv/bin/gunicorn --config ./gunicorn.conf.py
     Aug 14 22:21:40 wg sudo[494978]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
     Aug 14 22:21:40 wg wgd.sh[494979]: [WGDashboard] WGDashboard w/ Gunicorn will be running on 0.0.0.0:10086
     Aug 14 22:21:40 wg wgd.sh[494979]: [WGDashboard] Access log file is at ./log/access_2024_08_14_22_21_40.log
@@ -148,3 +148,21 @@ In the `src` folder, it contained a file called `wg-dashboard.service`, we can u
    ```
 
 8. **And now you can reboot your system, and use the command at step 6 to see if it will auto start after the reboot, or just simply access the dashboard through your browser. If you have any questions or problem, please report it in the issue page.**
+
+### Enable WireGuard configuration when WGDashboard start
+
+> Thanks to the solution from [@opit7](https://github.com/donaldzou/WGDashboard/issues/360#issuecomment-2374004622)
+
+You can add this in the service file. For example you want to enable `wg0` when WGDashboard start
+
+```ini
+...
+
+[Service]
+...
+ExecStartPre=wg-quick up wg0
+
+...
+```
+
+So now `wg0` will start before WGDashboard starts.

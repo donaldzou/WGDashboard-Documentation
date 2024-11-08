@@ -6,12 +6,6 @@ Reset peer's total, sent or receive data
 
 `POST /api/resetPeerData/<configName>`
 
-### URL Parameter
-
-| Parameter    | Type   | Description                       |
-|--------------|--------|-----------------------------------|
-| `configName` | string | The config name of the peer is in |
-
 ### Body Parameter
 
 ```json
@@ -27,6 +21,8 @@ Reset peer's total, sent or receive data
 | `type`    | string | Type of data you want to reset. It can be `total`, `receive` or `sent` |
 
 ## Response
+
+`200 - OK`
 
 <note>Request Success</note>
 

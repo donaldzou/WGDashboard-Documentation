@@ -2,12 +2,31 @@
 <!DOCTYPE buildprofiles SYSTEM "https://resources.jetbrains.com/writerside/1.0/build-profiles.dtd">
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
-    <variables></variables>
+    <variables>
+        <header-logo>
+            favicon.png
+        </header-logo>
+        <custom-favicons>
+            favicon.png
+        </custom-favicons>
+        <analytics-head-script-file>
+            ga.html
+        </analytics-head-script-file>
+        <algolia-id>I5B701TD0E</algolia-id>
+        <algolia-index>wgdashboard_doc_index</algolia-index>
+        <algolia-api-key>3cacfa831852e984c04ccc1bdc1c5d60</algolia-api-key>
+        <custom-css>custom.css</custom-css>
+        <web-root>https://donaldzou.github.io/WGDashboard-Documentation</web-root>
+    </variables>
     <build-profile instance="wd">
         <variables>
-            <noindex-content>true</noindex-content>
+            <noindex-content>false</noindex-content>
         </variables>
+        <sitemap priority="1" change-frequency="daily"/>
     </build-profile>
-
+    <footer>
+        <copyright>2021 - 2024 Donald Zou</copyright>
+        <social type="email" href="donaldzou@live.hk">Contact me through email</social>
+        <social type="linkedin" href="https://www.linkedin.com/in/donaldzou/">LinkedIn</social>
+    </footer>
 </buildprofiles>

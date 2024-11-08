@@ -35,6 +35,11 @@
 			<li>9-Stream</li>
 		</list>
     </tab>
+	<tab title="AlmaLinux">
+        <list type="bullet">
+			<li>9.4 (Seafoam Ocelot)</li>
+		</list>
+    </tab>
     <tab title="Fedora">
         <list type="bullet">
 			<li>40</li>
@@ -47,6 +52,16 @@
 			<li>3.20.2</li>
 		</list>
     </tab>
+	<tab title="Rocky Linux">
+        <list type="bullet">
+			<li>9.4</li>
+		</list>
+    </tab>
+	<tab title="Raspberry Pi OS">
+		<list type="bullet">
+			<li>Kernel Version: 6.6 w/ Debian 12 (Bookworm)</li>
+		</list>
+	</tab>
 </tabs>
 
 > If you installed WGDashboard on other systems without any issues, please let me know. Thank you!
