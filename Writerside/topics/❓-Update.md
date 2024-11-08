@@ -12,6 +12,16 @@ For user who is using `v2.3.1` or below, please notice that all data that stored
 
 ## How to update
 
+### Solution 1 (v4.0+)
+
+```shell
+sudo ./wgd.sh update
+```
+
+### Solution 2
+
+> If **Solution 1** above is not working for you...
+
 1. Change your directory to `wgdashboard`
 
     ```shell
@@ -28,5 +38,3 @@ For user who is using `v2.3.1` or below, please notice that all data that stored
    ```shell
    sudo ./wgd.sh install
    ```
-
-Starting with `v3.0`, you can simply do `sudo ./wgd.sh update` !! (I hope)

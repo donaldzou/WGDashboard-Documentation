@@ -1,0 +1,986 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-ini.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script><style>
+        .article {
+            position: relative;
+            padding-bottom: 24px;
+        }
+        
+
+        .bordered-element {
+            border: 1px solid #c4c4c4;
+            overflow: hidden;
+        }
+        
+
+        .bordered-element-rounded {
+            border: 1px solid #c4c4c4;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+        
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+
+        .center-text {
+            text-align: center;
+        }
+        
+
+        .code-block {
+            overflow: hidden;
+            position: relative;
+            padding: 0;
+            border-radius: 8px;
+            font-variant-ligatures: none;
+            background-color: rgba(25, 25, 28, .05);
+            word-break: break-all;
+        }
+        
+
+        .container {
+            max-width: 100%;
+            overflow: hidden;
+            page-break-inside: avoid;
+            display: block;
+        }
+        
+
+        .control {
+            color: #19191c;
+            font-size: 16px;
+            font-weight: 670;
+        }
+        
+
+        .detached {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-bottom: 8px;
+        }
+        
+
+        .emphasis {
+            color: inherit;
+            font-weight: inherit;
+            font-style: italic;
+        }
+        
+
+        .flex {
+            display: flex;
+        }
+        
+
+        .header-row {
+            background: #e6e6e6;
+        }
+        
+
+        .image {
+            max-width: 100%;
+            max-height: 90vh;
+            height: auto;
+        }
+        
+
+        .image-container {
+            max-width: 100vw;
+        }
+        
+
+        .image-size {
+            height: auto;
+        }
+        
+
+        .inline-code {
+            border-radius: 4px;
+            display: inline;
+            padding: 2px 1px;
+            font-family: JetBrains Sans,monospace;
+            background: #e6e6e6;
+        }
+        
+
+        .list {
+            list-style-type: disc;
+            padding-left: 0;
+            margin-left: 15px;
+        }
+        
+
+        .list-decimal {
+            list-style-type: decimal;
+        }
+        
+
+        .list-item {
+            margin-top: 6px;
+            margin-bottom: 6px;
+            margin-left: 4px;
+        }
+        
+
+        .main-title {
+            padding-bottom: 24px;
+            margin-top: 0;
+            font-size: 40px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+
+        .note {
+            background: rgba(77, 187, 95, .2);
+        }
+        
+
+        .prism {
+            page-break-inside: avoid;
+        }
+        
+        /* PrismJS 1.29.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apex+apl+applescript+aql+arduino+arff+armasm+arturo+asciidoc+aspnet+asm6502+asmatmel+autohotkey+autoit+avisynth+avro-idl+awk+bash+basic+batch+bbcode+bbj+bicep+birb+bison+bnf+bqn+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cfscript+chaiscript+cil+cilkc+cilkcpp+clojure+cmake+cobol+coffeescript+concurnas+csp+cooklang+coq+crystal+css-extras+csv+cue+cypher+d+dart+dataweave+dax+dhall+diff+django+dns-zone-file+docker+dot+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+false+firestore-security-rules+flow+fortran+ftl+gml+gap+gcode+gdscript+gedcom+gettext+gherkin+git+glsl+gn+linker-script+go+go-module+gradle+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+hoon+http+hpkp+hsts+ichigojam+icon+icu-message-format+idris+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jexl+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keepalived+keyman+kotlin+kumir+kusto+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+log+lolcode+lua+magma+makefile+markdown+markup-templating+mata+matlab+maxscript+mel+mermaid+metafont+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nevod+nginx+nim+nix+nsis+objectivec+ocaml+odin+opencl+openqasm+oz+parigp+parser+pascal+pascaligo+psl+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plant-uml+plsql+powerquery+powershell+processing+prolog+promql+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+qsharp+q+qml+qore+r+racket+cshtml+jsx+tsx+reason+regex+rego+renpy+rescript+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+squirrel+stan+stata+iecst+stylus+supercollider+swift+systemd+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+tremor+turtle+twig+typescript+typoscript+unrealscript+uorazor+uri+v+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+web-idl+wgsl+wiki+wolfram+wren+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=highlight-keywords */
+code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre-wrap;word-spacing:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:16px;margin:0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}
+
+        
+
+        .prompt {
+            flex-direction: row;
+            letter-spacing: .0015em;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+
+        .prompt-content {
+            padding: 15px;
+            overflow: hidden;
+            flex: 1 1 auto;
+        }
+        
+
+        .prompt-content-p p {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+
+        .prompt-icon {
+            flex: 0 0 auto;
+            margin-left: 15px;
+            margin-top: 15px;
+            fill: currentcolor;
+            width: 24px;
+            height: 24px;
+        }
+        
+
+        :root {
+            width: 95%;
+            max-width: 95vw;
+            padding: 0 0 0 30px;
+        }
+        
+        body {
+            font-family: JetBrains Sans,serif;
+        }
+        
+        a {
+            overflow-wrap: anywhere;
+            width: 100vw;
+        }
+        
+        
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Light.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Light.woff) format("woff");
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff) format("woff");
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-SemiBold.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-SemiBold.woff) format("woff");
+            font-weight: 600;
+            font-style: normal;
+        }
+        
+        
+        code {
+            display: inline;
+            word-break: break-word;
+            font-size: 15px;
+            line-height: inherit;
+            font-variant-ligatures: none;
+            font-family: JetBrains Sans,monospace;
+            white-space: pre-line;
+            overflow-wrap: break-word;
+        }
+        
+        figcaption {
+            margin-top: 5px;
+        }
+        
+        h2 {
+            padding-top: 16px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        h3 {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        h4 {
+            padding-top: 4px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        p {
+            padding: 0;
+            border: 0;
+            line-height: 25px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-bottom: 8px;
+        }
+        
+        div {
+            display: block;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            page-break-inside: avoid;
+        }
+        
+        th, td {
+            border: 1px solid #c4c4c4;
+            padding: 10px;
+            text-align: left;
+            word-break: break-all;
+        }
+        
+        .entry {
+            display: grid;
+            grid-template-columns: auto max-content;
+            grid-template-areas: "chapter page";
+            align-items: end;
+            gap: 0 .25rem;
+            line-height: 25px;
+        }
+        
+        .toc-link-container{
+            grid-area: chapter;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .toc-link{
+            text-decoration: none;
+            color: black;
+        }
+        
+        .toc-link-container::after {
+            position: absolute;
+            padding-left: .25ch;
+            content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+            text-align: right;
+        }
+        
+        .page {
+            grid-area: page;
+            width: 30px;
+            text-align: right;
+        }
+        
+
+        .tab-content {
+            padding: 16px;
+        }
+        
+        .tab-content > *  {
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+
+        .tab-title  {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+
+        .table-wrapper {
+            overflow: hidden;
+            box-sizing: border-box;
+            font: inherit;
+        }
+        
+
+        .tip {
+            background-color: rgba(25, 25, 28, .05);
+        }
+        
+
+        .topic {
+            page-break-before: always;
+        }
+        
+
+        .warning {
+            background: rgba(244, 92, 74, .2);
+        }
+        </style><title>pdfSourceWD</title></head><body><div><section class="topic"><div><article class="article"><h1 class="main-title">Table of contents</h1><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#530115961">📣 What's New: v4.1</a></div><div class="page">3</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-226015139">💡 Features</a></div><div class="page">5</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1225719523">📝 Requirements</a></div><div class="page">6</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1536277489">🛠 Install</a></div><div class="page">9</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1539383570">🪜 Usage</a></div><div class="page">15</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1166709447">🗂️ User Guides</a></div><div class="page">20</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-542099659">Sign In</a></div><div class="page">21</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1635589665">Access Remote Server</a></div><div class="page">22</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-243481923">✂️ Configure</a></div><div class="page">23</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-541780829">❓ Update</a></div><div class="page">29</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-2017093333">🐬 Docker Solutions</a></div><div class="page">30</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#375103183">🥘 Experimental Features</a></div><div class="page">31</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#2131104627">📖 API Documentation</a></div><div class="page">34</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1702290763">Endpoints</a></div><div class="page">36</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1738398593">Handshake to Server</a></div><div class="page">37</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1041763343">Validate Authentication</a></div><div class="page">38</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1885436661">Authenticate</a></div><div class="page">39</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#374785854">Sign Out</a></div><div class="page">41</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1862732950">Get WGDashboard Configuration</a></div><div class="page">42</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-2094305801">Update WGDashboard Configuration Item</a></div><div class="page">44</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1335085695">Get WireGuard Configurations</a></div><div class="page">46</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-317888131">Add WireGuard Configuration</a></div><div class="page">48</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#142026608">Toggle WireGuard Configuration</a></div><div class="page">50</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#384095717">Update WireGuard Configuration</a></div><div class="page">51</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1328866105">Delete WireGuard Configuration</a></div><div class="page">53</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#15040221">Get WireGuard Configuration Backup</a></div><div class="page">54</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1097477417">Get All WireGuard Configuration Backup</a></div><div class="page">55</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#140841384">Delete WireGuard Configuration Backup</a></div><div class="page">56</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1301794233">Get WGDashboard API Keys</a></div><div class="page">57</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1952553335">Add WGDashboard API Key</a></div><div class="page">59</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1304461761">Delete WGDashboard API Key</a></div><div class="page">61</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-184428981">Reset Peer Data Usage</a></div><div class="page">63</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1717269329">Delete Peers</a></div><div class="page">65</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1840802048">Restrict Peers</a></div><div class="page">68</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#971260323">Create Share Peer URL</a></div><div class="page">71</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1735832142">Endpoint Name</a></div><div class="page">74</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1397712125">🔍 Screenshot</a></div><div class="page">76</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1130505296">🕰️ Changelogs</a></div><div class="page">82</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1915376136">v3.0.0 - v3.0.6.2</a></div><div class="page">83</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-869160378">v2.3.1</a></div><div class="page">85</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#3564834">v2.3</a></div><div class="page">86</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-869161339">v2.2.1</a></div><div class="page">87</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#3564833">v2.2</a></div><div class="page">88</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#3564832">v2.1</a></div><div class="page">90</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#3564831">v2.0</a></div><div class="page">91</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-870085820">v1.1.2</a></div><div class="page">92</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1313794590">v.1.1.1</a></div><div class="page">93</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#3563870">v1.0 - Journey starts here!</a></div><div class="page">94</div></div></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="530115961">📣 What's New: v4.1</h1><section><h2 id="530115961#new-features" data-toc="new-features#overview.md-new-features">🎉 New Features</h2><ul class="list" id="530115961#-35422a_8" start="1"><li class="list-item" id="530115961#-35422a_9"><p><span class="control" id="530115961#-35422a_10">Multi-Language Support</span>: Now WGDashboard support the following language on its user interface, big thanks to our user's contribution! </p><ul class="list" id="530115961#-35422a_11" start="1"><li class="list-item" id="530115961#-35422a_12"><p>Czech (@jursed)</p></li><li class="list-item" id="530115961#-35422a_13"><p>German (@orangeferdi)</p></li><li class="list-item" id="530115961#-35422a_14"><p>English</p></li><li class="list-item" id="530115961#-35422a_15"><p>Italian (@3vis97)</p></li><li class="list-item" id="530115961#-35422a_16"><p>Dutch (@DaanSelen)</p></li><li class="list-item" id="530115961#-35422a_17"><p>Russian (Pixnet)</p></li><li class="list-item" id="530115961#-35422a_18"><p>Ukrainian (@shuricksumy)</p></li></ul></li></ul></section><section><h2 id="530115961#some-adjustments" data-toc="some-adjustments#overview.md-some-adjustments">🛠️ Some Adjustments</h2></section><section><h2 id="530115961#bugs-fixed" data-toc="bugs-fixed#overview.md-bugs-fixed">🧐 Bugs Fixed</h2><ul class="list" id="530115961#-35422a_19" start="1"><li class="list-item" id="530115961#-35422a_20"><p>Mobile UI issues in #353</p></li><li class="list-item" id="530115961#-35422a_21"><p>Removed WireGuard configuration error alert from Gunicorn start in #328</p></li><li class="list-item" id="530115961#-35422a_22"><p>Sometimes restrict peer might not be success in #357</p></li><li class="list-item" id="530115961#-35422a_23"><p>Weird SQLite error causing WGDashboard to crash in #366</p></li></ul></section><section><h2 id="530115961#experimental-features" data-toc="experimental-features#overview.md-experimental-features">🥘 Experimental Features</h2><ul class="list" id="530115961#-35422a_24" start="1"><li class="list-item" id="530115961#-35422a_26"><p><span class="control" id="530115961#-35422a_28">Cross-Server Access</span>: Now you can access other servers that installed <span class="inline-code" id="530115961#-35422a_29">v4</span> of WGDashboard through API key.</p></li><li class="list-item" id="530115961#-35422a_27"><p><span class="control" id="530115961#-35422a_30">Desktop App</span>: Thanks to <span class="control" id="530115961#-35422a_31">Cross-Server Access</span>, you can now download an ElectronJS based desktop app of WGDashboard, and use that to access WGDashboard on different servers.</p></li></ul><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="530115961#-35422a_32">For more information, please visit <a href="#375103183">🥘 Experimental Features</a></p></div>
+</blockquote>
+</section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-226015139">💡 Features</h1><ul class="list" id="-226015139#gqg4ru_3" start="1"><li class="list-item" id="-226015139#gqg4ru_4"><p>Automatically look for existing WireGuard configuration under <span class="inline-code" id="-226015139#gqg4ru_9">/etc/wireguard</span></p></li><li class="list-item" id="-226015139#gqg4ru_5"><p>Easy to use interface, provided credential and TOTP protection to the dashboard</p></li><li class="list-item" id="-226015139#gqg4ru_6"><p>Manage peers and configuration </p><ul class="list" id="-226015139#gqg4ru_10" start="1"><li class="list-item" id="-226015139#gqg4ru_11"><p>Add Peers or by bulk with auto-generated information</p></li><li class="list-item" id="-226015139#gqg4ru_12"><p>Edit peer information</p></li><li class="list-item" id="-226015139#gqg4ru_13"><p>Delete peers with ease</p></li><li class="list-item" id="-226015139#gqg4ru_14"><p>Restrict peers</p></li><li class="list-item" id="-226015139#gqg4ru_15"><p>Generate QR Code and <span class="inline-code" id="-226015139#gqg4ru_17">.conf</span> file for peers, share it through a public link</p></li><li class="list-item" id="-226015139#gqg4ru_16"><p>Schedule jobs to delete / restrict peer when conditions are met</p></li></ul></li><li class="list-item" id="-226015139#gqg4ru_7"><p>View real time peer status</p></li><li class="list-item" id="-226015139#gqg4ru_8"><p>Testing tool: Ping and Traceroute to your peer</p></li></ul></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1225719523">📝 Requirements</h1><ol class="list list-decimal" id="-1225719523#z3lvdra_3" type="1" start="1"><li class="list-item" id="-1225719523#z3lvdra_6"><p>Supported operating systems. Please view the list below.</p></li><li class="list-item" id="-1225719523#z3lvdra_7"><p>WireGuard &amp; WireGuard-Tools (<span class="inline-code" id="-1225719523#z3lvdra_10">wg-quick</span>)</p></li><li class="list-item" id="-1225719523#z3lvdra_8"><p>Python 3.10 / 3.11 / 3.12</p></li><li class="list-item" id="-1225719523#z3lvdra_9"><p><span class="inline-code" id="-1225719523#z3lvdra_11">git</span>, <span class="inline-code" id="-1225719523#z3lvdra_12">net-tools</span>, <span class="inline-code" id="-1225719523#z3lvdra_13">sudo</span> (<span class="emphasis" id="-1225719523#z3lvdra_14">This should only apply to RHEL 9 &amp; 8, interestingly it doesn't have it preinstalled)</span></p></li></ol><section><h2 id="-1225719523#supported-operating-systems" data-toc="supported-operating-systems#📝-Requirements.md-supported-operating-systems">Supported Operating Systems</h2><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>All operating systems below are tested by myself. All are <b id="-1225719523#z3lvdra_18">ARM64</b> ran in UTM Virtual Machine.</p></div>
+</blockquote>
+<div id="-1225719523#z3lvdra_16"><div class="detached" id="-1225719523#z3lvdra_19"><div class="tab-title"><div>Ubuntu</div></div><div class="bordered-element tab-content"><ul class="list" id="-1225719523#z3lvdra_25" start="1"><li class="list-item" id="-1225719523#z3lvdra_26"><p>20.04 LTS</p></li><li class="list-item" id="-1225719523#z3lvdra_27"><p>22.04 LTS</p></li><li class="list-item" id="-1225719523#z3lvdra_28"><p>24.02 LTS</p></li></ul></div></div><div class="detached" id="-1225719523#z3lvdra_20"><div class="tab-title"><div>Debian</div></div><div class="bordered-element tab-content"><ul class="list" id="-1225719523#z3lvdra_29" start="1"><li class="list-item" id="-1225719523#z3lvdra_30"><p>12.6</p></li><li class="list-item" id="-1225719523#z3lvdra_31"><p>11.10</p></li></ul></div></div><div class="detached" id="-1225719523#z3lvdra_21"><div class="tab-title"><div>Red Hat Enterprise Linux</div></div><div class="bordered-element tab-content"><ul class="list" id="-1225719523#z3lvdra_32" start="1"><li class="list-item" id="-1225719523#z3lvdra_33"><p>9.4</p></li></ul></div></div><div class="detached" id="-1225719523#z3lvdra_22"><div class="tab-title"><div>CentOS</div></div><div class="bordered-element tab-content"><ul class="list" id="-1225719523#z3lvdra_34" start="1"><li class="list-item" id="-1225719523#z3lvdra_35"><p>9-Stream</p></li></ul></div></div><div class="detached" id="-1225719523#z3lvdra_23"><div class="tab-title"><div>Fedora</div></div><div class="bordered-element tab-content"><ul class="list" id="-1225719523#z3lvdra_36" start="1"><li class="list-item" id="-1225719523#z3lvdra_37"><p>40</p></li><li class="list-item" id="-1225719523#z3lvdra_38"><p>39</p></li><li class="list-item" id="-1225719523#z3lvdra_39"><p>38</p></li></ul></div></div><div class="detached" id="-1225719523#z3lvdra_24"><div class="tab-title"><div>Alpine Linux</div></div><div class="bordered-element tab-content"><ul class="list" id="-1225719523#z3lvdra_40" start="1"><li class="list-item" id="-1225719523#z3lvdra_41"><p>3.20.2</p></li></ul></div></div></div><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="-1225719523#z3lvdra_42">If you installed WGDashboard on other systems without any issues, please let me know. Thank you!</p></div>
+</blockquote>
+</section><section><h2 id="-1225719523#existing-wireguard-configurations" data-toc="existing-wireguard-configurations#📝-Requirements.md-existing-wireguard-configurations">Existing WireGuard Configurations</h2><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>This only applies to existing WireGuard Configuration under `/etc/wireguard`</p></div>
+</blockquote>
+<div class="detached code-block" id="-1225719523#z3lvdra_44"><pre><code class="language-ini">[Interface]
+...
+SaveConfig = true
+...
+
+[Peer]
+#Name# = Donald's iPhone
+PublicKey = abcd1234
+AllowedIPs = 1.2.3.4/32</code></pre></div><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="-1225719523#z3lvdra_46">With <span class="inline-code" id="-1225719523#z3lvdra_47">v4</span>, WGDashboard will look for entry with <span class="inline-code" id="-1225719523#z3lvdra_48">#Name# = abc...</span> in each peer and use that for the name.</p></div>
+</blockquote>
+</section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1536277489">🛠 Install</h1><section><h2 id="1536277489#install-commands" data-toc="install-commands#🛠-Install.md-install-commands">Install Commands</h2><p id="1536277489#rxo4gm_5">These commands are tested by myself in each OS. It contains commands to install WireGuard, Git, Net Tools, and even Python on some OS.</p><blockquote class="prompt flex bordered-element-rounded warning detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>Please make sure you understand these commands before you run them.</p></div>
+</blockquote>
+<div id="1536277489#rxo4gm_7"><div class="detached" id="1536277489#rxo4gm_8"><div class="tab-title"><div>Ubuntu</div></div><div class="bordered-element tab-content"><section><h3 id="1536277489#rxo4gm_14" data-toc="rxo4gm_14#🛠-Install.md-rxo4gm_14">20.04 LTS</h3><div class="detached code-block" id="1536277489#rxo4gm_16"><pre><code class="language-bash">sudo add-apt-repository ppa:deadsnakes/ppa -y &amp;&amp; \
+sudo apt-get update -y &amp;&amp; \
+sudo apt-get install python3.10 python3.10-distutils wireguard-tools net-tools --no-install-recommends -y &amp;&amp; \
+git clone https://github.com/donaldzou/WGDashboard.git &amp;&amp; \
+cd WGDashboard/src &amp;&amp; \
+chmod +x ./wgd.sh &amp;&amp; \
+./wgd.sh install &amp;&amp; \
+sudo echo &quot;net.ipv4.ip_forward=1&quot; &gt;&gt; /etc/sysctl.conf &amp;&amp; \
+sudo sysctl -p</code></pre></div></section><section><h3 id="1536277489#rxo4gm_15" data-toc="rxo4gm_15#🛠-Install.md-rxo4gm_15">22.04 LTS and 24.02 LTS</h3><div class="detached code-block" id="1536277489#rxo4gm_17"><pre><code class="language-bash">sudo apt-get update -y &amp;&amp; \
+sudo apt install wireguard-tools net-tools --no-install-recommends -y &amp;&amp; \
+git clone https://github.com/donaldzou/WGDashboard.git &amp;&amp; \
+cd ./WGDashboard/src &amp;&amp; \
+chmod +x ./wgd.sh &amp;&amp; \
+./wgd.sh install &amp;&amp; \
+sudo echo &quot;net.ipv4.ip_forward=1&quot; &gt;&gt; /etc/sysctl.conf &amp;&amp; \
+sudo sysctl -p /etc/sysctl.conf</code></pre></div></section></div></div><div class="detached" id="1536277489#rxo4gm_9"><div class="tab-title"><div>Debian</div></div><div class="bordered-element tab-content"><section><h3 id="1536277489#rxo4gm_18" data-toc="rxo4gm_18#🛠-Install.md-rxo4gm_18">12.6</h3><div class="detached code-block" id="1536277489#rxo4gm_20"><pre><code class="language-bash">apt-get install sudo git iptables -y &amp;&amp; \ 
+sudo apt-get update &amp;&amp; \
+sudo apt install wireguard-tools net-tools &amp;&amp; \
+git clone https://github.com/donaldzou/WGDashboard.git &amp;&amp; \
+cd ./WGDashboard/src &amp;&amp; \
+chmod +x ./wgd.sh &amp;&amp; \
+./wgd.sh install &amp;&amp; \
+sudo echo &quot;net.ipv4.ip_forward=1&quot; &gt;&gt; /etc/sysctl.conf &amp;&amp; \
+sudo sysctl -p /etc/sysctl.conf</code></pre></div></section><section><h3 id="1536277489#rxo4gm_19" data-toc="rxo4gm_19#🛠-Install.md-rxo4gm_19">11.10</h3><blockquote class="prompt flex bordered-element-rounded warning detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>This commands will download Python 3.10's source code and build from it, since Debian 11.10 doesn't come with Python 3.10</p></div>
+</blockquote>
+<div class="detached code-block" id="1536277489#rxo4gm_22"><pre><code class="language-bash">apt-get install sudo -y &amp;&amp; \ 
+sudo apt-get update &amp;&amp; \ 
+sudo apt install -y git iptables build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev wireguard-tools net-tools &amp;&amp; \ 
+wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz &amp;&amp; \ 
+tar -xvf Python-3.10.0.tgz &amp;&amp; \ 
+cd Python-3.10.0 &amp;&amp; \ 
+sudo ./configure --enable-optimizations &amp;&amp; \ 
+sudo make &amp;&amp; \ 
+sudo make altinstall &amp;&amp; \ 
+cd .. &amp;&amp; \ 
+git clone https://github.com/donaldzou/WGDashboard.git &amp;&amp; \ 
+cd ./WGDashboard/src &amp;&amp; \ 
+chmod +x ./wgd.sh &amp;&amp; \ 
+./wgd.sh install &amp;&amp; \ 
+sudo echo &quot;net.ipv4.ip_forward=1&quot; &gt;&gt; /etc/sysctl.conf &amp;&amp; \
+sudo sysctl -p /etc/sysctl.conf</code></pre></div></section></div></div><div class="detached" id="1536277489#rxo4gm_10"><div class="tab-title"><div>Red Hat Enterprise Linux</div></div><div class="bordered-element tab-content"><section><h3 id="1536277489#rxo4gm_23" data-toc="rxo4gm_23#🛠-Install.md-rxo4gm_23">9.4</h3><div class="detached code-block" id="1536277489#rxo4gm_24"><pre><code class="language-bash">sudo yum install wireguard-tools net-tools git python3.11 -y &amp;&amp; \
+git clone https://github.com/donaldzou/WGDashboard.git &amp;&amp; \
+cd ./WGDashboard/src &amp;&amp; \
+chmod +x ./wgd.sh &amp;&amp; \
+./wgd.sh install &amp;&amp; \
+sudo echo &quot;net.ipv4.ip_forward=1&quot; &gt;&gt; /etc/sysctl.conf &amp;&amp; \
+sudo sysctl -p /etc/sysctl.conf &amp;&amp; \
+firewall-cmd --add-port=10086/tcp --permanent &amp;&amp; \
+firewall-cmd --add-port=51820/udp --permanent &amp;&amp; \
+firewall-cmd --reload</code></pre></div></section></div></div><div class="detached" id="1536277489#rxo4gm_11"><div class="tab-title"><div>CentOS</div></div><div class="bordered-element tab-content"><section><h3 id="1536277489#rxo4gm_25" data-toc="rxo4gm_25#🛠-Install.md-rxo4gm_25">9-Stream</h3><div class="detached code-block" id="1536277489#rxo4gm_26"><pre><code class="language-bash">sudo yum install wireguard-tools net-tools git python3.11 -y &amp;&amp; \
+git clone https://github.com/donaldzou/WGDashboard.git &amp;&amp; \
+cd ./WGDashboard/src &amp;&amp; \
+chmod +x ./wgd.sh &amp;&amp; \
+./wgd.sh install &amp;&amp; \
+sudo echo &quot;net.ipv4.ip_forward=1&quot; &gt;&gt; /etc/sysctl.conf &amp;&amp; \
+sudo sysctl -p /etc/sysctl.conf &amp;&amp; \
+firewall-cmd --add-port=10086/tcp --permanent &amp;&amp; \
+firewall-cmd --add-port=51820/udp --permanent &amp;&amp; \
+firewall-cmd --reload</code></pre></div></section></div></div><div class="detached" id="1536277489#rxo4gm_12"><div class="tab-title"><div>Fedora</div></div><div class="bordered-element tab-content"><section><h3 id="1536277489#rxo4gm_27" data-toc="rxo4gm_27#🛠-Install.md-rxo4gm_27">40, 39 and 38</h3><div class="detached code-block" id="1536277489#rxo4gm_28"><pre><code class="language-bash">sudo yum install wireguard-tools net-tools git -y &amp;&amp; \
+git clone https://github.com/donaldzou/WGDashboard.git &amp;&amp; \
+cd ./WGDashboard/src &amp;&amp; \
+chmod +x ./wgd.sh &amp;&amp; \
+./wgd.sh install &amp;&amp; \
+sudo echo &quot;net.ipv4.ip_forward=1&quot; &gt;&gt; /etc/sysctl.conf &amp;&amp; \
+sudo sysctl -p /etc/sysctl.conf &amp;&amp; \
+firewall-cmd --add-port=10086/tcp --permanent &amp;&amp; \
+firewall-cmd --add-port=51820/udp --permanent &amp;&amp; \
+firewall-cmd --reload</code></pre></div></section></div></div><div class="detached" id="1536277489#rxo4gm_13"><div class="tab-title"><div>Alpine Linux</div></div><div class="bordered-element tab-content"><section><h3 id="1536277489#rxo4gm_29" data-toc="rxo4gm_29#🛠-Install.md-rxo4gm_29">3.20.2</h3><div class="detached code-block" id="1536277489#rxo4gm_30"><pre><code class="language-bash">sudo yum install wireguard-tools net-tools git -y &amp;&amp; \
+git clone https://github.com/donaldzou/WGDashboard.git &amp;&amp; \
+cd ./WGDashboard/src &amp;&amp; \
+chmod +x ./wgd.sh &amp;&amp; \
+./wgd.sh install &amp;&amp; \
+sudo echo &quot;net.ipv4.ip_forward=1&quot; &gt;&gt; /etc/sysctl.conf &amp;&amp; \
+sudo sysctl -p /etc/sysctl.conf &amp;&amp; \
+firewall-cmd --add-port=10086/tcp --permanent &amp;&amp; \
+firewall-cmd --add-port=51820/udp --permanent &amp;&amp; \
+firewall-cmd --reload</code></pre></div></section></div></div></div></section><section><h2 id="1536277489#manual-installation" data-toc="manual-installation#🛠-Install.md-manual-installation">Manual Installation</h2><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="1536277489#rxo4gm_33">To ensure a smooth installation process, please make sure you have the following installed:</p><ul class="list" id="1536277489#rxo4gm_34" start="1"><li class="list-item" id="1536277489#rxo4gm_35"><p>Python 3.10 or above</p></li><li class="list-item" id="1536277489#rxo4gm_36"><p><span class="inline-code" id="1536277489#rxo4gm_39">git</span></p></li><li class="list-item" id="1536277489#rxo4gm_37"><p><span class="inline-code" id="1536277489#rxo4gm_40">wireguard-tools</span></p></li><li class="list-item" id="1536277489#rxo4gm_38"><p><span class="inline-code" id="1536277489#rxo4gm_41">net-tools</span></p></li></ul></div>
+</blockquote>
+<ol class="list list-decimal" id="1536277489#rxo4gm_32" type="1" start="1"><li class="list-item" id="1536277489#rxo4gm_42"><p id="1536277489#rxo4gm_48">Download WGDashboard</p><div class="detached code-block" id="1536277489#rxo4gm_49"><pre><code class="language-bash">git clone https://github.com/donaldzou/WGDashboard.git wgdashboard</code></pre></div></li><li class="list-item" id="1536277489#rxo4gm_43"><p id="1536277489#rxo4gm_50">Open the WGDashboard folder</p><div class="detached code-block" id="1536277489#rxo4gm_51"><pre><code class="language-bash">cd wgdashboard/src</code></pre></div></li><li class="list-item" id="1536277489#rxo4gm_44"><p id="1536277489#rxo4gm_52">Install WGDashboard</p><div class="detached code-block" id="1536277489#rxo4gm_53"><pre><code class="language-bash">sudo chmod u+x wgd.sh &amp;&amp; \
+sudo ./wgd.sh install</code></pre></div></li><li class="list-item" id="1536277489#rxo4gm_45"><p id="1536277489#rxo4gm_54">Give read and execute permission to root of the WireGuard configuration folder, you can change the path if your configuration files are not stored in <span class="inline-code" id="1536277489#rxo4gm_56">/etc/wireguard</span></p><div class="detached code-block" id="1536277489#rxo4gm_55"><pre><code class="language-bash">sudo chmod -R 755 /etc/wireguard</code></pre></div></li><li class="list-item" id="1536277489#rxo4gm_46"><p id="1536277489#rxo4gm_57">Run WGDashboard</p><div class="detached code-block" id="1536277489#rxo4gm_58"><pre><code class="language-bash">sudo ./wgd.sh start</code></pre></div></li><li class="list-item" id="1536277489#rxo4gm_47"><p id="1536277489#rxo4gm_59">Access dashboard</p><p id="1536277489#rxo4gm_60">Access your server with port <span class="inline-code" id="1536277489#rxo4gm_61">10086</span> (e.g. http://your_server_ip:10086), using username <span class="inline-code" id="1536277489#rxo4gm_62">admin</span> and password <span class="inline-code" id="1536277489#rxo4gm_63">admin</span>. See below how to change port and ip that the dashboard is running with.</p></li></ol></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1539383570">🪜 Usage</h1><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="1539383570#z8bbyt_9">The following commands are assumed you're in <span class="inline-code" id="1539383570#z8bbyt_10">wgdashboard/src</span></p></div>
+</blockquote>
+<section><h2 id="1539383570#start" data-toc="start#🪜-Usage.md-start">Start</h2><p id="1539383570#z8bbyt_11">This command will start WGDashboard and run it in the background.</p><div class="detached code-block" id="1539383570#z8bbyt_12"><pre><code class="language-bash">./wgd.sh start</code></pre></div></section><section><h2 id="1539383570#stop" data-toc="stop#🪜-Usage.md-stop">Stop</h2><p id="1539383570#z8bbyt_13">This command will stop WGDashboard.</p><div class="detached code-block" id="1539383570#z8bbyt_14"><pre><code class="language-bash">./wgd.sh stop</code></pre></div></section><section><h2 id="1539383570#restart" data-toc="restart#🪜-Usage.md-restart">Restart</h2><p id="1539383570#z8bbyt_15">This command will stop and start WGDashboard in the background.</p><div class="detached code-block" id="1539383570#z8bbyt_16"><pre><code class="language-bash">./wgd.sh restart</code></pre></div></section><section><h2 id="1539383570#debug-mode" data-toc="debug-mode#🪜-Usage.md-debug-mode">Debug Mode</h2><p id="1539383570#z8bbyt_17">This command will run WGDashboard in the foreground and output logs on the screen.</p><div class="detached code-block" id="1539383570#z8bbyt_18"><pre><code class="language-bash">./wgd.sh debug</code></pre></div></section><section><h2 id="1539383570#run-wgdashboard-as-a-system-service" data-toc="run-wgdashboard-as-a-system-service#🪜-Usage.md-run-wgdashboard-as-a-system-service">Run WGDashboard as a system service</h2><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="1539383570#z8bbyt_22">This feature require WGDashboard v2.0 or above</p></div>
+</blockquote>
+<p id="1539383570#z8bbyt_20">In the <span class="inline-code" id="1539383570#z8bbyt_23">src</span> folder, it contained a file called <span class="inline-code" id="1539383570#z8bbyt_24">wg-dashboard.service</span>, we can use this file to let our system autostart the dashboard after reboot. The following guide has tested on <span class="control" id="1539383570#z8bbyt_25">Ubuntu</span>, most <span class="control" id="1539383570#z8bbyt_26">Debian</span> based OS might be the same, but some might not. Please don't hesitate to provide your system if you have tested the autostart on another system.</p><ol class="list list-decimal" id="1539383570#z8bbyt_21" type="1" start="1"><li class="list-item" id="1539383570#z8bbyt_27"><p id="1539383570#z8bbyt_35">Changing the directory to the dashboard's directory</p><div class="detached code-block" id="1539383570#z8bbyt_36"><pre><code class="language-bash">cd wgdashboard/src</code></pre></div></li><li class="list-item" id="1539383570#z8bbyt_28"><p id="1539383570#z8bbyt_37">Get the full path of the dashboard's directory</p><div class="detached code-block" id="1539383570#z8bbyt_38"><pre><code class="language-bash">pwd
+#Output: /root/wgdashboard/src</code></pre></div><p id="1539383570#z8bbyt_39">For this example, the output is <span class="inline-code" id="1539383570#z8bbyt_40">/root/wireguard-dashboard/src</span>, your path might be different since it depends on where you downloaded the dashboard in the first place. <span class="control" id="1539383570#z8bbyt_41">Copy the the output to somewhere, we will need this in the next step.</span></p></li><li class="list-item" id="1539383570#z8bbyt_29"><p id="1539383570#z8bbyt_42">Edit the service file, the service file is located in <span class="inline-code" id="1539383570#z8bbyt_48">wireguard-dashboard/src</span>, you can use other editor you like, here will be using <span class="inline-code" id="1539383570#z8bbyt_49">nano</span></p><div class="detached code-block" id="1539383570#z8bbyt_43"><pre><code class="language-bash">nano wg-dashboard.service</code></pre></div><p id="1539383570#z8bbyt_44">You will see something like this:</p><div class="detached code-block" id="1539383570#z8bbyt_45"><pre><code class="language-ini">[Unit]
+After=syslog.target network-online.target
+Wants=wg-quick.target
+ConditionPathIsDirectory=/etc/wireguard
+
+[Service]
+Type=forking
+PIDFile=&lt;absolute_path_of_wgdashboard_src&gt;/gunicorn.pid
+WorkingDirectory=&lt;absolute_path_of_wgdashboard_src&gt;
+ExecStart=&lt;absolute_path_of_wgdashboard_src&gt;/wgd.sh start
+ExecStop=&lt;absolute_path_of_wgdashboard_src&gt;/wgd.sh stop
+ExecReload=&lt;absolute_path_of_wgdashboard_src&gt;/wgd.sh restart
+TimeoutSec=120
+PrivateTmp=yes
+Restart=always
+
+[Install]
+WantedBy=multi-user.target</code></pre></div><p id="1539383570#z8bbyt_46">Now, we need to replace all <span class="inline-code" id="1539383570#z8bbyt_50">&lt;absolute_path_of_wgdashboard_src&gt;</span> to the one you just copied from step 2. After doing this, the file will become something like this, your file might be different:</p><p id="1539383570#z8bbyt_47"><span class="control" id="1539383570#z8bbyt_51">Be aware that after the value of <span class="inline-code" id="1539383570#z8bbyt_52">WorkingDirectory</span>, it does not have a <span class="inline-code" id="1539383570#z8bbyt_53">/</span> (slash).</span> And then save the file after you edited it</p></li><li class="list-item" id="1539383570#z8bbyt_30"><p id="1539383570#z8bbyt_54">Copy the service file to systemd folder</p><div class="detached code-block" id="1539383570#z8bbyt_55"><pre><code class="language-bash">$ sudo cp wg-dashboard.service /etc/systemd/system/wg-dashboard.service</code></pre></div><p id="1539383570#z8bbyt_56">To make sure you copy the file successfully, you can use this command <span class="inline-code" id="1539383570#z8bbyt_57">cat /etc/systemd/system/wg-dashboard.service</span> to see if it will output the file you just edited.</p></li><li class="list-item" id="1539383570#z8bbyt_31"><p id="1539383570#z8bbyt_58">Enable the service</p><div class="detached code-block" id="1539383570#z8bbyt_59"><pre><code class="language-bash">$ sudo chmod 664 /etc/systemd/system/wg-dashboard.service
+$ sudo systemctl daemon-reload
+$ sudo systemctl enable wg-dashboard.service
+$ sudo systemctl start wg-dashboard.service  # &lt;-- To start the service</code></pre></div></li><li class="list-item" id="1539383570#z8bbyt_32"><p id="1539383570#z8bbyt_60">Check if the service run correctly</p><div class="detached code-block" id="1539383570#z8bbyt_61"><pre><code class="language-bash">$ sudo systemctl status wg-dashboard.service</code></pre></div><p id="1539383570#z8bbyt_62">And you should see something like this</p><div class="detached code-block" id="1539383570#z8bbyt_63"><pre><code class="language-bash">● wg-dashboard.service
+Loaded: loaded (/etc/systemd/system/wg-dashboard.service; enabled; vendor preset: enabled)
+Active: active (running) since Wed 2024-08-14 22:21:47 EDT; 55s ago
+Process: 494968 ExecStart=/home/donaldzou/Wireguard-Dashboard/src/wgd.sh start (code=exited, status=0/SUCCESS)
+Main PID: 495005 (gunicorn)
+Tasks: 5 (limit: 4523)
+Memory: 36.8M
+CPU: 789ms
+CGroup: /system.slice/wg-dashboard.service
+├─495005 /home/donaldzou/Wireguard-Dashboard/src/venv/bin/python3 ./venv/bin/gunicorn --config ./gunicorn.conf.py
+└─495007 /home/donaldzou/Wireguard-Dashboard/src/venv/bin/python3 ./venv/bin/gunicorn --config ./gunicorn.conf.py
+
+Aug 14 22:21:40 wg sudo[494978]:     root : PWD=/home/donaldzou/Wireguard-Dashboard/src ; USER=root ; COMMAND=./venv/bin/gunicorn --config ./gunicorn.conf.py
+Aug 14 22:21:40 wg sudo[494978]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Aug 14 22:21:40 wg wgd.sh[494979]: [WGDashboard] WGDashboard w/ Gunicorn will be running on 0.0.0.0:10086
+Aug 14 22:21:40 wg wgd.sh[494979]: [WGDashboard] Access log file is at ./log/access_2024_08_14_22_21_40.log
+Aug 14 22:21:40 wg wgd.sh[494979]: [WGDashboard] Error log file is at ./log/error_2024_08_14_22_21_40.log
+Aug 14 22:21:40 wg sudo[494978]: pam_unix(sudo:session): session closed for user root
+Aug 14 22:21:45 wg wgd.sh[494968]: [WGDashboard] Checking if WGDashboard w/ Gunicorn started successfully
+Aug 14 22:21:47 wg wgd.sh[494968]: [WGDashboard] WGDashboard w/ Gunicorn started successfully
+Aug 14 22:21:47 wg wgd.sh[494968]: ------------------------------------------------------------
+Aug 14 22:21:47 wg systemd[1]: Started wg-dashboard.service.</code></pre></div><p id="1539383570#z8bbyt_64">If you see <span class="inline-code" id="1539383570#z8bbyt_65">Active:</span> followed by <span class="inline-code" id="1539383570#z8bbyt_66">active (running) since...</span> then it means it run correctly.</p></li><li class="list-item" id="1539383570#z8bbyt_33"><p id="1539383570#z8bbyt_67">Stop/Start/Restart the service</p><div class="detached code-block" id="1539383570#z8bbyt_68"><pre><code class="language-bash">sudo systemctl stop wg-dashboard.service      # &lt;-- To stop the service
+sudo systemctl start wg-dashboard.service     # &lt;-- To start the service
+sudo systemctl restart wg-dashboard.service   # &lt;-- To restart the service</code></pre></div></li><li class="list-item" id="1539383570#z8bbyt_34"><p id="1539383570#z8bbyt_69"><span class="control" id="1539383570#z8bbyt_70">And now you can reboot your system, and use the command at step 6 to see if it will auto start after the reboot, or just simply access the dashboard through your browser. If you have any questions or problem, please report it in the issue page.</span></p></li></ol></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1166709447">🗂️ User Guides</h1><p id="-1166709447#z5pjz62_3">I will be providing some step-by-step guides on how to use WGDashboard, specifically on the app itself. For information on how to run WGDashboard, please visit <a href="#1539383570">🪜 Usage</a>.</p><p id="-1166709447#z5pjz62_4">You can use the table of contents below, or the navigation bar on the left to find the content you're looking for :)</p></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-542099659">Sign In</h1><p id="-542099659#-3fe0tu_3">To sign in to WGDashboard, enter the username in the <span class="control" id="-542099659#-3fe0tu_6">Username</span> field, password in the <span class="control" id="-542099659#-3fe0tu_7">Password</span> field, and click the <span class="control" id="-542099659#-3fe0tu_8">Sign In</span> button.</p><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="-542099659#-3fe0tu_9">By default, both <span class="control" id="-542099659#-3fe0tu_10">Username</span> and <span class="control" id="-542099659#-3fe0tu_11">Password</span> is <span class="inline-code" id="-542099659#-3fe0tu_12">admin</span></p></div>
+</blockquote>
+<div class="container"><figure class="image-container"><img class="center image image-size" id="-542099659#-3fe0tu_5" alt="Sign in" title="Sign in" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/user-guides/sign-in.png" width="2048" height="1536"><figcaption class="center-text">Sign in</figcaption></figure></div></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1635589665">Access Remote Server</h1><div class="container"><figure class="image-container"><img class="center image image-size" id="1635589665#izge7a_3" alt="access-remote-server.png" title="access-remote-server.png" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/user-guides/access-remote-server.png" width="2048" height="1536"><figcaption class="center-text">access-remote-server.png</figcaption></figure></div><section><h2 id="1635589665#enable" data-toc="enable#Access-Remote-Server.md-enable">Enable</h2><p id="1635589665#izge7a_6">To access remote server, simply toggle the <span class="control" id="1635589665#izge7a_8">switch</span> under <span class="control" id="1635589665#izge7a_9">Sign In</span> button in the <a href="#-542099659">Sign In</a> page</p></section><section><h2 id="1635589665#add-remote-server" data-toc="add-remote-server#Access-Remote-Server.md-add-remote-server">Add Remote Server</h2><p id="1635589665#izge7a_11">To add remote see</p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-243481923">✂️ Configure</h1><section><h2 id="-243481923#configuration-file" data-toc="configuration-file#✂️-Dashboard-Configuration.md-configuration-file">Configuration File</h2><p id="-243481923#-7y8dkm_5">Since version 2.0, WGDashboard will be using a configuration file called <span class="inline-code" id="-243481923#-7y8dkm_7">wg-dashboard.ini</span>, (It will generate automatically after first time running the dashboard). More options will include in future versions, and for now it included the following configurations:</p><div class="table-wrapper detached"><table id="-243481923#-7y8dkm_6"><tr class="header-row" id="-243481923#-7y8dkm_8"><th id="-243481923#-7y8dkm_33"></th><th id="-243481923#-7y8dkm_34"><p>Description</p></th><th id="-243481923#-7y8dkm_35"><p>Default</p></th></tr><tr class="" id="-243481923#-7y8dkm_9"><td id="-243481923#-7y8dkm_36"><p><span class="control" id="-243481923#-7y8dkm_39"><span class="inline-code" id="-243481923#-7y8dkm_40">[Account]</span></span></p></td><td id="-243481923#-7y8dkm_37"><p><span class="emphasis" id="-243481923#-7y8dkm_41">Configuration on account</span></p></td><td id="-243481923#-7y8dkm_38"></td></tr><tr class="" id="-243481923#-7y8dkm_10"><td id="-243481923#-7y8dkm_42"><p><span class="inline-code" id="-243481923#-7y8dkm_45">username</span></p></td><td id="-243481923#-7y8dkm_43"><p>Dashboard login username</p></td><td id="-243481923#-7y8dkm_44"><p><span class="inline-code" id="-243481923#-7y8dkm_46">admin</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_11"><td id="-243481923#-7y8dkm_47"><p><span class="inline-code" id="-243481923#-7y8dkm_50">password</span></p></td><td id="-243481923#-7y8dkm_48"><p>Password, will be hash with SHA256</p></td><td id="-243481923#-7y8dkm_49"><p><span class="inline-code" id="-243481923#-7y8dkm_51">admin</span> hashed in SHA256</p></td></tr><tr class="" id="-243481923#-7y8dkm_12"><td id="-243481923#-7y8dkm_52"></td><td id="-243481923#-7y8dkm_53"></td><td id="-243481923#-7y8dkm_54"></td></tr><tr class="" id="-243481923#-7y8dkm_13"><td id="-243481923#-7y8dkm_55"><p><span class="control" id="-243481923#-7y8dkm_58"><span class="inline-code" id="-243481923#-7y8dkm_59">[Server]</span></span></p></td><td id="-243481923#-7y8dkm_56"><p><span class="emphasis" id="-243481923#-7y8dkm_60">Configuration on dashboard</span></p></td><td id="-243481923#-7y8dkm_57"></td></tr><tr class="" id="-243481923#-7y8dkm_14"><td id="-243481923#-7y8dkm_61"><p><span class="inline-code" id="-243481923#-7y8dkm_64">wg_conf_path</span></p></td><td id="-243481923#-7y8dkm_62"><p>The path of all the Wireguard configurations</p></td><td id="-243481923#-7y8dkm_63"><p><span class="inline-code" id="-243481923#-7y8dkm_65">/etc/wireguard</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_15"><td id="-243481923#-7y8dkm_66"><p><span class="inline-code" id="-243481923#-7y8dkm_69">app_prefix</span></p></td><td id="-243481923#-7y8dkm_67"><p>Prefix before each path</p></td><td id="-243481923#-7y8dkm_68"><p><span class="inline-code" id="-243481923#-7y8dkm_70">(blank)</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_16"><td id="-243481923#-7y8dkm_71"><p><span class="inline-code" id="-243481923#-7y8dkm_74">app_ip</span></p></td><td id="-243481923#-7y8dkm_72"><p>IP address the dashboard will run with</p></td><td id="-243481923#-7y8dkm_73"><p><span class="inline-code" id="-243481923#-7y8dkm_75">0.0.0.0</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_17"><td id="-243481923#-7y8dkm_76"><p><span class="inline-code" id="-243481923#-7y8dkm_79">app_port</span></p></td><td id="-243481923#-7y8dkm_77"><p>Port the the dashboard will run with</p></td><td id="-243481923#-7y8dkm_78"><p><span class="inline-code" id="-243481923#-7y8dkm_80">10086</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_18"><td id="-243481923#-7y8dkm_81"><p><span class="inline-code" id="-243481923#-7y8dkm_84">auth_req</span></p></td><td id="-243481923#-7y8dkm_82"><p>Does the dashboard need authentication to access, if <span class="inline-code" id="-243481923#-7y8dkm_85">auth_req = false</span>, user will not be access the <span class="control" id="-243481923#-7y8dkm_86">Setting</span> tab due to security consideration. <span class="control" id="-243481923#-7y8dkm_87">User can only edit the file directly in system</span>.</p></td><td id="-243481923#-7y8dkm_83"><p><span class="inline-code" id="-243481923#-7y8dkm_88">true</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_19"><td id="-243481923#-7y8dkm_89"><p><span class="inline-code" id="-243481923#-7y8dkm_92">version</span></p></td><td id="-243481923#-7y8dkm_90"><p>Dashboard Version</p></td><td id="-243481923#-7y8dkm_91"><p><span class="inline-code" id="-243481923#-7y8dkm_93">v4.0</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_20"><td id="-243481923#-7y8dkm_94"><p><span class="inline-code" id="-243481923#-7y8dkm_97">dashboard_refresh_interval</span></p></td><td id="-243481923#-7y8dkm_95"><p>How frequent the dashboard will refresh on the configuration page</p></td><td id="-243481923#-7y8dkm_96"><p><span class="inline-code" id="-243481923#-7y8dkm_98">60000ms</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_21"><td id="-243481923#-7y8dkm_99"><p><span class="inline-code" id="-243481923#-7y8dkm_102">dashboard_sort</span></p></td><td id="-243481923#-7y8dkm_100"><p>How configuration is sorting</p></td><td id="-243481923#-7y8dkm_101"><p><span class="inline-code" id="-243481923#-7y8dkm_103">status</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_22"><td id="-243481923#-7y8dkm_104"><p><span class="inline-code" id="-243481923#-7y8dkm_107">dashboard_theme</span></p></td><td id="-243481923#-7y8dkm_105"><p>Dashboard Theme</p></td><td id="-243481923#-7y8dkm_106"><p><span class="inline-code" id="-243481923#-7y8dkm_108">dark</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_23"><td id="-243481923#-7y8dkm_109"><p><span class="inline-code" id="-243481923#-7y8dkm_112">dashboard_api_key</span></p></td><td id="-243481923#-7y8dkm_110"><p>WGDashboard API Key Function</p></td><td id="-243481923#-7y8dkm_111"><p><span class="inline-code" id="-243481923#-7y8dkm_113">false</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_24"><td id="-243481923#-7y8dkm_114"><p><span class="inline-code" id="-243481923#-7y8dkm_117">dashboard_language</span></p></td><td id="-243481923#-7y8dkm_115"><p>WGDashboard Language</p></td><td id="-243481923#-7y8dkm_116"><p><span class="inline-code" id="-243481923#-7y8dkm_118">en</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_25"><td id="-243481923#-7y8dkm_119"></td><td id="-243481923#-7y8dkm_120"></td><td id="-243481923#-7y8dkm_121"></td></tr><tr class="" id="-243481923#-7y8dkm_26"><td id="-243481923#-7y8dkm_122"><p><span class="control" id="-243481923#-7y8dkm_125"><span class="inline-code" id="-243481923#-7y8dkm_126">[Peers]</span></span></p></td><td id="-243481923#-7y8dkm_123"><p><span class="emphasis" id="-243481923#-7y8dkm_127">Default Settings on a new peer</span></p></td><td id="-243481923#-7y8dkm_124"></td></tr><tr class="" id="-243481923#-7y8dkm_27"><td id="-243481923#-7y8dkm_128"><p><span class="inline-code" id="-243481923#-7y8dkm_131">peer_global_dns</span></p></td><td id="-243481923#-7y8dkm_129"><p>DNS Server</p></td><td id="-243481923#-7y8dkm_130"><p><span class="inline-code" id="-243481923#-7y8dkm_132">1.1.1.1</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_28"><td id="-243481923#-7y8dkm_133"><p><span class="inline-code" id="-243481923#-7y8dkm_136">peer_endpoint_allowed_ip</span></p></td><td id="-243481923#-7y8dkm_134"><p>Endpoint Allowed IP</p></td><td id="-243481923#-7y8dkm_135"><p><span class="inline-code" id="-243481923#-7y8dkm_137">0.0.0.0/0</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_29"><td id="-243481923#-7y8dkm_138"><p><span class="inline-code" id="-243481923#-7y8dkm_141">peer_display_mode</span></p></td><td id="-243481923#-7y8dkm_139"><p>How peer will display</p></td><td id="-243481923#-7y8dkm_140"><p><span class="inline-code" id="-243481923#-7y8dkm_142">grid</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_30"><td id="-243481923#-7y8dkm_143"><p><span class="inline-code" id="-243481923#-7y8dkm_146">remote_endpoint</span></p></td><td id="-243481923#-7y8dkm_144"><p>Remote Endpoint (i.e where your peers will connect to)</p></td><td id="-243481923#-7y8dkm_145"><p><span class="emphasis" id="-243481923#-7y8dkm_147">depends on your server's default network interface</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_31"><td id="-243481923#-7y8dkm_148"><p><span class="inline-code" id="-243481923#-7y8dkm_151">peer_mtu</span></p></td><td id="-243481923#-7y8dkm_149"><p>Maximum Transmit Unit</p></td><td id="-243481923#-7y8dkm_150"><p><span class="inline-code" id="-243481923#-7y8dkm_152">1420</span></p></td></tr><tr class="" id="-243481923#-7y8dkm_32"><td id="-243481923#-7y8dkm_153"><p><span class="inline-code" id="-243481923#-7y8dkm_156">peer_keep_alive</span></p></td><td id="-243481923#-7y8dkm_154"><p>Keep Alive</p></td><td id="-243481923#-7y8dkm_155"><p><span class="inline-code" id="-243481923#-7y8dkm_157">21</span></p></td></tr></table></div></section><section><h2 id="-243481923#generating-qr-code-and-peer-configuration-file-conf" data-toc="generating-qr-code-and-peer-configuration-file-conf#✂️-Dashboard-Configuration.md-generating-qr-code-and-peer-configuration-file-conf">Generating QR code and peer configuration file (.conf)</h2><p id="-243481923#-7y8dkm_158">Starting version 2.2, dashboard can now generate QR code and configuration file for each peer. Here is a template of what each QR code encoded with and the same content will be inside the file:</p><div class="detached code-block" id="-243481923#-7y8dkm_159"><pre><code class="language-ini">[Interface]
+PrivateKey = QWERTYUIOPO234567890YUSDAKFH10E1B12JE129U21=
+Address = 0.0.0.0/32
+DNS = 1.1.1.1
+
+[Peer]
+PublicKey = QWERTYUIOPO234567890YUSDAKFH10E1B12JE129U21=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 0.0.0.0:51820
+PresharedKey = QWERTYUIOPO234567890YUSDAKFH10E1B12JE129U21=</code></pre></div><div class="table-wrapper detached"><table id="-243481923#-7y8dkm_160"><tr class="header-row" id="-243481923#-7y8dkm_161"><th id="-243481923#-7y8dkm_171"></th><th id="-243481923#-7y8dkm_172"><p>Description</p></th><th id="-243481923#-7y8dkm_173"><p>Default Value</p></th><th id="-243481923#-7y8dkm_174"><p>Available in Peer setting</p></th></tr><tr class="" id="-243481923#-7y8dkm_162"><td id="-243481923#-7y8dkm_175"><p><span class="control" id="-243481923#-7y8dkm_179"><span class="inline-code" id="-243481923#-7y8dkm_180">[Interface]</span></span></p></td><td id="-243481923#-7y8dkm_176"></td><td id="-243481923#-7y8dkm_177"></td><td id="-243481923#-7y8dkm_178"></td></tr><tr class="" id="-243481923#-7y8dkm_163"><td id="-243481923#-7y8dkm_181"><p><span class="inline-code" id="-243481923#-7y8dkm_185">PrivateKey</span></p></td><td id="-243481923#-7y8dkm_182"><p>The private key of this peer</p></td><td id="-243481923#-7y8dkm_183"><p>Private key generated by WireGuard (<span class="inline-code" id="-243481923#-7y8dkm_186">wg genkey</span>) or provided by user</p></td><td id="-243481923#-7y8dkm_184"><p>Yes</p></td></tr><tr class="" id="-243481923#-7y8dkm_164"><td id="-243481923#-7y8dkm_187"><p><span class="inline-code" id="-243481923#-7y8dkm_191">Address</span></p></td><td id="-243481923#-7y8dkm_188"><p>The <span class="inline-code" id="-243481923#-7y8dkm_192">allowed_ips</span> of your peer</p></td><td id="-243481923#-7y8dkm_189"><p>N/A</p></td><td id="-243481923#-7y8dkm_190"><p>Yes</p></td></tr><tr class="" id="-243481923#-7y8dkm_165"><td id="-243481923#-7y8dkm_193"><p><span class="inline-code" id="-243481923#-7y8dkm_197">DNS</span></p></td><td id="-243481923#-7y8dkm_194"><p>The DNS server your peer will use</p></td><td id="-243481923#-7y8dkm_195"><p><span class="inline-code" id="-243481923#-7y8dkm_198">1.1.1.1</span> - Cloud flare DNS, you can change it when you adding the peer or in the peer setting.</p></td><td id="-243481923#-7y8dkm_196"><p>Yes</p></td></tr><tr class="" id="-243481923#-7y8dkm_166"><td id="-243481923#-7y8dkm_199"><p><span class="control" id="-243481923#-7y8dkm_203"><span class="inline-code" id="-243481923#-7y8dkm_204">[Peer]</span></span></p></td><td id="-243481923#-7y8dkm_200"></td><td id="-243481923#-7y8dkm_201"></td><td id="-243481923#-7y8dkm_202"></td></tr><tr class="" id="-243481923#-7y8dkm_167"><td id="-243481923#-7y8dkm_205"><p><span class="inline-code" id="-243481923#-7y8dkm_209">PublicKey</span></p></td><td id="-243481923#-7y8dkm_206"><p>The public key of your server</p></td><td id="-243481923#-7y8dkm_207"><p>N/A</p></td><td id="-243481923#-7y8dkm_208"><p>No</p></td></tr><tr class="" id="-243481923#-7y8dkm_168"><td id="-243481923#-7y8dkm_210"><p><span class="inline-code" id="-243481923#-7y8dkm_214">AllowedIPs</span></p></td><td id="-243481923#-7y8dkm_211"><p>IP ranges for which a peer will route traffic</p></td><td id="-243481923#-7y8dkm_212"><p><span class="inline-code" id="-243481923#-7y8dkm_215">0.0.0.0/0</span> - Indicated a default route to send all internet and VPN traffic through that peer.</p></td><td id="-243481923#-7y8dkm_213"><p>Yes</p></td></tr><tr class="" id="-243481923#-7y8dkm_169"><td id="-243481923#-7y8dkm_216"><p><span class="inline-code" id="-243481923#-7y8dkm_220">Endpoint</span></p></td><td id="-243481923#-7y8dkm_217"><p>Your wireguard server ip and port, the dashboard will search for your server's default interface's ip.</p></td><td id="-243481923#-7y8dkm_218"><p><span class="inline-code" id="-243481923#-7y8dkm_221">&lt;your server default interface ip&gt;:&lt;listen port&gt;</span></p></td><td id="-243481923#-7y8dkm_219"><p>Yes</p></td></tr><tr class="" id="-243481923#-7y8dkm_170"><td id="-243481923#-7y8dkm_222"><p><span class="inline-code" id="-243481923#-7y8dkm_226">PresharedKey</span></p></td><td id="-243481923#-7y8dkm_223"><p>The Pre-Shared Key of this peer <span class="emphasis" id="-243481923#-7y8dkm_227">(if available)</span></p></td><td id="-243481923#-7y8dkm_224"><p>N/A</p></td><td id="-243481923#-7y8dkm_225"><p>Yes</p></td></tr></table></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-541780829">❓ Update</h1><blockquote class="prompt flex bordered-element-rounded warning detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="-541780829#z8oox0_8"><span class="control" id="-541780829#z8oox0_9">Notice to users who are using <span class="inline-code" id="-541780829#z8oox0_10">v3 - v3.0.6</span> and want to update to <span class="inline-code" id="-541780829#z8oox0_11">v4.0</span></span></p></div>
+</blockquote>
+<p id="-541780829#z8oox0_4">Although theoretically updating through <span class="inline-code" id="-541780829#z8oox0_12">wgd.sh</span> should work, but I still suggest you to update the dashboard manually.</p><blockquote class="prompt flex bordered-element-rounded warning detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="-541780829#z8oox0_13"><span class="control" id="-541780829#z8oox0_14">Notice to users who are using <span class="inline-code" id="-541780829#z8oox0_15">v2.3.1</span> or below</span></p></div>
+</blockquote>
+<p id="-541780829#z8oox0_6">For user who is using <span class="inline-code" id="-541780829#z8oox0_16">v2.3.1</span> or below, please notice that all data that stored in the current database will <span class="control" id="-541780829#z8oox0_17">not</span> transfer to the new database. This is hard decision to move from TinyDB to SQLite. But SQLite does provide a thread-safe access and TinyDB doesn't. I couldn't find a safe way to transfer the data, so you need to do them manually... Sorry about that 😔。 But I guess this would be a great start for future development 😎.</p><section><h2 id="-541780829#how-to-update" data-toc="how-to-update#❓-Update.md-how-to-update">How to update</h2><ol class="list list-decimal" id="-541780829#z8oox0_18" type="1" start="1"><li class="list-item" id="-541780829#z8oox0_20"><p id="-541780829#z8oox0_23">Change your directory to <span class="inline-code" id="-541780829#z8oox0_25">wgdashboard</span></p><div class="detached code-block" id="-541780829#z8oox0_24"><pre><code class="language-bash">cd wgdashboard/src</code></pre></div></li><li class="list-item" id="-541780829#z8oox0_21"><p id="-541780829#z8oox0_26">Update the dashboard</p><div class="detached code-block" id="-541780829#z8oox0_27"><pre><code class="language-bash">git pull https://github.com/donaldzou/WGDashboard.git --force</code></pre></div></li><li class="list-item" id="-541780829#z8oox0_22"><p id="-541780829#z8oox0_28">Install</p><div class="detached code-block" id="-541780829#z8oox0_29"><pre><code class="language-bash">sudo ./wgd.sh install</code></pre></div></li></ol><p id="-541780829#z8oox0_19">Starting with <span class="inline-code" id="-541780829#z8oox0_30">v3.0</span>, you can simply do <span class="inline-code" id="-541780829#z8oox0_31">sudo ./wgd.sh update</span>!! (I hope)</p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-2017093333">🐬 Docker Solutions</h1><p id="-2017093333#tnjf6g_3">Current, we have 2 beloved contributors provided solutions for hosting WGDashboard with Docker</p><div id="-2017093333#tnjf6g_4"><div class="detached" id="-2017093333#tnjf6g_6"><div class="tab-title"><div>Solution 1 from @DaanSelen</div></div><div class="bordered-element tab-content"><p>Please visit <span class="inline-code" id="-2017093333#tnjf6g_9">Docker-explain.md</span> (<a href="https://github.com/donaldzou/WGDashboard/blob/main/docker/README.md">https://github.com/donaldzou/WGDashboard/blob/main/docker/README.md</a>) for most up-to-date information</p></div></div><div class="detached" id="-2017093333#tnjf6g_7"><div class="tab-title"><div>Solution 2 from @shuricksumy</div></div><div class="bordered-element tab-content"><p id="-2017093333#tnjf6g_10">Please visit <span class="inline-code" id="-2017093333#tnjf6g_12">shuricksumy/docker-wgdashboard</span> (<a href="https://github.com/shuricksumy/docker-wgdashboard">https://github.com/shuricksumy/docker-wgdashboard</a>) for most up-to-date information</p></div></div></div><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>For questions or issues related to Docker, please visit issue #272 (<a href="https://github.com/donaldzou/WGDashboard/issues/272">https://github.com/donaldzou/WGDashboard/issues/272</a>)</p></div>
+</blockquote>
+</article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="375103183">🥘 Experimental Features</h1><section><h2 id="375103183#cross-server-access" data-toc="cross-server-access#🥘-Experimental-Features.md-cross-server-access">Cross-Server Access</h2><p id="375103183#-tz7vd4_4">Starting with <span class="inline-code" id="375103183#-tz7vd4_7">v4.0</span>, you can access WGDashboards on other server through one WGDashboard with API Keys</p><div class="container"><figure class="image-container"><img class="center bordered-element image image-size" id="375103183#-tz7vd4_5" alt="Cross Server Example" title="Cross Server Example" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/cross-server.gif" width="800" height="940"><figcaption class="center-text">Cross Server Example</figcaption></figure></div><section><h3 id="375103183#desktop-app" data-toc="desktop-app#🥘-Experimental-Features.md-desktop-app">Desktop App</h3><p id="375103183#-tz7vd4_8">Since the major changes for <span class="inline-code" id="375103183#-tz7vd4_11">v4.0</span> is to move the whole front-end code to Vue.js. And with this change, we can take the advantage of combining ElectronJS and Vue.js to create a Desktop version of WGDashboard. Currently, we provide an Universal macOS app and a Windows app.</p><p id="375103183#-tz7vd4_9">To download the app, please visit the latest release (<a href="https://github.com/donaldzou/WGDashboard/releases">https://github.com/donaldzou/WGDashboard/releases</a>).</p><div class="container"><figure class="image-container"><img class="center bordered-element image image-size" id="375103183#-tz7vd4_10" alt="ElectronJS App Demo" title="ElectronJS App Demo" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/electronjs-app.gif" width="800" height="485"><figcaption class="center-text">ElectronJS App Demo</figcaption></figure></div></section></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="2131104627">📖 API Documentation</h1><p id="2131104627#kd90lw_3">I will try my best to keep this up-to-date 😄</p><section><h2 id="2131104627#get-started" data-toc="get-started#📖-API-Documentation.md-get-started">Get Started</h2><p id="2131104627#kd90lw_6">To use the REST API of your WGDashboard, you need to obtain an API Key.</p><section><h3 id="2131104627#create-api-key" data-toc="create-api-key#📖-API-Documentation.md-create-api-key">Create API Key</h3><ol class="list list-decimal" id="2131104627#kd90lw_9" type="1" start="1"><li class="list-item" id="2131104627#kd90lw_10"><p>To request an API Key, simply login to your WGDashboard, go to <span class="control" id="2131104627#kd90lw_12">Settings</span>, scroll to the very bottom. Click the <span class="control" id="2131104627#kd90lw_13">switch</span> on the right to enable API Key.</p></li><li class="list-item" id="2131104627#kd90lw_11"><p>Click the blur <span class="control" id="2131104627#kd90lw_14">Create</span> button, set an <span class="control" id="2131104627#kd90lw_15">expiry date</span> you want or <span class="control" id="2131104627#kd90lw_16">never expire</span>, then click <span class="control" id="2131104627#kd90lw_17">Done</span>.</p></li></ol></section><section><h3 id="2131104627#use-api-key" data-toc="use-api-key#📖-API-Documentation.md-use-api-key">Use API Key</h3><ul class="list" id="2131104627#kd90lw_18" start="1"><li class="list-item" id="2131104627#kd90lw_20"><p>Simply add <span class="inline-code" id="2131104627#kd90lw_21">wg-dashboard-apikey</span> with the value of your API key into the HTTP Header.</p></li></ul><div id="2131104627#kd90lw_19"><div class="detached" id="2131104627#kd90lw_22"><div class="tab-title"><div>Default</div></div><div class="bordered-element tab-content"><div class="detached code-block" id="2131104627#kd90lw_24"><pre><code class="language-javascript">fetch('http://server:10086/api/handshake', {
+    headers: {
+       'content-type': 'application/json',
+        'wg-dashboard-apikey': 'insert your api key here'
+    },
+    method: &quot;GET&quot;
+})</code></pre></div></div></div><div class="detached" id="2131104627#kd90lw_23"><div class="tab-title"><div>With APP_PREFIX set</div></div><div class="bordered-element tab-content"><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>For more information, please visit <a href="#-243481923">✂️ Configure</a></p></div>
+</blockquote>
+<div class="detached code-block" id="2131104627#kd90lw_27"><pre><code class="language-javascript">fetch('http://server:10086/[app_prefix]/api/handshake', {
+    headers: {
+       'content-type': 'application/json',
+        'wg-dashboard-apikey': 'insert your api key here'
+    },
+    method: &quot;GET&quot;
+})</code></pre></div></div></div></div></section></section><section><h2 id="2131104627#now-you-re-ready" data-toc="now-you-re-ready#📖-API-Documentation.md-now-you-re-ready">Now you're ready</h2><p id="2131104627#kd90lw_29">Please visit this page for details of <a href="#1702290763">Endpoints</a></p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1702290763">Endpoints</h1></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1738398593">Handshake to Server</h1><p id="-1738398593#-ydln3w_3">This endpoint is designed for a simple handshake when using API key to connect. If <span class="inline-code" id="-1738398593#-ydln3w_6">status</span> is <span class="inline-code" id="-1738398593#-ydln3w_7">true</span> that means</p><section><h2 id="-1738398593#request" data-toc="request#Handshake-to-Server.md-request">Request</h2><p id="-1738398593#-ydln3w_8"><span class="inline-code" id="-1738398593#-ydln3w_9">GET /api/handshake</span></p></section><section><h2 id="-1738398593#response" data-toc="response#Handshake-to-Server.md-response">Response</h2><p id="-1738398593#-ydln3w_10"><span class="inline-code" id="-1738398593#-ydln3w_15">200 - OK</span></p><div class="detached code-block" id="-1738398593#-ydln3w_11"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: null,
+    &quot;status&quot;: true
+}</code></pre></div><p id="-1738398593#-ydln3w_12"><span class="inline-code" id="-1738398593#-ydln3w_16">401 - UNAUTHORIZED</span></p><div class="detached code-block" id="-1738398593#-ydln3w_13"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: &quot;Unauthorized access.&quot;,
+    &quot;status&quot;: false
+}</code></pre></div><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="-1738398593#-ydln3w_17">Notice: this <span class="inline-code" id="-1738398593#-ydln3w_18">401</span> response will return at all endpoint if your API Key or session is invalid.</p></div>
+</blockquote>
+</section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1041763343">Validate Authentication</h1><p id="1041763343#-n75i30_3">This endpoint if needed for non-cross-server access. This will check if the cookie on the client side is still valid on the server side.</p><section><h2 id="1041763343#request" data-toc="request#Validate-Authentication.md-request">Request</h2><p id="1041763343#-n75i30_6"><span class="inline-code" id="1041763343#-n75i30_7">GET /api/validateAuthentication</span></p></section><section><h2 id="1041763343#response" data-toc="response#Validate-Authentication.md-response">Response</h2><p id="1041763343#-n75i30_8"><span class="inline-code" id="1041763343#-n75i30_13">200 - OK</span></p><p id="1041763343#-n75i30_9">Session is still valid</p><div class="detached code-block" id="1041763343#-n75i30_10"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: null,
+    &quot;status&quot;: true
+}</code></pre></div><p id="1041763343#-n75i30_11">Session is invalid</p><div class="detached code-block" id="1041763343#-n75i30_12"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: &quot;Invalid authentication.&quot;,
+    &quot;status&quot;: false
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1885436661">Authenticate</h1><p id="1885436661#-8594ku_3">This endpoint is dedicated for non-cross-server access. It is used to authenticate user's username, password and TOTP</p><section><h2 id="1885436661#request" data-toc="request#Authenticate.md-request">Request</h2><p id="1885436661#-8594ku_6"><span class="inline-code" id="1885436661#-8594ku_8">POST /api/authenticate</span></p><section><h3 id="1885436661#body-parameters" data-toc="body-parameters#Authenticate.md-body-parameters">Body Parameters</h3><div class="detached code-block" id="1885436661#-8594ku_9"><pre><code class="language-json">{
+    &quot;username&quot;: &quot;admin&quot;,
+    &quot;password&quot;: &quot;admin&quot;,
+    &quot;totp&quot;: &quot;123456&quot;
+}</code></pre></div><div class="table-wrapper detached"><table id="1885436661#-8594ku_10"><tr class="header-row" id="1885436661#-8594ku_11"><th id="1885436661#-8594ku_15"><p>Parameter</p></th><th id="1885436661#-8594ku_16"><p>Type</p></th></tr><tr class="" id="1885436661#-8594ku_12"><td id="1885436661#-8594ku_17"><p><span class="inline-code" id="1885436661#-8594ku_19">username</span></p></td><td id="1885436661#-8594ku_18"><p>string</p></td></tr><tr class="" id="1885436661#-8594ku_13"><td id="1885436661#-8594ku_20"><p><span class="inline-code" id="1885436661#-8594ku_22">password</span></p></td><td id="1885436661#-8594ku_21"><p>string</p></td></tr><tr class="" id="1885436661#-8594ku_14"><td id="1885436661#-8594ku_23"><p><span class="inline-code" id="1885436661#-8594ku_25">totp</span></p></td><td id="1885436661#-8594ku_24"><p>string</p></td></tr></table></div></section></section><section><h2 id="1885436661#response" data-toc="response#Authenticate.md-response">Response</h2><p id="1885436661#-8594ku_26"><span class="inline-code" id="1885436661#-8594ku_31">200 - OK</span></p><p id="1885436661#-8594ku_27">If username, password and TOTP matched</p><div class="detached code-block" id="1885436661#-8594ku_28"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: null,
+    &quot;status&quot;: true
+}</code></pre></div><p id="1885436661#-8594ku_29">If username, password or TOTP is not match</p><div class="detached code-block" id="1885436661#-8594ku_30"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: &quot;Sorry, your username, password or OTP is incorrect.&quot;,
+    &quot;status&quot;: false
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="374785854">Sign Out</h1><p id="374785854#-w8myjb_3">To remove the current session on server side</p><section><h2 id="374785854#request" data-toc="request#Sign-Out.md-request">Request</h2><p id="374785854#-w8myjb_6"><span class="inline-code" id="374785854#-w8myjb_7">GET /api/signout</span></p></section><section><h2 id="374785854#response" data-toc="response#Sign-Out.md-response">Response</h2><p id="374785854#-w8myjb_8"><span class="inline-code" id="374785854#-w8myjb_10">200 - OK</span></p><div class="detached code-block" id="374785854#-w8myjb_9"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: null,
+    &quot;status&quot;: true
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1862732950">Get WGDashboard Configuration</h1><p id="1862732950#-2lp7ar_3">Get the WGDashboard Configuration, such as <span class="inline-code" id="1862732950#-2lp7ar_6">dashboard_theme</span>...</p><section><h2 id="1862732950#request" data-toc="request#Get-WGDashboard-Configuration.md-request">Request</h2><p id="1862732950#-2lp7ar_7"><span class="inline-code" id="1862732950#-2lp7ar_8">GET /api/getDashboardConfiguration</span></p></section><section><h2 id="1862732950#response" data-toc="response#Get-WGDashboard-Configuration.md-response">Response</h2><p id="1862732950#-2lp7ar_9"><span class="inline-code" id="1862732950#-2lp7ar_11">200 - OK</span></p><div class="detached code-block" id="1862732950#-2lp7ar_10"><pre><code class="language-json">{
+    &quot;data&quot;: {
+        &quot;Account&quot;: {
+            &quot;enable_totp&quot;: false,
+            &quot;password&quot;: &quot;some hashed value :(&quot;,
+            &quot;totp_verified&quot;: false,
+            &quot;username&quot;: &quot;admin&quot;
+        },
+        &quot;Database&quot;: {
+            &quot;type&quot;: &quot;sqlite&quot;
+        },
+        &quot;Other&quot;: {
+            &quot;welcome_session&quot;: false
+        },
+        &quot;Peers&quot;: {
+            &quot;peer_display_mode&quot;: &quot;grid&quot;,
+            &quot;peer_endpoint_allowed_ip&quot;: &quot;0.0.0.0/0&quot;,
+            &quot;peer_global_dns&quot;: &quot;1.1.1.1&quot;,
+            &quot;peer_keep_alive&quot;: &quot;21&quot;,
+            &quot;peer_mtu&quot;: &quot;1420&quot;,
+            &quot;remote_endpoint&quot;: &quot;192.168.2.38&quot;
+        },
+        &quot;Server&quot;: {
+            &quot;app_ip&quot;: &quot;0.0.0.0&quot;,
+            &quot;app_port&quot;: &quot;10086&quot;,
+            &quot;app_prefix&quot;: &quot;&quot;,
+            &quot;auth_req&quot;: true,
+            &quot;dashboard_api_key&quot;: true,
+            &quot;dashboard_refresh_interval&quot;: &quot;5000&quot;,
+            &quot;dashboard_sort&quot;: &quot;status&quot;,
+            &quot;dashboard_theme&quot;: &quot;dark&quot;,
+            &quot;version&quot;: &quot;v4.0&quot;,
+            &quot;wg_conf_path&quot;: &quot;/etc/wireguard&quot;
+        }
+    },
+    &quot;message&quot;: null,
+    &quot;status&quot;: true
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-2094305801">Update WGDashboard Configuration Item</h1><section><h2 id="-2094305801#request" data-toc="request#Update-WGDashboard-Configuration-Item.md-request">Request</h2><p id="-2094305801#z60s72k_5"><span class="inline-code" id="-2094305801#z60s72k_7">POST /api/updateDashboardConfigurationItem</span></p><section><h3 id="-2094305801#body-parameters" data-toc="body-parameters#Update-WGDashboard-Configuration-Item.md-body-parameters">Body Parameters</h3><div class="detached code-block" id="-2094305801#z60s72k_8"><pre><code class="language-json">{
+    &quot;section&quot;: &quot;Server&quot;,
+    &quot;key&quot;: &quot;dashboard_theme&quot;,
+    &quot;value&quot;: &quot;dark&quot;
+}</code></pre></div><div class="table-wrapper detached"><table id="-2094305801#z60s72k_9"><tr class="header-row" id="-2094305801#z60s72k_10"><th id="-2094305801#z60s72k_14"><p>Parameter</p></th><th id="-2094305801#z60s72k_15"><p>Type</p></th><th id="-2094305801#z60s72k_16"></th></tr><tr class="" id="-2094305801#z60s72k_11"><td id="-2094305801#z60s72k_17"><p><span class="inline-code" id="-2094305801#z60s72k_20">section</span></p></td><td id="-2094305801#z60s72k_18"><p>string</p></td><td id="-2094305801#z60s72k_19"><p>Each section in the <span class="inline-code" id="-2094305801#z60s72k_21">wg-dashboard.ini</span></p></td></tr><tr class="" id="-2094305801#z60s72k_12"><td id="-2094305801#z60s72k_22"><p><span class="inline-code" id="-2094305801#z60s72k_25">key</span></p></td><td id="-2094305801#z60s72k_23"><p>string</p></td><td id="-2094305801#z60s72k_24"><p>Each key/value pair under each in the <span class="inline-code" id="-2094305801#z60s72k_26">wg-dashboard.ini</span></p></td></tr><tr class="" id="-2094305801#z60s72k_13"><td id="-2094305801#z60s72k_27"><p><span class="inline-code" id="-2094305801#z60s72k_30">value</span></p></td><td id="-2094305801#z60s72k_28"><p>string</p></td><td id="-2094305801#z60s72k_29"><p>Value for this key/value pair</p></td></tr></table></div></section></section><section><h2 id="-2094305801#response" data-toc="response#Update-WGDashboard-Configuration-Item.md-response">Response</h2><p id="-2094305801#z60s72k_31"><span class="inline-code" id="-2094305801#z60s72k_36">200 - OK</span></p><p id="-2094305801#z60s72k_32">If update is success</p><div class="detached code-block" id="-2094305801#z60s72k_33"><pre><code class="language-json">{
+    &quot;data&quot;: true,
+    &quot;message&quot;: null,
+    &quot;status&quot;: true
+}</code></pre></div><p id="-2094305801#z60s72k_34">If update failed</p><div class="detached code-block" id="-2094305801#z60s72k_35"><pre><code class="language-json">{
+    &quot;data&quot;: true,
+    &quot;message&quot;: &quot;Message related to the error will appear here&quot;,
+    &quot;status&quot;: false
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1335085695">Get WireGuard Configurations</h1><p id="-1335085695#z9ldom_3">To get all WireGuard configurations in <span class="inline-code" id="-1335085695#z9ldom_6">/etc/wireguard</span></p><section><h2 id="-1335085695#request" data-toc="request#Get-WireGuard-Configurations.md-request">Request</h2><p id="-1335085695#z9ldom_7"><span class="inline-code" id="-1335085695#z9ldom_8">GET /api/getWireguardConfigurations</span></p></section><section><h2 id="-1335085695#response" data-toc="response#Get-WireGuard-Configurations.md-response">Response</h2><p id="-1335085695#z9ldom_9"><span class="inline-code" id="-1335085695#z9ldom_11">200 - OK</span></p><div class="detached code-block" id="-1335085695#z9ldom_10"><pre><code class="language-json">{
+    &quot;data&quot;: [
+        {
+            &quot;Address&quot;: &quot;10.200.200.1/24&quot;,
+            &quot;ConnectedPeers&quot;: 0,
+            &quot;DataUsage&quot;: {
+                &quot;Receive&quot;: 0.1582,
+                &quot;Sent&quot;: 2.1012999999999997,
+                &quot;Total&quot;: 2.2595
+            },
+            &quot;ListenPort&quot;: &quot;51820&quot;,
+            &quot;Name&quot;: &quot;wg0&quot;,
+            &quot;PostDown&quot;: &quot;iptables -D FORWARD -i wg0 -j ACCEPT; iptables -D FORWARD -o wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o enp0s1 -j MASQUERADE;&quot;,
+            &quot;PostUp&quot;: &quot;iptables -A FORWARD -i wg0 -j ACCEPT; iptables -A FORWARD -o wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o enp0s1 -j MASQUERADE;&quot;,
+            &quot;PreDown&quot;: &quot;&quot;,
+            &quot;PreUp&quot;: &quot;&quot;,
+            &quot;PrivateKey&quot;: &quot;8DsSMli3okgUx5frKbFQ0fMW5ZMyqyxOdOW7+g21L18=&quot;,
+            &quot;PublicKey&quot;: &quot;GQlGi8QJ93hWY7L2xlJyh+7S6+ekER9xP11T92T0O0Q=&quot;,
+            &quot;SaveConfig&quot;: true,
+            &quot;Status&quot;: false
+        }
+    ],
+    &quot;message&quot;: null,
+    &quot;status&quot;: true
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-317888131">Add WireGuard Configuration</h1><p id="-317888131#z24lhc6_3">Add a new WireGuard Configuration</p><section><h2 id="-317888131#request" data-toc="request#Add-WireGuard-Configuration.md-request">Request</h2><p id="-317888131#z24lhc6_6"><span class="inline-code" id="-317888131#z24lhc6_8">POST /api/addWireguardConfiguration</span></p><section><h3 id="-317888131#body-parameters" data-toc="body-parameters#Add-WireGuard-Configuration.md-body-parameters">Body Parameters</h3><div class="detached code-block" id="-317888131#z24lhc6_9"><pre><code class="language-json">{
+    &quot;ConfigurationName&quot;: &quot;wg0&quot;,
+    &quot;Address&quot;: &quot;10.0.0.1/24&quot;,
+    &quot;ListenPort&quot;:  51820,
+    &quot;PrivateKey&quot;: &quot;eJuuamCgakVs2xUZGHh/g7C6Oy89JGh7eE2jjEGbbFc=&quot;,
+    &quot;PublicKey&quot;:  &quot;3Ruirgw9qNRwNpBepkiVjjSe82tY+lDZr6WaFC4wO2g=&quot;,
+    &quot;PresharedKey&quot;: &quot;GMMLKWdJlgsKVoR26BJPsNbDXyfILL+x1Nd6Ecmn4lg=&quot;,
+    &quot;PreUp&quot;:  &quot;&quot;,
+    &quot;PreDown&quot;: &quot;iptables -D FORWARD -i wg0 -j ACCEPT; iptables -D FORWARD -o wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o enp0s1 -j MASQUERADE;&quot;,
+    &quot;PostUp&quot;:  &quot;iptables -A FORWARD -i wg0 -j ACCEPT; iptables -A FORWARD -o wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o enp0s1 -j MASQUERADE;&quot;,
+    &quot;PostDown&quot;: &quot;&quot;
+}</code></pre></div></section></section><section><h2 id="-317888131#response" data-toc="response#Add-WireGuard-Configuration.md-response">Response</h2><p id="-317888131#z24lhc6_10"><span class="inline-code" id="-317888131#z24lhc6_19">200 - OK</span></p><p id="-317888131#z24lhc6_11">If everything is good</p><div class="detached code-block" id="-317888131#z24lhc6_12"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: null,
+    &quot;status&quot;: true
+}</code></pre></div><p id="-317888131#z24lhc6_13">If the new configuration's <span class="inline-code" id="-317888131#z24lhc6_20">ConfigurationName</span> is already existed</p><div class="detached code-block" id="-317888131#z24lhc6_14"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: &quot;Already have a configuration with the name \&quot;wg0\&quot;&quot;,
+    &quot;status&quot;: false
+}</code></pre></div><p id="-317888131#z24lhc6_15">If the new configuration's <span class="inline-code" id="-317888131#z24lhc6_21">ListenPort</span> is used by another configuration</p><div class="detached code-block" id="-317888131#z24lhc6_16"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: &quot;Already have a configuration with the port  \&quot;51820\&quot;&quot;,
+    &quot;status&quot;: false
+}</code></pre></div><p id="-317888131#z24lhc6_17">If the new configuration's <span class="inline-code" id="-317888131#z24lhc6_22">Address</span> is used by another configuration</p><div class="detached code-block" id="-317888131#z24lhc6_18"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: &quot;Already have a configuration with the address \&quot;10.0.0.1/24\&quot;&quot;,
+    &quot;status&quot;: false
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="142026608">Toggle WireGuard Configuration</h1><p id="142026608#-jc18w9_3">To turn on/off of a WireGuard Configuration</p><section><h2 id="142026608#request" data-toc="request#Toggle-WireGuard-Configuration.md-request">Request</h2><p id="142026608#-jc18w9_6"><span class="inline-code" id="142026608#-jc18w9_8">GET /api/toggleWireguardConfiguration/?configurationName=</span></p><section><h3 id="142026608#query-string-parameter" data-toc="query-string-parameter#Toggle-WireGuard-Configuration.md-query-string-parameter">Query String Parameter</h3><div class="table-wrapper detached"><table id="142026608#-jc18w9_9"><tr class="header-row" id="142026608#-jc18w9_10"><th id="142026608#-jc18w9_12"><p>Parameter</p></th><th id="142026608#-jc18w9_13"><p>Type</p></th></tr><tr class="" id="142026608#-jc18w9_11"><td id="142026608#-jc18w9_14"><p><span class="inline-code" id="142026608#-jc18w9_16">configurationName</span></p></td><td id="142026608#-jc18w9_15"><p>string</p></td></tr></table></div></section></section><section><h2 id="142026608#response" data-toc="response#Toggle-WireGuard-Configuration.md-response">Response</h2><p id="142026608#-jc18w9_17"><span class="inline-code" id="142026608#-jc18w9_22">200 - OK</span></p><p id="142026608#-jc18w9_18">If toggle is successful, server will return the current status in <span class="inline-code" id="142026608#-jc18w9_23">status</span>: <span class="inline-code" id="142026608#-jc18w9_24">true</span> or <span class="inline-code" id="142026608#-jc18w9_25">false</span> indicating if the configuration is up or not.</p><div class="detached code-block" id="142026608#-jc18w9_19"><pre><code class="language-json">{
+    &quot;data&quot;: true,
+    &quot;message&quot;: null,
+    &quot;status&quot;: true
+}</code></pre></div><p id="142026608#-jc18w9_20">If the <span class="inline-code" id="142026608#-jc18w9_26">configurationName</span> provided does not exist</p><div class="detached code-block" id="142026608#-jc18w9_21"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: &quot;Please provide a valid configuration name&quot;,
+    &quot;status&quot;: false
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="384095717">Update WireGuard Configuration</h1><p id="384095717#-finroe_3">Update WireGuard configuration information</p><section><h2 id="384095717#request" data-toc="request#Update-WireGuard-Configuration.md-request">Request</h2><p id="384095717#-finroe_6"><span class="inline-code" id="384095717#-finroe_8">POST /api/updateWireguardConfiguration</span></p><section><h3 id="384095717#body-parameter" data-toc="body-parameter#Update-WireGuard-Configuration.md-body-parameter">Body Parameter</h3><div class="detached code-block" id="384095717#-finroe_9"><pre><code class="language-json">{
+	&quot;Name&quot;: &quot;wg88&quot;,
+	&quot;Address&quot;: &quot;10.24.4.0/23&quot;,
+	&quot;ListenPort&quot;: 56768,
+	&quot;PostDown&quot;: &quot;iptables -D FORWARD -i wg0 -j ACCEPT; iptables -D FORWARD -o wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o enp0s1 -j MASQUERADE;&quot;,
+	&quot;PostUp&quot;: &quot;iptables -A FORWARD -i wg0 -j ACCEPT; iptables -A FORWARD -o wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o enp0s1 -j MASQUERADE;&quot;,
+	&quot;PreDown&quot;: &quot;&quot;,
+	&quot;PreUp&quot;: &quot;&quot;
+}</code></pre></div></section></section><section><h2 id="384095717#response" data-toc="response#Update-WireGuard-Configuration.md-response">Response</h2><p id="384095717#-finroe_10"><span class="inline-code" id="384095717#-finroe_14">200 - OK</span></p><div class="detached code-block" id="384095717#-finroe_11"><pre><code class="language-json">{
+    &quot;data&quot;: true,
+    &quot;message&quot;: null,
+    &quot;status&quot;: true
+}</code></pre></div><p id="384095717#-finroe_12">If the <span class="inline-code" id="384095717#-finroe_15">Name</span> provided does not exist or <span class="inline-code" id="384095717#-finroe_16">Name</span> is not in body parameter</p><div class="detached code-block" id="384095717#-finroe_13"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: &quot;Please provide a valid configuration name&quot;,
+    &quot;status&quot;: false
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1328866105">Delete WireGuard Configuration</h1><section><h2 id="-1328866105#request" data-toc="request#Delete-WireGuard-Configuration.md-request">Request</h2><p id="-1328866105#gtr7k0_4"><span class="inline-code" id="-1328866105#gtr7k0_5">POST /api/deleteWireguardConfiguration</span></p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="15040221">Get WireGuard Configuration Backup</h1><section><h2 id="15040221#request" data-toc="request#Get-WireGuard-Configuration-Backup.md-request">Request</h2><p id="15040221#e3sylm_4"><span class="inline-code" id="15040221#e3sylm_5">GET /api/getWireguardConfigurationBackup?configurationName=</span></p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1097477417">Get All WireGuard Configuration Backup</h1><section><h2 id="1097477417#request" data-toc="request#Get-All-WireGuard-Configuration-Backup.md-request">Request</h2><p id="1097477417#z2xtni_4"><span class="inline-code" id="1097477417#z2xtni_5">GET /api/getAllWireguardConfigurationBackup</span></p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="140841384">Delete WireGuard Configuration Backup</h1><section><h2 id="140841384#request" data-toc="request#Delete-WireGuard-Configuration-Backup.md-request">Request</h2><p id="140841384#-pgbbet_4"><span class="inline-code" id="140841384#-pgbbet_5">POST /api/deleteWireguardConfigurationBackup</span></p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1301794233">Get WGDashboard API Keys</h1><p id="-1301794233#d5wwzk_3">Get a list of active API key in WGDashboard</p><section><h2 id="-1301794233#request" data-toc="request#Get-WGDashboard-API-Keys.md-request">Request</h2><p id="-1301794233#d5wwzk_6"><span class="inline-code" id="-1301794233#d5wwzk_7">GET /api/getDashboardAPIKeys</span></p></section><section><h2 id="-1301794233#response" data-toc="response#Get-WGDashboard-API-Keys.md-response">Response</h2><p id="-1301794233#d5wwzk_8"><span class="inline-code" id="-1301794233#d5wwzk_14">200 - OK</span></p><p id="-1301794233#d5wwzk_9">If API Key function is enabled and there are active API keys</p><blockquote class="prompt flex bordered-element-rounded warning detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="-1301794233#d5wwzk_15">If <span class="inline-code" id="-1301794233#d5wwzk_16">ExpiredAt</span> is <span class="inline-code" id="-1301794233#d5wwzk_17">null</span>, that means this API key will never expire</p></div>
+</blockquote>
+<div class="detached code-block" id="-1301794233#d5wwzk_11"><pre><code class="language-json">{
+    &quot;data&quot;: [
+        {
+            &quot;CreatedAt&quot;: &quot;2024-08-15 00:42:31&quot;,
+            &quot;ExpiredAt&quot;: null,
+            &quot;Key&quot;: &quot;AXt1x3TZMukmA-eSnAyESy08I14n20boppSsknHOB-Y&quot;
+        },
+        {
+            &quot;CreatedAt&quot;: &quot;2024-08-14 22:50:44&quot;,
+            &quot;ExpiredAt&quot;: &quot;2024-08-21 22:50:43&quot;,
+            &quot;Key&quot;: &quot;ry0Suo0BrypSMzbq0C_TjkEcgrFHHj6UBZGmC2-KI2o&quot;
+        }
+    ],
+    &quot;message&quot;: null,
+    &quot;status&quot;: true
+}</code></pre></div><p id="-1301794233#d5wwzk_12">If API key function is disabled</p><div class="detached code-block" id="-1301794233#d5wwzk_13"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: &quot;Dashboard API Keys function is disabled&quot;,
+    &quot;status&quot;: false
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1952553335">Add WGDashboard API Key</h1><p id="1952553335#ah68y4_3">Add a new API Key in WGDashboard</p><section><h2 id="1952553335#request" data-toc="request#Add-WGDashboard-API-Key.md-request">Request</h2><p id="1952553335#ah68y4_6"><span class="inline-code" id="1952553335#ah68y4_8">POST /api/newDashboardAPIKey</span></p><section><h3 id="1952553335#body-parameters" data-toc="body-parameters#Add-WGDashboard-API-Key.md-body-parameters">Body Parameters</h3><div class="detached code-block" id="1952553335#ah68y4_9"><pre><code class="language-json">{
+    &quot;neverExpire&quot;: false,
+    &quot;ExpiredAt&quot;: &quot;2024-12-31 16:00:00&quot;
+}</code></pre></div><div class="table-wrapper detached"><table id="1952553335#ah68y4_10"><tr class="header-row" id="1952553335#ah68y4_11"><th id="1952553335#ah68y4_14"><p>Parameter</p></th><th id="1952553335#ah68y4_15"><p>Type</p></th><th id="1952553335#ah68y4_16"></th></tr><tr class="" id="1952553335#ah68y4_12"><td id="1952553335#ah68y4_17"><p><span class="inline-code" id="1952553335#ah68y4_20">neverExpire</span></p></td><td id="1952553335#ah68y4_18"><p>bool</p></td><td id="1952553335#ah68y4_19"><p>If this is <span class="inline-code" id="1952553335#ah68y4_21">false</span>, please specify a date in <span class="inline-code" id="1952553335#ah68y4_22">ExpiredAt</span></p></td></tr><tr class="" id="1952553335#ah68y4_13"><td id="1952553335#ah68y4_23"><p><span class="inline-code" id="1952553335#ah68y4_26">ExpiredAt</span></p></td><td id="1952553335#ah68y4_24"><p>string</p></td><td id="1952553335#ah68y4_25"><p>If <span class="inline-code" id="1952553335#ah68y4_27">neverExpire</span> is <span class="inline-code" id="1952553335#ah68y4_28">true</span>, this can be omitted. Format is <span class="inline-code" id="1952553335#ah68y4_29">YYYY-MM-DD hh:mm:ss</span>.</p></td></tr></table></div></section></section><section><h2 id="1952553335#response" data-toc="response#Add-WGDashboard-API-Key.md-response">Response</h2><p id="1952553335#ah68y4_30"><span class="inline-code" id="1952553335#ah68y4_35">200 - OK</span></p><p id="1952553335#ah68y4_31">If success, it will return the latest list of API Keys</p><div class="detached code-block" id="1952553335#ah68y4_32"><pre><code class="language-json">{
+  &quot;data&quot;: [
+    {
+      &quot;CreatedAt&quot;: &quot;2024-08-15 00:42:31&quot;,
+      &quot;ExpiredAt&quot;: null,
+      &quot;Key&quot;: &quot;AXt1x3TZMukmA-eSnAyESy08I14n20boppSsknHOB-Y&quot;
+    },
+    {
+      &quot;CreatedAt&quot;: &quot;2024-08-14 22:50:44&quot;,
+      &quot;ExpiredAt&quot;: &quot;2024-12-31 16:50:43&quot;,
+      &quot;Key&quot;: &quot;ry0Suo0BrypSMzbq0C_TjkEcgrFHHj6UBZGmC2-KI2o&quot;
+    }
+  ],
+  &quot;message&quot;: null,
+  &quot;status&quot;: true
+}</code></pre></div><p id="1952553335#ah68y4_33">If API key function is disabled</p><div class="detached code-block" id="1952553335#ah68y4_34"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: &quot;Dashboard API Keys function is disabled&quot;,
+    &quot;status&quot;: false
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1304461761">Delete WGDashboard API Key</h1><p id="1304461761#-ch3vay_3">Delete an existing API Key in WGDashboard</p><section><h2 id="1304461761#request" data-toc="request#Delete-WGDashboard-API-Key.md-request">Request</h2><p id="1304461761#-ch3vay_6"><span class="inline-code" id="1304461761#-ch3vay_8">POST /api/deleteDashboardAPIKey</span></p><section><h3 id="1304461761#body-parameters" data-toc="body-parameters#Delete-WGDashboard-API-Key.md-body-parameters">Body Parameters</h3><div class="detached code-block" id="1304461761#-ch3vay_9"><pre><code class="language-json">{
+    &quot;key&quot;: &quot;ry0Suo0BrypSMzbq0C_TjkEcgrFHHj6UBZGmC2-KI2o&quot;
+}</code></pre></div><div class="table-wrapper detached"><table id="1304461761#-ch3vay_10"><tr class="header-row" id="1304461761#-ch3vay_11"><th id="1304461761#-ch3vay_13"><p>Parameter</p></th><th id="1304461761#-ch3vay_14"><p>Type</p></th><th id="1304461761#-ch3vay_15"></th></tr><tr class="" id="1304461761#-ch3vay_12"><td id="1304461761#-ch3vay_16"><p><span class="inline-code" id="1304461761#-ch3vay_19">key</span></p></td><td id="1304461761#-ch3vay_17"><p>string</p></td><td id="1304461761#-ch3vay_18"><p>The API Key you want to delete</p></td></tr></table></div></section></section><section><h2 id="1304461761#response" data-toc="response#Delete-WGDashboard-API-Key.md-response">Response</h2><p id="1304461761#-ch3vay_20"><span class="inline-code" id="1304461761#-ch3vay_25">200 - OK</span></p><p id="1304461761#-ch3vay_21">If success, it will return the latest list of API Keys after deleting the one you provided</p><div class="detached code-block" id="1304461761#-ch3vay_22"><pre><code class="language-json">{
+  &quot;data&quot;: [
+    {
+      &quot;CreatedAt&quot;: &quot;2024-08-15 00:42:31&quot;,
+      &quot;ExpiredAt&quot;: null,
+      &quot;Key&quot;: &quot;AXt1x3TZMukmA-eSnAyESy08I14n20boppSsknHOB-Y&quot;
+    }
+  ],
+  &quot;message&quot;: null,
+  &quot;status&quot;: true
+}</code></pre></div><p id="1304461761#-ch3vay_23">If API key function is disabled</p><div class="detached code-block" id="1304461761#-ch3vay_24"><pre><code class="language-json">{
+    &quot;data&quot;: null,
+    &quot;message&quot;: &quot;Dashboard API Keys function is disabled&quot;,
+    &quot;status&quot;: false
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-184428981">Reset Peer Data Usage</h1><p id="-184428981#z1qcwl4_3">Reset peer's total, sent or receive data</p><section><h2 id="-184428981#request" data-toc="request#Reset-Peer-Data-Usage.md-request">Request</h2><p id="-184428981#z1qcwl4_6"><span class="inline-code" id="-184428981#z1qcwl4_9">POST /api/resetPeerData/&lt;configName&gt;</span></p><section><h3 id="-184428981#url-parameter" data-toc="url-parameter#Reset-Peer-Data-Usage.md-url-parameter">URL Parameter</h3><div class="table-wrapper detached"><table id="-184428981#z1qcwl4_10"><tr class="header-row" id="-184428981#z1qcwl4_11"><th id="-184428981#z1qcwl4_13"><p>Parameter</p></th><th id="-184428981#z1qcwl4_14"><p>Type</p></th><th id="-184428981#z1qcwl4_15"><p>Description</p></th></tr><tr class="" id="-184428981#z1qcwl4_12"><td id="-184428981#z1qcwl4_16"><p><span class="inline-code" id="-184428981#z1qcwl4_19">configName</span></p></td><td id="-184428981#z1qcwl4_17"><p>string</p></td><td id="-184428981#z1qcwl4_18"><p>The config name of the peer is in</p></td></tr></table></div></section><section><h3 id="-184428981#body-parameter" data-toc="body-parameter#Reset-Peer-Data-Usage.md-body-parameter">Body Parameter</h3><div class="detached code-block" id="-184428981#z1qcwl4_20"><pre><code class="language-json">{
+  &quot;id&quot;: &quot;mCP70rKd4iumKptwTgzvAR3g8/D74ZDkwR0EuI10uk4=&quot;,
+  &quot;type&quot;: &quot;total&quot;
+}</code></pre></div><div class="table-wrapper detached"><table id="-184428981#z1qcwl4_21"><tr class="header-row" id="-184428981#z1qcwl4_22"><th id="-184428981#z1qcwl4_25"><p>Parameter</p></th><th id="-184428981#z1qcwl4_26"><p>Type</p></th><th id="-184428981#z1qcwl4_27"><p>Description</p></th></tr><tr class="" id="-184428981#z1qcwl4_23"><td id="-184428981#z1qcwl4_28"><p><span class="inline-code" id="-184428981#z1qcwl4_31">id</span></p></td><td id="-184428981#z1qcwl4_29"><p>string</p></td><td id="-184428981#z1qcwl4_30"><p>Public Key of the peer you want to update</p></td></tr><tr class="" id="-184428981#z1qcwl4_24"><td id="-184428981#z1qcwl4_32"><p><span class="inline-code" id="-184428981#z1qcwl4_35">type</span></p></td><td id="-184428981#z1qcwl4_33"><p>string</p></td><td id="-184428981#z1qcwl4_34"><p>Type of data you want to reset. It can be <span class="inline-code" id="-184428981#z1qcwl4_36">total</span>, <span class="inline-code" id="-184428981#z1qcwl4_37">receive</span> or <span class="inline-code" id="-184428981#z1qcwl4_38">sent</span></p></td></tr></table></div></section></section><section><h2 id="-184428981#response" data-toc="response#Reset-Peer-Data-Usage.md-response">Response</h2><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>Request Success</p></div>
+</blockquote>
+<div class="detached code-block" id="-184428981#z1qcwl4_40"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: null,
+  &quot;status&quot;: true
+}</code></pre></div><blockquote class="prompt flex bordered-element-rounded warning detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>Request Failed</p></div>
+</blockquote>
+<p id="-184428981#z1qcwl4_42">If <span class="inline-code" id="-184428981#z1qcwl4_44">id</span> is not provided, <span class="inline-code" id="-184428981#z1qcwl4_45">configName</span> does not exist, or peer does not exist</p><div class="detached code-block" id="-184428981#z1qcwl4_43"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;Configuration/Peer does not exist&quot;,
+  &quot;status&quot;: false
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1717269329">Delete Peers</h1><p id="-1717269329#-t96k4o_3">To delete peers individually or in bulk</p><section><h2 id="-1717269329#request" data-toc="request#Delete-Peers.md-request">Request</h2><p id="-1717269329#-t96k4o_6"><span class="inline-code" id="-1717269329#-t96k4o_9">POST /api/deletePeers/&lt;configName&gt;</span></p><section><h3 id="-1717269329#url-parameter" data-toc="url-parameter#Delete-Peers.md-url-parameter">URL Parameter</h3><div class="table-wrapper detached"><table id="-1717269329#-t96k4o_10"><tr class="header-row" id="-1717269329#-t96k4o_11"><th id="-1717269329#-t96k4o_13"><p>Parameter</p></th><th id="-1717269329#-t96k4o_14"><p>Type</p></th><th id="-1717269329#-t96k4o_15"></th></tr><tr class="" id="-1717269329#-t96k4o_12"><td id="-1717269329#-t96k4o_16"><p><span class="inline-code" id="-1717269329#-t96k4o_19">configName</span></p></td><td id="-1717269329#-t96k4o_17"><p>string</p></td><td id="-1717269329#-t96k4o_18"><p>The config name of the peer(s) is in</p></td></tr></table></div></section><section><h3 id="-1717269329#body-parameter" data-toc="body-parameter#Delete-Peers.md-body-parameter">Body Parameter</h3><div class="detached code-block" id="-1717269329#-t96k4o_20"><pre><code class="language-json">{
+  &quot;peers&quot;: [
+    &quot;mCP70rKd4iumKptwTgzvAR3g8/D74ZDkwR0EuI10uk4=&quot;,
+    &quot;lKptwTgzvAR3gmCP70rKd4iu8/D74ZDkwR0EuI10uk4=&quot;,
+    &quot;pCP70rKd4iumK0uk4ptwTgzvAR3g8/D74ZDkwR0EuI1=&quot;
+  ]
+}</code></pre></div><div class="table-wrapper detached"><table id="-1717269329#-t96k4o_21"><tr class="header-row" id="-1717269329#-t96k4o_22"><th id="-1717269329#-t96k4o_24"><p>Parameter</p></th><th id="-1717269329#-t96k4o_25"><p>Type</p></th><th id="-1717269329#-t96k4o_26"></th></tr><tr class="" id="-1717269329#-t96k4o_23"><td id="-1717269329#-t96k4o_27"><p><span class="inline-code" id="-1717269329#-t96k4o_30">peers</span></p></td><td id="-1717269329#-t96k4o_28"><p>list[string]</p></td><td id="-1717269329#-t96k4o_29"><p>List of strings contain public key(s) you want to delete</p></td></tr></table></div></section></section><section><h2 id="-1717269329#response" data-toc="response#Delete-Peers.md-response">Response</h2><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>Request Success</p></div>
+</blockquote>
+<div class="detached code-block" id="-1717269329#-t96k4o_32"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;Deleted 3 peer(s)&quot;,
+  &quot;status&quot;: true
+}</code></pre></div><blockquote class="prompt flex bordered-element-rounded warning detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>Request Failed</p></div>
+</blockquote>
+<p id="-1717269329#-t96k4o_34">If configuration name provided in <span class="inline-code" id="-1717269329#-t96k4o_42">configName</span> does not exist</p><div class="detached code-block" id="-1717269329#-t96k4o_35"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;Configuration does not exist&quot;,
+  &quot;status&quot;: false
+}</code></pre></div><p id="-1717269329#-t96k4o_36">If length of <span class="inline-code" id="-1717269329#-t96k4o_43">peers</span> is 0</p><div class="detached code-block" id="-1717269329#-t96k4o_37"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;Please specify one or more peers&quot;,
+  &quot;status&quot;: false
+}</code></pre></div><p id="-1717269329#-t96k4o_38">If failed to save to WireGuard</p><div class="detached code-block" id="-1717269329#-t96k4o_39"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;Failed to save configuration through WireGuard&quot;,
+  &quot;status&quot;: false
+}</code></pre></div><p id="-1717269329#-t96k4o_40">If failed delete some of the peers</p><div class="detached code-block" id="-1717269329#-t96k4o_41"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;Deleted 3 peer(s) successfully. Failed to delete 1 peer(s)&quot;,
+  &quot;status&quot;: false
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1840802048">Restrict Peers</h1><p id="1840802048#-sif3rt_3">Description</p><section><h2 id="1840802048#request" data-toc="request#Restrict-Peers.md-request">Request</h2><p id="1840802048#-sif3rt_6"><span class="inline-code" id="1840802048#-sif3rt_9">POST /api/restrictPeers/&lt;configName&gt;'</span></p><section><h3 id="1840802048#url-parameter" data-toc="url-parameter#Restrict-Peers.md-url-parameter">URL Parameter</h3><div class="table-wrapper detached"><table id="1840802048#-sif3rt_10"><tr class="header-row" id="1840802048#-sif3rt_11"><th id="1840802048#-sif3rt_13"><p>Parameter</p></th><th id="1840802048#-sif3rt_14"><p>Type</p></th><th id="1840802048#-sif3rt_15"></th></tr><tr class="" id="1840802048#-sif3rt_12"><td id="1840802048#-sif3rt_16"><p><span class="inline-code" id="1840802048#-sif3rt_19">configName</span></p></td><td id="1840802048#-sif3rt_17"><p>string</p></td><td id="1840802048#-sif3rt_18"><p>The config name of the peer is in</p></td></tr></table></div></section><section><h3 id="1840802048#body-parameter" data-toc="body-parameter#Restrict-Peers.md-body-parameter">Body Parameter</h3><div class="detached code-block" id="1840802048#-sif3rt_20"><pre><code class="language-json">{
+  	&quot;peers&quot;: [
+      &quot;mCP70rKd4iumKptwTgzvAR3g8/D74ZDkwR0EuI10uk4=&quot;,
+      &quot;lKptwTgzvAR3gmCP70rKd4iu8/D74ZDkwR0EuI10uk4=&quot;,
+      &quot;pCP70rKd4iumK0uk4ptwTgzvAR3g8/D74ZDkwR0EuI1=&quot;
+	]
+}</code></pre></div><div class="table-wrapper detached"><table id="1840802048#-sif3rt_21"><tr class="header-row" id="1840802048#-sif3rt_22"><th id="1840802048#-sif3rt_24"><p>Parameter</p></th><th id="1840802048#-sif3rt_25"><p>Type</p></th><th id="1840802048#-sif3rt_26"></th></tr><tr class="" id="1840802048#-sif3rt_23"><td id="1840802048#-sif3rt_27"><p><span class="inline-code" id="1840802048#-sif3rt_30">peers</span></p></td><td id="1840802048#-sif3rt_28"><p>list[string]</p></td><td id="1840802048#-sif3rt_29"><p>List of strings contain public key(s) you want to delete</p></td></tr></table></div></section></section><section><h2 id="1840802048#response" data-toc="response#Restrict-Peers.md-response">Response</h2><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>Request Success</p></div>
+</blockquote>
+<p id="1840802048#-sif3rt_32">Description</p><div class="detached code-block" id="1840802048#-sif3rt_33"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;Restricted 3 peer(s)&quot;,
+  &quot;status&quot;: true
+}</code></pre></div><blockquote class="prompt flex bordered-element-rounded warning detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>Request Failed</p></div>
+</blockquote>
+<p id="1840802048#-sif3rt_35">If configuration name provided in <span class="inline-code" id="1840802048#-sif3rt_43">configName</span> does not exist</p><div class="detached code-block" id="1840802048#-sif3rt_36"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;Configuration does not exist&quot;,
+  &quot;status&quot;: false
+}</code></pre></div><p id="1840802048#-sif3rt_37">If length of <span class="inline-code" id="1840802048#-sif3rt_44">peers</span> is 0</p><div class="detached code-block" id="1840802048#-sif3rt_38"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;Please specify one or more peers&quot;,
+  &quot;status&quot;: false
+}</code></pre></div><p id="1840802048#-sif3rt_39">If failed to save to WireGuard</p><div class="detached code-block" id="1840802048#-sif3rt_40"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;Failed to save configuration through WireGuard&quot;,
+  &quot;status&quot;: false
+}</code></pre></div><p id="1840802048#-sif3rt_41">If failed restrict some of the peers</p><div class="detached code-block" id="1840802048#-sif3rt_42"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;Restricted 3 peer(s) successfully. Failed to restrict 1 peer(s)&quot;,
+  &quot;status&quot;: false
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="971260323">Create Share Peer URL</h1><p id="971260323#d0j1r4_3">Create a URL to share peer's configuration file and QR Code</p><section><h2 id="971260323#request" data-toc="request#Create-Share-Peer-URL.md-request">Request</h2><p id="971260323#d0j1r4_6"><span class="inline-code" id="971260323#d0j1r4_9">POST /api/sharePeer/create</span></p><section><h3 id="971260323#url-parameter" data-toc="url-parameter#Create-Share-Peer-URL.md-url-parameter">URL Parameter</h3><div class="table-wrapper detached"><table id="971260323#d0j1r4_10"><tr class="header-row" id="971260323#d0j1r4_11"><th id="971260323#d0j1r4_13"><p>Parameter</p></th><th id="971260323#d0j1r4_14"><p>Type</p></th><th id="971260323#d0j1r4_15"></th></tr><tr class="" id="971260323#d0j1r4_12"><td id="971260323#d0j1r4_16"><p>``</p></td><td id="971260323#d0j1r4_17"><p>string</p></td><td id="971260323#d0j1r4_18"><p>The config name of the peer is in</p></td></tr></table></div></section><section><h3 id="971260323#body-parameter" data-toc="body-parameter#Create-Share-Peer-URL.md-body-parameter">Body Parameter</h3><div class="detached code-block" id="971260323#d0j1r4_19"><pre><code class="language-json">{
+   	&quot;Configuration&quot;: &quot;wg0&quot;,
+  	&quot;Peer&quot;: &quot;mCP70rKd4iumKptwTgzvAR3g8/D74ZDkwR0EuI10uk4=&quot;,
+  	&quot;ExpireDate&quot;: &quot;2024-10-01 23:50:52&quot;
+}</code></pre></div><div class="table-wrapper detached"><table id="971260323#d0j1r4_20"><tr class="header-row" id="971260323#d0j1r4_21"><th id="971260323#d0j1r4_25"><p>Parameter</p></th><th id="971260323#d0j1r4_26"><p>Type</p></th><th id="971260323#d0j1r4_27"></th></tr><tr class="" id="971260323#d0j1r4_22"><td id="971260323#d0j1r4_28"><p><span class="inline-code" id="971260323#d0j1r4_31">Configuration</span></p></td><td id="971260323#d0j1r4_29"><p>string</p></td><td id="971260323#d0j1r4_30"><p>The config name of the peer is in</p></td></tr><tr class="" id="971260323#d0j1r4_23"><td id="971260323#d0j1r4_32"><p><span class="inline-code" id="971260323#d0j1r4_35">Peer</span></p></td><td id="971260323#d0j1r4_33"><p>string</p></td><td id="971260323#d0j1r4_34"><p>The peer you want to share</p></td></tr><tr class="" id="971260323#d0j1r4_24"><td id="971260323#d0j1r4_36"><p><span class="inline-code" id="971260323#d0j1r4_39">ExpireDate</span></p></td><td id="971260323#d0j1r4_37"><p>string</p></td><td id="971260323#d0j1r4_38"><p>Expire date for the URL, format is <span class="inline-code" id="971260323#d0j1r4_40">YYYY-MM-DD hh:mm:ss</span> (24-hours). This field is <span class="control" id="971260323#d0j1r4_41">optional</span></p></td></tr></table></div></section></section><section><h2 id="971260323#response" data-toc="response#Create-Share-Peer-URL.md-response">Response</h2><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>Request Success</p></div>
+</blockquote>
+<p id="971260323#d0j1r4_43">If create successfully, it will return an object in the data, it contains information about the share URL</p><div class="detached code-block" id="971260323#d0j1r4_44"><pre><code class="language-json">{
+	&quot;data&quot;: [
+		{
+		  &quot;Configuration&quot;: &quot;wg88&quot;,
+		  &quot;ExpireDate&quot;: &quot;2024-10-01 23:50:52&quot;,
+		  &quot;Peer&quot;: &quot;72y7R7deXRLZoIb+BYNFWe5RuCmXnWxTSMHfv4Kjay8=&quot;,
+		  &quot;ShareID&quot;: &quot;448a6f79-f6fc-4ce9-802a-1a3142ae7253&quot;
+		}
+	],
+	&quot;message&quot;: null,
+	&quot;status&quot;: true
+}</code></pre></div><blockquote class="prompt flex bordered-element-rounded warning detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>Request Failed</p></div>
+</blockquote>
+<p id="971260323#d0j1r4_46">If <span class="inline-code" id="971260323#d0j1r4_50">Configuration</span> or <span class="inline-code" id="971260323#d0j1r4_51">Peer</span> did not provide</p><div class="detached code-block" id="971260323#d0j1r4_47"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;Please specify configuration and peers&quot;,
+  &quot;status&quot;: false
+}</code></pre></div><p id="971260323#d0j1r4_48">If this peer have an existing URL</p><div class="detached code-block" id="971260323#d0j1r4_49"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;This peer is already sharing, please stop sharing first.&quot;,
+  &quot;status&quot;: false
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1735832142">Endpoint Name</h1><p id="-1735832142#-hphpe7_3">Description</p><section><h2 id="-1735832142#request" data-toc="request#Endpoint-Template.md-request">Request</h2><p id="-1735832142#-hphpe7_6"><span class="inline-code" id="-1735832142#-hphpe7_9">POST /api/</span></p><section><h3 id="-1735832142#url-parameter" data-toc="url-parameter#Endpoint-Template.md-url-parameter">URL Parameter</h3><div class="table-wrapper detached"><table id="-1735832142#-hphpe7_10"><tr class="header-row" id="-1735832142#-hphpe7_11"><th id="-1735832142#-hphpe7_13"><p>Parameter</p></th><th id="-1735832142#-hphpe7_14"><p>Type</p></th><th id="-1735832142#-hphpe7_15"></th></tr><tr class="" id="-1735832142#-hphpe7_12"><td id="-1735832142#-hphpe7_16"><p>``</p></td><td id="-1735832142#-hphpe7_17"><p>string</p></td><td id="-1735832142#-hphpe7_18"><p>The config name of the peer is in</p></td></tr></table></div></section><section><h3 id="-1735832142#body-parameter" data-toc="body-parameter#Endpoint-Template.md-body-parameter">Body Parameter</h3><div class="detached code-block" id="-1735832142#-hphpe7_19"><pre><code class="language-json">{
+  &quot;id&quot;: &quot;mCP70rKd4iumKptwTgzvAR3g8/D74ZDkwR0EuI10uk4=&quot;,
+  &quot;type&quot;: &quot;total&quot;
+}</code></pre></div><div class="table-wrapper detached"><table id="-1735832142#-hphpe7_20"><tr class="header-row" id="-1735832142#-hphpe7_21"><th id="-1735832142#-hphpe7_23"><p>Parameter</p></th><th id="-1735832142#-hphpe7_24"><p>Type</p></th><th id="-1735832142#-hphpe7_25"></th></tr><tr class="" id="-1735832142#-hphpe7_22"><td id="-1735832142#-hphpe7_26"><p>``</p></td><td id="-1735832142#-hphpe7_27"><p>string</p></td><td id="-1735832142#-hphpe7_28"><p>The config name of the peer is in</p></td></tr></table></div></section></section><section><h2 id="-1735832142#response" data-toc="response#Endpoint-Template.md-response">Response</h2><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>Request Success</p></div>
+</blockquote>
+<p id="-1735832142#-hphpe7_30">Description</p><div class="detached code-block" id="-1735832142#-hphpe7_31"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: null,
+  &quot;status&quot;: true
+}</code></pre></div><blockquote class="prompt flex bordered-element-rounded warning detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p>Request Failed</p></div>
+</blockquote>
+<p id="-1735832142#-hphpe7_33">Description</p><div class="detached code-block" id="-1735832142#-hphpe7_34"><pre><code class="language-json">{
+  &quot;data&quot;: null,
+  &quot;message&quot;: null,
+  &quot;status&quot;: true
+}</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1397712125">🔍 Screenshot</h1><p id="-1397712125#vcur0g_3"><div class="container"><figure class="image-container"><img class="center image image-size" id="-1397712125#vcur0g_4" alt="Sign in" title="Sign in" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/user-guides/sign-in.png" width="2048" height="1536"><figcaption class="center-text">Sign in</figcaption></figure></div><div class="container"><figure class="image-container"><img class="center image image-size" id="-1397712125#vcur0g_5" alt="Cross server" title="Cross server" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/cross-server.png" width="2880" height="1826"><figcaption class="center-text">Cross server</figcaption></figure></div><div class="container"><figure class="image-container"><img class="center image image-size" id="-1397712125#vcur0g_6" alt="Index" title="Index" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/index.png" width="2880" height="1826"><figcaption class="center-text">Index</figcaption></figure></div><div class="container"><figure class="image-container"><img class="center image image-size" id="-1397712125#vcur0g_7" alt="New configuration" title="New configuration" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/new-configuration.png" width="2880" height="1826"><figcaption class="center-text">New configuration</figcaption></figure></div><div class="container"><figure class="image-container"><img class="center image image-size" id="-1397712125#vcur0g_8" alt="Settings" title="Settings" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/settings.png" width="2880" height="1826"><figcaption class="center-text">Settings</figcaption></figure></div><div class="container"><figure class="image-container"><img class="center image image-size" id="-1397712125#vcur0g_9" alt="Light dark" title="Light dark" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/light-dark.png" width="5760" height="3652"><figcaption class="center-text">Light dark</figcaption></figure></div><div class="container"><figure class="image-container"><img class="center image image-size" id="-1397712125#vcur0g_10" alt="Configuration" title="Configuration" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/configuration.png" width="2880" height="1826"><figcaption class="center-text">Configuration</figcaption></figure></div><div class="container"><figure class="image-container"><img class="center image image-size" id="-1397712125#vcur0g_11" alt="Add peers" title="Add peers" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/add-peers.png" width="2880" height="1826"><figcaption class="center-text">Add peers</figcaption></figure></div><div class="container"><figure class="image-container"><img class="center image image-size" id="-1397712125#vcur0g_12" alt="Ping" title="Ping" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/ping.png" width="2880" height="1826"><figcaption class="center-text">Ping</figcaption></figure></div><div class="container"><figure class="image-container"><img class="center image image-size" id="-1397712125#vcur0g_13" alt="Traceroute" title="Traceroute" src="/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images/traceroute.png" width="2880" height="1826"><figcaption class="center-text">Traceroute</figcaption></figure></div></p></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1130505296">🕰️ Changelogs</h1><p id="1130505296#-eedb8p_3">Please use the navigation bar on the left to find each changelog</p></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1915376136">v3.0.0 - v3.0.6.2</h1><ul class="list" id="-1915376136#tgo697_3" start="1"><li class="list-item" id="-1915376136#tgo697_5"><p id="-1915376136#tgo697_8">🎉 <span class="control" id="-1915376136#tgo697_10">New Features</span></p><ul class="list" id="-1915376136#tgo697_9" start="1"><li class="list-item" id="-1915376136#tgo697_11"><p><span class="control" id="-1915376136#tgo697_19">Moved from TinyDB to SQLite</span>: SQLite provide a better performance and loading speed when getting peers! Also avoided crashing the database due to <span class="control" id="-1915376136#tgo697_20">race condition</span>.</p></li><li class="list-item" id="-1915376136#tgo697_12"><p><span class="control" id="-1915376136#tgo697_21">Added Gunicorn WSGI Server</span>: This could provide more stable on handling HTTP request, and more flexibility in the future (such as HTTPS support). <span class="control" id="-1915376136#tgo697_22">BIG THANKS to @pgalonza ❤</span></p></li><li class="list-item" id="-1915376136#tgo697_13"><p><span class="control" id="-1915376136#tgo697_23">Add Peers by Bulk:</span> User can add peers by bulk, just simply set the amount and click add.</p></li><li class="list-item" id="-1915376136#tgo697_14"><p><span class="control" id="-1915376136#tgo697_24">Delete Peers by Bulk</span>: User can delete peers by bulk, without deleting peers one by one.</p></li><li class="list-item" id="-1915376136#tgo697_15"><p><span class="control" id="-1915376136#tgo697_25">Download Peers in Zip</span>: User can download all <span class="emphasis" id="-1915376136#tgo697_26">downloadable</span> peers in a zip.</p></li><li class="list-item" id="-1915376136#tgo697_16"><p><span class="control" id="-1915376136#tgo697_27">Added Pre-shared Key to peers:</span> Now each peer can add with a pre-shared key to enhance security. Previously added peers can add the pre-shared key through the peer setting button.</p></li><li class="list-item" id="-1915376136#tgo697_17"><p><span class="control" id="-1915376136#tgo697_28">Redirect Back to Previous Page:</span> The dashboard will now redirect you back to your previous page if the current session got timed out and you need to sign in again.</p></li><li class="list-item" id="-1915376136#tgo697_18"><p><span class="control" id="-1915376136#tgo697_29">Added Some <a href="#375103183">🥘 Experimental Features</a></span></p></li></ul></li><li class="list-item" id="-1915376136#tgo697_6"><p id="-1915376136#tgo697_31">🪚 <span class="control" id="-1915376136#tgo697_33">Bug Fixed</span></p><ul class="list" id="-1915376136#tgo697_32" start="1"><li class="list-item" id="-1915376136#tgo697_34"><p>IP Sorting range issues #99 (<a href="https://github.com/donaldzou/WGDashboard/issues/99">https://github.com/donaldzou/WGDashboard/issues/99</a>) [❤️ @barryboom]</p></li><li class="list-item" id="-1915376136#tgo697_35"><p>INvalid character written to tunnel json file #108 (<a href="https://github.com/donaldzou/WGDashboard/issues/108">https://github.com/donaldzou/WGDashboard/issues/108</a>) [❤️ @ikidd]</p></li><li class="list-item" id="-1915376136#tgo697_36"><p>Add IPv6 #91 (<a href="https://github.com/donaldzou/WGDashboard/pull/91">https://github.com/donaldzou/WGDashboard/pull/91</a>) [❤️ @pgalonza]</p></li><li class="list-item" id="-1915376136#tgo697_37"><p>Added MTU and PersistentKeepalive to QR code and download files #112 (<a href="https://github.com/donaldzou/WGDashboard/pull/112">https://github.com/donaldzou/WGDashboard/pull/112</a>) [❤ @reafian]</p></li><li class="list-item" id="-1915376136#tgo697_38"><p><span class="control" id="-1915376136#tgo697_43">And many other bugs provided by our beloved users</span> ❤</p></li></ul></li><li class="list-item" id="-1915376136#tgo697_7"><p id="-1915376136#tgo697_44"><span class="control" id="-1915376136#tgo697_46">🧐 Other Changes</span></p><ul class="list" id="-1915376136#tgo697_45" start="1"><li class="list-item" id="-1915376136#tgo697_47"><p><span class="control" id="-1915376136#tgo697_52">Key generating moved to front-end</span>: No longer need to use the server's WireGuard to generate keys, thanks to the <span class="inline-code" id="-1915376136#tgo697_53">wireguard.js</span> from the official repository (<a href="https://git.zx2c4.com/wireguard-tools/tree/contrib/keygen-html/wireguard.js">https://git.zx2c4.com/wireguard-tools/tree/contrib/keygen-html/wireguard.js</a>)!</p></li><li class="list-item" id="-1915376136#tgo697_48"><p><span class="control" id="-1915376136#tgo697_55">Peer transfer calculation</span>: each peer will now show all transfer amount (previously was only showing transfer amount from the last configuration start-up).</p></li><li class="list-item" id="-1915376136#tgo697_49"><p><span class="control" id="-1915376136#tgo697_56">UI adjustment on running peers</span>: peers will have a new style indicating that it is running.</p></li><li class="list-item" id="-1915376136#tgo697_50"><p><span class="control" id="-1915376136#tgo697_57"><span class="inline-code" id="-1915376136#tgo697_60">wgd.sh</span> finally can update itself</span>: So now user could update the whole dashboard from <span class="inline-code" id="-1915376136#tgo697_58">wgd.sh</span>, with the <span class="inline-code" id="-1915376136#tgo697_59">update</span> command.</p></li><li class="list-item" id="-1915376136#tgo697_51"><p><span class="control" id="-1915376136#tgo697_61">Minified JS and CSS files</span>: Although only a small changes on the file size, but I think is still a good practice to save a bit of bandwidth ;)</p></li></ul></li></ul><p id="-1915376136#tgo697_4"><span class="emphasis" id="-1915376136#tgo697_62">And many other small changes for performance and bug fixes! 😆</span></p></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-869160378">v2.3.1</h1><ul class="list" id="-869160378#-9pg99b_3" start="1"><li class="list-item" id="-869160378#-9pg99b_4"><p>Updated dashboard's name to <span class="control" id="-869160378#-9pg99b_5">WGDashboard</span>!!</p></li></ul></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="3564834">v2.3</h1><ul class="list" id="3564834#-bzfbnf_3" start="1"><li class="list-item" id="3564834#-bzfbnf_4"><p>🎉 <span class="control" id="3564834#-bzfbnf_7">New Features</span></p><ul class="list" id="3564834#-bzfbnf_8" start="1"><li class="list-item" id="3564834#-bzfbnf_9"><p><span class="control" id="3564834#-bzfbnf_11">Update directly from <span class="inline-code" id="3564834#-bzfbnf_12">wgd.sh</span>:</span> Now you can update WGDashboard directly from the bash script.</p></li><li class="list-item" id="3564834#-bzfbnf_10"><p><span class="control" id="3564834#-bzfbnf_13">Displaying Peers:</span> You can switch the display mode between list and table in the configuration page.</p></li></ul></li><li class="list-item" id="3564834#-bzfbnf_5"><p>🪚 <span class="control" id="3564834#-bzfbnf_14">Bug Fixed</span></p><ul class="list" id="3564834#-bzfbnf_15" start="1"><li class="list-item" id="3564834#-bzfbnf_16"><p>Peer DNS Validation Fails #67 (<a href="https://github.com/donaldzou/WGDashboard/issues/67">https://github.com/donaldzou/WGDashboard/issues/67</a>): Added DNS format check. [❤️ @realfian]</p></li><li class="list-item" id="3564834#-bzfbnf_17"><p>configparser.NoSectionError: No section: 'Interface' #66 (<a href="https://github.com/donaldzou/WGDashboard/issues/66">https://github.com/donaldzou/WGDashboard/issues/66</a>): Changed permission requirement for <span class="inline-code" id="3564834#-bzfbnf_23">etc/wireguard</span> from <span class="inline-code" id="3564834#-bzfbnf_24">744</span> to <span class="inline-code" id="3564834#-bzfbnf_25">755</span>. [❤️ @ramalmaty]</p></li><li class="list-item" id="3564834#-bzfbnf_18"><p>Feature request: Interface not loading when information missing #73 (<a href="https://github.com/donaldzou/WGDashboard/issues/73">https://github.com/donaldzou/WGDashboard/issues/73</a>): Fixed when Configuration Address and Listen Port is missing will crash the dashboard. [❤️ @js32]</p></li><li class="list-item" id="3564834#-bzfbnf_19"><p>Remote Peer, MTU and PersistentKeepalives added #70 (<a href="https://github.com/donaldzou/WGDashboard/pull/70">https://github.com/donaldzou/WGDashboard/pull/70</a>): Added MTU, remote peer and Persistent Keepalive. [❤️ @realfian]</p></li><li class="list-item" id="3564834#-bzfbnf_20"><p>Fixes DNS check to support search domain #65 (<a href="https://github.com/donaldzou/WGDashboard/pull/65">https://github.com/donaldzou/WGDashboard/pull/65</a>): Added allow input domain into DNS. [❤️@davejlong]</p></li></ul></li><li class="list-item" id="3564834#-bzfbnf_6"><p><span class="control" id="3564834#-bzfbnf_29">🧐 Other Changes</span></p><ul class="list" id="3564834#-bzfbnf_30" start="1"><li class="list-item" id="3564834#-bzfbnf_31"><p>Moved Add Peer Button into the right bottom corner.</p></li></ul></li></ul></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-869161339">v2.2.1</h1><p id="-869161339#-a6hvni_3">Bug Fixed:</p><ul class="list" id="-869161339#-a6hvni_4" start="1"><li class="list-item" id="-869161339#-a6hvni_5"><p>Added support for full subnet on Allowed IP</p></li><li class="list-item" id="-869161339#-a6hvni_6"><p>Peer setting Save button</p></li></ul></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="3564833">v2.2</h1><ul class="list" id="3564833#-bzfymy_3" start="1"><li class="list-item" id="3564833#-bzfymy_4"><p>🎉 <span class="control" id="3564833#-bzfymy_7">New Features</span></p><ul class="list" id="3564833#-bzfymy_8" start="1"><li class="list-item" id="3564833#-bzfymy_9"><p><span class="control" id="3564833#-bzfymy_15">Add new peers</span>: Now you can add peers directly on dashboard, it will generate a pair of private key and public key. You can also set its DNS, endpoint allowed IPs. Both can set a default value in the setting page. [❤️ in #44 (<a href="https://github.com/donaldzou/wireguard-dashboard/issues/44">https://github.com/donaldzou/wireguard-dashboard/issues/44</a>)]</p></li><li class="list-item" id="3564833#-bzfymy_10"><p><span class="control" id="3564833#-bzfymy_17">QR Code:</span> You can add the private key in peer setting of your existed peer to create a QR code. Or just create a new one, dashboard will now be able to auto generate a private key and public key ;) Don't worry, all keys will be generated on your machine, and <span class="control" id="3564833#-bzfymy_18">will delete all key files after they got generated</span>. [❤️ in #29 (<a href="https://github.com/donaldzou/wireguard-dashboard/issues/29">https://github.com/donaldzou/wireguard-dashboard/issues/29</a>)]</p></li><li class="list-item" id="3564833#-bzfymy_11"><p><span class="control" id="3564833#-bzfymy_20">Peer configuration file download:</span> Same as QR code, you now can download the peer configuration file, so you don't need to manually input all the details on the peer machine! [❤️ in #40 (<a href="https://github.com/donaldzou/wireguard-dashboard/issues/40">https://github.com/donaldzou/wireguard-dashboard/issues/40</a>)]</p></li><li class="list-item" id="3564833#-bzfymy_12"><p><span class="control" id="3564833#-bzfymy_22">Search peers</span>: You can now search peers by their name.</p></li><li class="list-item" id="3564833#-bzfymy_13"><p><span class="control" id="3564833#-bzfymy_23">Autostart on boot:</span> Added a tutorial on how to start the dashboard to on boot! Please read the tutorial below (<a href="#1539383570#run-wgdashboard-as-a-system-service">&quot;Run WGDashboard as a system service&quot; in &quot;🪜 Usage&quot;</a>). [❤️ in #29 (<a href="https://github.com/donaldzou/wireguard-dashboard/issues/29">https://github.com/donaldzou/wireguard-dashboard/issues/29</a>)]</p></li><li class="list-item" id="3564833#-bzfymy_14"><p><span class="control" id="3564833#-bzfymy_26">Click to copy</span>: You can now click and copy all peer's public key and configuration's public key.</p></li></ul></li><li class="list-item" id="3564833#-bzfymy_5"><p>🪚 <span class="control" id="3564833#-bzfymy_27">Bug Fixed</span></p><ul class="list" id="3564833#-bzfymy_28" start="1"><li class="list-item" id="3564833#-bzfymy_29"><p>When there are comments in the wireguard config file, will cause the dashboard to crash.</p></li><li class="list-item" id="3564833#-bzfymy_30"><p>Used regex to search for config files.</p></li></ul></li><li class="list-item" id="3564833#-bzfymy_6"><p><span class="control" id="3564833#-bzfymy_31">🧐 Other Changes</span></p><ul class="list" id="3564833#-bzfymy_32" start="1"><li class="list-item" id="3564833#-bzfymy_33"><p>Moved all external CSS and JavaScript file to local hosting (Except Bootstrap Icon, due to large amount of SVG files).</p></li><li class="list-item" id="3564833#-bzfymy_34"><p>Updated Python dependencies </p><ul class="list" id="3564833#-bzfymy_37" start="1"><li class="list-item" id="3564833#-bzfymy_38"><p>Flask: <span class="inline-code" id="3564833#-bzfymy_41">v1.1.2 =&gt; v2.0.1</span></p></li><li class="list-item" id="3564833#-bzfymy_39"><p>Jinja: <span class="inline-code" id="3564833#-bzfymy_42">v2.10.1 =&gt; v3.0.1</span></p></li><li class="list-item" id="3564833#-bzfymy_40"><p>icmplib: <span class="inline-code" id="3564833#-bzfymy_43">v2.1.1 =&gt; v3.0.1</span></p></li></ul></li><li class="list-item" id="3564833#-bzfymy_35"><p>Updated CSS/JS dependencies </p><ul class="list" id="3564833#-bzfymy_44" start="1"><li class="list-item" id="3564833#-bzfymy_45"><p>Bootstrap: <span class="inline-code" id="3564833#-bzfymy_46">v4.5.3 =&gt; v4.6.0</span></p></li></ul></li><li class="list-item" id="3564833#-bzfymy_36"><p>UI adjustment </p><ul class="list" id="3564833#-bzfymy_47" start="1"><li class="list-item" id="3564833#-bzfymy_48"><p>Adjusted how peers will display in larger screens, used to be 1 row per peer, now is 3 peers in 1 row.</p></li></ul></li></ul></li></ul></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="3564832">v2.1</h1><ul class="list" id="3564832#-bzglmh_3" start="1"><li class="list-item" id="3564832#-bzglmh_4"><p>Added <span class="control" id="3564832#-bzglmh_9">Ping</span> and <span class="control" id="3564832#-bzglmh_10">Traceroute</span> tools!</p></li><li class="list-item" id="3564832#-bzglmh_5"><p>Adjusted the calculation of data usage on each peers</p></li><li class="list-item" id="3564832#-bzglmh_6"><p>Added refresh interval of the dashboard</p></li><li class="list-item" id="3564832#-bzglmh_7"><p>Bug fixed when no configuration on fresh install (#23 (<a href="https://github.com/donaldzou/wireguard-dashboard/issues/23">https://github.com/donaldzou/wireguard-dashboard/issues/23</a>))</p></li><li class="list-item" id="3564832#-bzglmh_8"><p>Fixed crash when too many peers (#22 (<a href="https://github.com/donaldzou/wireguard-dashboard/issues/22">https://github.com/donaldzou/wireguard-dashboard/issues/22</a>))</p></li></ul></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="3564831">v2.0</h1><ul class="list" id="3564831#-bzh8m0_3" start="1"><li class="list-item" id="3564831#-bzh8m0_4"><p>Added login function to dashboard </p><ul class="list" id="3564831#-bzh8m0_9" start="1"><li class="list-item" id="3564831#-bzh8m0_10"><p><span class="emphasis" id="3564831#-bzh8m0_11"><span class="control" id="3564831#-bzh8m0_12">I'm not using the most ideal way to store the username and password, feel free to provide a better way to do this if you any good idea!</span></span></p></li></ul></li><li class="list-item" id="3564831#-bzh8m0_5"><p>Added a config file to the dashboard</p></li><li class="list-item" id="3564831#-bzh8m0_6"><p>Dashboard config can be changed within the <span class="control" id="3564831#-bzh8m0_13">Setting</span> tab on the sidebar</p></li><li class="list-item" id="3564831#-bzh8m0_7"><p>Adjusted UI</p></li><li class="list-item" id="3564831#-bzh8m0_8"><p>And much more!</p></li></ul></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-870085820">v1.1.2</h1><ul class="list" id="-870085820#vjypur_3" start="1"><li class="list-item" id="-870085820#vjypur_4"><p>Resolved issue #3 (<a href="https://github.com/donaldzou/wireguard-dashboard/issues/3">https://github.com/donaldzou/wireguard-dashboard/issues/3</a>).</p></li></ul></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1313794590">v.1.1.1</h1><ul class="list" id="-1313794590#jnwdj5_3" start="1"><li class="list-item" id="-1313794590#jnwdj5_4"><p>Able to add a friendly name to each peer. Thanks #2 (<a href="https://github.com/donaldzou/wireguard-dashboard/issues/2">https://github.com/donaldzou/wireguard-dashboard/issues/2</a>)!</p></li></ul></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="3563870">v1.0 - Journey starts here!</h1><ul class="list" id="3563870#-cgiv07_3" start="1"><li class="list-item" id="3563870#-cgiv07_4"><p>Added the function to remove peers</p></li></ul></article></div></section></div></body></html>
