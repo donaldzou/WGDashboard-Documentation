@@ -141,7 +141,6 @@ Please make sure you understand these commands before you run them.
 			<code-block lang="shell">
                setup-interfaces -a ; \
                rc-service networking --quiet start ; \
-               printf "https://mirrors.aliyun.com/alpine/latest-stable/main\nhttps://mirrors.aliyun.com/alpine/latest-stable/community" > /etc/apk/repositories ; \
                apk update ; \
                apk add wireguard-tools python3 python3-dev git iptables net-tools gcc musl-dev linux-headers sudo ; \
                git clone -b v4.0-alpine-linux https://github.com/donaldzou/WGDashboard.git ; \
