@@ -182,6 +182,18 @@ Please make sure you understand these commands before you run them.
          <tip>Tested by our community member. Thank you!</tip>
       </chapter>
    </tab>
+   <tab title="OpenBSD">
+      <chapter title="7.6">
+         <code-block lang="shell">
+            pkg_add python-3.11.10p0 wireguard-tools-1.0.20210914p2v0 git-2.46.1 sudo-1.9.15.5p0 rust-1.81.0
+            mkdir WGDashboard
+            git clone https://github.com/donaldzou/WGDashboard.git WGDashboard
+            cd WGDashboard/src
+            chmod +x ./wgd.sh
+            ./wgd.sh install
+         </code-block>
+      </chapter>
+   </tab>
 </tabs>
 
 
