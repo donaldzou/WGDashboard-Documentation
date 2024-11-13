@@ -39,4 +39,9 @@
         <description>Created after removal of "Endpoint Name" from WGDashboard Documentation</description>
         <accepts>Endpoint-Template.html</accepts>
     </rule>
+    <rule id="2977a44d">
+        <description>Created after removal of "Add WireGuard Configurations" from WGDashboard Documentation
+        </description>
+        <accepts>Add-WireGuard-Configuration-Guide.html</accepts>
+    </rule>
 </rules>
