@@ -16,6 +16,7 @@
         <toc-element topic="Sign-In.md">
         </toc-element>
         <toc-element topic="Access-Remote-Server.md"/>
+        <toc-element topic="Add-WireGuard-Configuration-Guide.md"/>
     </toc-element>
     <toc-element topic="✂️-Dashboard-Configuration.md"/>
     <toc-element topic="❓-Update.md"/>
