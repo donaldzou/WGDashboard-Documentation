@@ -13,3 +13,17 @@ Then you will see a form, with the following fields need to input. Specification
 - **Private Key & Public Key**
   - Both keys are pre-generated. If you wish to use your own key pair, simply **paste** your Private Key into the input, and it will generate the Public Key automatically.
   - To re-generate a key pair, simply click the blue refresh button on the right of Private Key input.
+- **Listen Port**
+  - Port that your configuration will be listened to. Can't be using the same port as other configuration.
+- **IP Address/CIDR**
+  - This defines what address range each peers will be. For example, `10.0.0.1/24` means peers can allocate IP address from `10.0.0.2` to `10.0.0.254`
+  - Of course, you can also define multiple subnets, like `10.0.0.1/24,2001:DB8::/64`
+- Optional Settings
+  - PreUp
+    - Shell commands to run **before** the configuration is **turned on**
+  - PreDown
+    - Shell commands to run **before** the configuration is **turned off**
+  - PostUp
+    - Shell commands to run **after** the configuration is **turned on**
+  - PostDown
+    - Shell commands to run **after** the configuration is **turned off**
