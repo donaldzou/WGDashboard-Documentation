@@ -18,3 +18,10 @@ Once you clicked the button, you will see a form similar to adding a configurati
   - But if you want to forward all traffic through WireGuard, you can set it to `0.0.0.0/0, ::/0`
 - **DNS**
   - The DNS servers that this peer will be using.
+- **Pre-Shared Key**
+  - If you want an extra layer of security between your server and peer, you can toggle this feature to let WireGuard to additional symmetric encryption. 
+  - More information: [WireGuard: Next Generation Kernel Network Tunnel, 5.2 - Optional Pre-shared Symmetric Key Mode](https://www.wireguard.com/papers/wireguard.pdf)
+- **MTU**
+  - [The MTU is automatically determined from the endpoint addresses or the system default route, which is usually a sane choice.](https://github.com/pirate/wireguard-docs?tab=readme-ov-file#MTU)
+- **Persistent Keepalive**
+  - [If the connection is going from a NAT-ed peer to a public peer, the node behind the NAT must regularly send an outgoing ping in order to keep the bidirectional connection alive in the NAT router's connection table.](https://github.com/pirate/wireguard-docs?tab=readme-ov-file#persistentkeepalive)
