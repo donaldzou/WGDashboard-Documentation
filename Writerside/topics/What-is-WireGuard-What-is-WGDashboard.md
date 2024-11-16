@@ -30,7 +30,7 @@ WireGuard and WGDashboard are often used together, but they serve different purp
 - View real time peer status
 - Testing tool: Ping and Traceroute to your peer
 
-### Note for WireGuard LXC Script Users
+## Note for WireGuard LXC Script Users
 
 > [WireGuard LXC](https://community-scripts.github.io/ProxmoxVE/scripts?id=wireguard)
 
