@@ -13,7 +13,6 @@
     <toc-element topic="🛠-Install.md"/>
     <toc-element topic="🪜-Usage.md"/>
     <toc-element topic="User-Guides.md">
-        <toc-element topic="What-is-WireGuard-What-is-WGDashboard.md"/>
         <toc-element topic="Sign-In.md">
         </toc-element>
         <toc-element topic="Access-Remote-Server.md"/>
