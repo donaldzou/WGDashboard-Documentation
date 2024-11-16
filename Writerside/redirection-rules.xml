@@ -44,4 +44,9 @@
         </description>
         <accepts>Add-WireGuard-Configuration-Guide.html</accepts>
     </rule>
+    <rule id="67a12587">
+        <description>
+            <![CDATA[Created after removal of "What is WireGuard & What is WGDashboard?" from WGDashboard Documentation]]></description>
+        <accepts>What-is-WireGuard-What-is-WGDashboard.html</accepts>
+    </rule>
 </rules>
