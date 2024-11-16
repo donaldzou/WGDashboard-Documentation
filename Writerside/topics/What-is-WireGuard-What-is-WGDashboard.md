@@ -30,7 +30,10 @@ WireGuard and WGDashboard are often used together, but they serve different purp
 - View real time peer status
 - Testing tool: Ping and Traceroute to your peer
 
-### Important Note for Users
+### Note for WireGuard LXC Script Users
+
+> [WireGuard LXC](https://community-scripts.github.io/ProxmoxVE/scripts?id=wireguard)
+
 > **WireGuard and WGDashboard are separate components**:
 > - **WireGuard** is the VPN software itself.
 > - **WGDashboard** is an optional tool for managing and monitoring WireGuard configurations.
@@ -38,10 +41,6 @@ WireGuard and WGDashboard are often used together, but they serve different purp
 If you encounter issues specifically with **WireGuard** (e.g., connectivity or tunnel errors), refer to WireGuard’s [official documentation](https://www.wireguard.com/) or support. 
 
 **WGDashboard** issues related to the interface, peer management, or dashboard functionality can be reported [here](https://github.com/donaldzou/WGDashboard).
-
----
-
-# Default WireGuard Configuration
 
 A default configuration file (`wg0.conf`) is already included in the standard installation. This configuration is designed to simplify the setup and enhance understanding for new users. You can view and edit it using:
 

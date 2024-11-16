@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Frequently-Asked-Questions-FAQ.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Writerside/redirection-rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/redirection-rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/What-is-WireGuard-What-is-WGDashboard.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/What-is-WireGuard-What-is-WGDashboard.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Writerside/wd.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/wd.tree" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +100,7 @@
       <recent name="$PROJECT_DIR$/Writerside/images" />
     </key>
   </component>
-  <component name="RunManager" selected="Writerside.PDF (wd)">
+  <component name="RunManager" selected="Writerside.Web Archive (wd)">
     <configuration name="PDF (wd)" type="StardustRunConfiguration" factoryName="build-pdf">
       <option name="addCover" value="true" />
       <option name="copyright" />

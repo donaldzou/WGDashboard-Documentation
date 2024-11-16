@@ -19,6 +19,9 @@
         <toc-element topic="Add-WireGuard-Configuration-Guide.md"/>
         <toc-element topic="Add-WireGuard-Configuration-Peers-Guide.md"/>
     </toc-element>
+    <toc-element topic="Frequently-Asked-Questions-FAQ.md">
+        <toc-element topic="What-is-WireGuard-What-is-WGDashboard.md"/>
+    </toc-element>
     <toc-element topic="✂️-Dashboard-Configuration.md"/>
     <toc-element topic="❓-Update.md"/>
     <toc-element topic="🐬-Docker-Solutions.md"/>
