@@ -10,6 +10,10 @@
 <note>
 	All operating systems below are tested by myself. All are <b>ARM64</b> ran in UTM Virtual Machine.
 </note>
+<note>
+	For Proxmox VE, please visit <a href="https://community-scripts.github.io/ProxmoxVE/scripts?id=wireguard">community script</a> to install
+
+</note>
 
 <tabs>
     <tab title="Ubuntu">

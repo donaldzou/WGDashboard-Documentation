@@ -184,6 +184,10 @@ Please make sure you understand these commands before you run them.
    </tab>
 </tabs>
 
+## For Proxmox Virtual Environment
+
+Please visit this [community script](https://community-scripts.github.io/ProxmoxVE/scripts?id=wireguard) to install.
+
 
 ## Manually install WGDashboard
 
