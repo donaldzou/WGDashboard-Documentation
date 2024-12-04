@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Get-WireGuard-Configuration-Peers-Information.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/-Requirements.md" beforePathEscaped="$PROJECT_DIR$/Writerside/topics/📝-Requirements.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/-Requirements.md" afterPathEscaped="$PROJECT_DIR$/Writerside/topics/📝-Requirements.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/-Install.md" beforePathEscaped="$PROJECT_DIR$/Writerside/topics/🛠-Install.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/-Install.md" afterPathEscaped="$PROJECT_DIR$/Writerside/topics/🛠-Install.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/wd.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/wd.tree" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,18 +73,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Writerside.PDF (wd).executor&quot;: &quot;Run&quot;,
-    &quot;Writerside.Web Archive (wd).executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;writerside.last.selected.productWGDashboard-Documentation&quot;: &quot;wd&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Writerside.PDF (wd).executor": "Run",
+    "Writerside.Web Archive (wd).executor": "Run",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "writerside.last.selected.productWGDashboard-Documentation": "wd"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Writerside/images" />

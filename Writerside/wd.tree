@@ -45,6 +45,7 @@
             <toc-element topic="Get-WireGuard-Configuration-Backup.md"/>
             <toc-element topic="Get-All-WireGuard-Configuration-Backup.md"/>
             <toc-element topic="Delete-WireGuard-Configuration-Backup.md"/>
+            <toc-element topic="Get-WireGuard-Configuration-Peers-Information.md"/>
             <toc-element topic="Get-WGDashboard-API-Keys.md"/>
             <toc-element topic="Add-WGDashboard-API-Key.md"/>
             <toc-element topic="Delete-WGDashboard-API-Key.md"/>
