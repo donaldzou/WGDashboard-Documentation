@@ -2,7 +2,7 @@
 
 ## Issue
 
-<img src="CaseStudy1-Page-2.drawio.png" alt="">
+<img src="CaseStudy1-Page-2.drawio.png" alt="" />
 
 So it got me thinking, is it possible to forward the client traffic as many as possible? I think so!
 
