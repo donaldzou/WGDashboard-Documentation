@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
+      <change afterPath="$PROJECT_DIR$/Writerside/images/case-study/2-hop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/images/case-study/CaseStudy1-Page-2.drawio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Case-Study-1-1-Multi-Hop-and-Hop-Again-Connection.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Case-Study-1-Multi-Hop-Connection.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Case-Study.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/wd.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/wd.tree" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,46 +77,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Writerside.PDF (wd).executor&quot;: &quot;Run&quot;,
-    &quot;Writerside.Web Archive (wd).executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;writerside.last.selected.productWGDashboard-Documentation&quot;: &quot;wd&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Access-Remote-Server.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Add-WireGuard-Configuration-Guide.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Add-WireGuard-Configuration-Peers-Guide.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Features.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Frequently-Asked-Questions-FAQ.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Get-All-WireGuard-Configuration-Backup.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Get-WGDashboard-API-Keys.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Get-WGDashboard-Configuration.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Get-WireGuard-Configuration-Backup.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Get-WireGuard-Configuration-Peers-Information.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Get-WireGuard-Configurations.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Sign-In.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Sponsors.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Update-WireGuard-Configuration.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/What-is-WireGuard-What-is-WGDashboard.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/📖-API-Documentation.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/📝-Requirements.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/🛠-Install.md&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Writerside.PDF (wd).executor": "Run",
+    "Writerside.Web Archive (wd).executor": "Run",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "writerside.last.selected.productWGDashboard-Documentation": "wd"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Writerside/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Writerside/images/case-study" />
       <recent name="$PROJECT_DIR$/Writerside/images" />
     </key>
   </component>
