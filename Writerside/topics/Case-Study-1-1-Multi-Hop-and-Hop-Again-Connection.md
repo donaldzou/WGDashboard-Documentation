@@ -8,6 +8,8 @@ So it got me thinking, is it possible to forward the client traffic as many as p
 
 ## Solution
 
+> Solution originated from this [Reddit Post](https://www.reddit.com/r/WireGuard/comments/1dn9gxd/help_in_setting_up_multihop_wireguard_tunneling/)
+
 ### Specification
 
 | Device   | OS           | WireGuard IP |

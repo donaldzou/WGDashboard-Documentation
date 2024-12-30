@@ -8,6 +8,8 @@ Client located in Hong Kong can only connect to a Hong Kong Server via WireGuard
 
 ## Solution
 
+> Solution originated from this [Reddit Post](https://www.reddit.com/r/WireGuard/comments/1dn9gxd/help_in_setting_up_multihop_wireguard_tunneling/)
+
 ### Specifications
 
 | Device    | OS           | WireGuard IP | Public Key     | Private Key    |
