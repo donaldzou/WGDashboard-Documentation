@@ -1,5 +1,11 @@
 # 🛠 Install
 
+## Host WGDashboard & WireGuard with DigitalOcean
+
+WGDashboard is now available as a **1-Click** app on DigitalOcean! 
+
+[Instruction to host](Host-WGDashboard-WireGuard-with-DigitalOcean.md)
+
 ## Commands to install WGDashboard
 
 These commands are tested by myself in each OS. It contains commands to install WireGuard, Git, Net Tools, and even Python on some OS.
