@@ -237,6 +237,11 @@ Please visit this [community script](https://community-scripts.github.io/Proxmox
 
    Access your server with port `10086` (e.g. http://your_server_ip:10086), using username `admin` and password `admin`. See below how to change port and ip that the dashboard is running with.
 
+7. Allow traffic forwarding (Optional, but recommend for most users)
+   ```shell
+   sudo echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
+   sudo sysctl -p /etc/sysctl.conf
+   ```
 
 ## Looking for server to configure WireGuard and WGDashboard?
 
