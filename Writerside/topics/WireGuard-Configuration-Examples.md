@@ -5,7 +5,7 @@ This example is for the most common use case of WireGuard, which is a peer-serve
 
 First, we will need to know what is our default network interface, the one that is connected to your local network, or publicly.
 ```bash
-iifconfig
+ifconfig
 ```
 Then you should see something like this:
 ```
