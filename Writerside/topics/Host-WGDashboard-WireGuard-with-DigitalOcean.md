@@ -10,7 +10,7 @@ If you don't have a DigitalOcean account yet, you can click my referral button b
 
 ## Step 2: Create a WGDashboard Droplet
 
-<video src="https://www.youtube.com/watch?v=w4ENGn7RFlE"/>
+<video src="https://www.youtube.com/watch?v=VnTnLBq2cOI"/>
 
 
 1. After the registration process, head to [WGDashboard | DigitalOcean Marketplace](https://marketplace.digitalocean.com/apps/wgdashboard)
