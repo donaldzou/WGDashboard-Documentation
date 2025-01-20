@@ -149,7 +149,7 @@ Please make sure you understand these commands before you run them.
                rc-service networking --quiet start ; \
                apk update ; \
                apk add wireguard-tools python3 python3-dev git iptables net-tools gcc musl-dev linux-headers sudo ; \
-               git clone -b v4.0-alpine-linux https://github.com/donaldzou/WGDashboard.git ; \
+               git clone https://github.com/donaldzou/WGDashboard.git ; \
                cd ./WGDashboard/src ; \
                chmod +x ./wgd.sh ; \
                ./wgd.sh install
