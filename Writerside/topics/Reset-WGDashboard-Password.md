@@ -27,5 +27,6 @@ If you ever forgot your password WGDashboard, you can simply do the following:
 8. After signed in, head to **Settings > WGDashboard Settings > Account Settings** to update with your own password.
 
 <note>
-When editing <code>wg-dashboard.ini</code>, please be careful not to change/remove other settings. If you do please make sure you understand what you're doing, and create backups before any changes.
+When editing <code>wg-dashboard.ini</code>, please be careful not to change/remove other settings. 
+If you do please make sure you understand what you're doing, and create backups before any changes.
 </note>
