@@ -33,6 +33,7 @@
     <toc-element topic="Case-Study.md">
         <toc-element topic="Case-Study-1-Multi-Hop-Connection.md"/>
         <toc-element topic="Case-Study-1-1-Multi-Hop-and-Hop-Again-Connection.md"/>
+        <toc-element topic="Case-Study-2-Split-Tunnel-with-WireGuard.md"/>
     </toc-element>
     <toc-element topic="📖-API-Documentation.md">
         <toc-element topic="API-Endpoints.md">
