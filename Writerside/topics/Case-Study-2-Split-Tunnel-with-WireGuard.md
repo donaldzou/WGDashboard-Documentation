@@ -35,7 +35,7 @@ We will be using a web server to host the `.pac` file, any web server will be fi
 
 `http://192.168.31.65:8080/proxy.pac`
 
-```js
+```javascript
 function FindProxyForURL(url,host)
 {
     // Access the internet directly for one site
