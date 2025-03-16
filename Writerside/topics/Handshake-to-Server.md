@@ -1,6 +1,6 @@
 # Handshake to Server
 
-This endpoint is designed for a simple handshake when using API key to connect. If `status` is `true` that means
+This endpoint is designed for a simple handshake when using API key to connect.
 
 ## Request
 

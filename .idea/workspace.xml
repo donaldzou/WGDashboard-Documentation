@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/Case-Study-2-Split-Tunnel-with-WireGuard.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/api.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/ar.tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/swagger-api.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/api.json/API_Reference.topic" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/api.json/API_Reference2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/api.json/Handshake.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/api.json/Returns_a_list_of_users_.topic" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/wd.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/wd.tree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/cfg/ga.html" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/cfg/ga.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/redirection-rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/redirection-rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/Handshake-to-Server.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Handshake-to-Server.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/-Screenshot.md" beforePathEscaped="$PROJECT_DIR$/Writerside/topics/🔍-Screenshot.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/-Screenshot.md" afterPathEscaped="$PROJECT_DIR$/Writerside/topics/🔍-Screenshot.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +42,33 @@
   <component name="InstanceColorv3">
     <option name="map">
       <map>
+        <entry key="$PROJECT_DIR$/Writerside/ar.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="2" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="225" />
+                  <option name="darkBlue" value="225" />
+                  <option name="darkGreen" value="149" />
+                  <option name="darkRed" value="56" />
+                  <option name="green" value="149" />
+                  <option name="red" value="56" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="234" />
+                  <option name="darkBlue" value="234" />
+                  <option name="darkGreen" value="197" />
+                  <option name="darkRed" value="81" />
+                  <option name="green" value="197" />
+                  <option name="red" value="81" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Writerside/wd.tree">
           <value>
             <ColorState>
@@ -82,7 +119,7 @@
     "Writerside.Web Archive (wd).executor": "Run",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images",
-    "settings.editor.selected.configurable": "fileTemplates",
+    "settings.editor.selected.configurable": "settings.json.schema",
     "writerside.last.selected.productWGDashboard-Documentation": "wd"
   }
 }]]></component>
@@ -95,7 +132,7 @@
       <recent name="$PROJECT_DIR$/Writerside/images/case-study" />
     </key>
   </component>
-  <component name="RunManager" selected="Writerside.PDF (wd)">
+  <component name="RunManager" selected="Writerside.Web Archive (wd)">
     <configuration name="PDF (wd)" type="StardustRunConfiguration" factoryName="build-pdf">
       <option name="addCover" value="true" />
       <option name="copyright" />

@@ -31,4 +31,9 @@
         <social type="email" href="donaldzou@live.hk">Contact me through email</social>
         <social type="linkedin" href="https://www.linkedin.com/in/donaldzou/">LinkedIn</social>
     </footer>
+    <build-profile instance="ar">
+        <variables>
+            <noindex-content>true</noindex-content>
+        </variables>
+    </build-profile>
 </buildprofiles>
