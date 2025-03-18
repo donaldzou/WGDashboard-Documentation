@@ -21,14 +21,17 @@
             <a href="📝-Requirements.md" summary="Step 1 - Make sure your system meet the requirements"/>
             <a href="🛠-Install.md" summary="Step 2 - Now you can follow me to install WGDashboard"/>
             <a href="🪜-Usage.md" summary="Step 3 - Enjoy WGDashboard :)"/>
-            <a href="❓-Update.md" summary="Follow this instruction when you receive an update notification"/>
+            <a href="User-Guides.md" summary="User guides of WGDashboard"/>
         </primary>
         <secondary>
             <title>Know more about WGDashboard</title>
+            <a href="❓-Update.md" summary="Follow this instruction when you receive an update notification"/>
+            <a href="Frequently-Asked-Questions-FAQ.md" summary="Maybe you can find your answer here"/>
             <a href="✂️-Dashboard-Configuration.md" summary="Customize your WGDashboard"/>
             <a href="🐬-Docker-Solutions.md" summary="Customize your WGDashboard"/>
             <a href="📖-API-Documentation.md" summary="Want to integrate WGDashboard with other tools? Check this out!"/>
             <a href="🔍-Screenshot.md" summary="Take a peek of what WGDashboard looks like"/>
+            <a href="Case-Study.md" summary="Sometimes I will post some useful case study related to WireGuard and WGDashboard"/>
             <a href="Sponsors.md" summary="Thanks to our sponsors and people who love this project!"/>
             <a href="https://github.com/donaldzou/WGDashboard/issues/new/choose" summary="Click here to raise a GitHub ticket and I'll be on my way ;)">Need help?</a>
         </secondary>
