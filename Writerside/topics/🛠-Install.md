@@ -17,7 +17,7 @@ These commands are tested by myself in each operating system listed below. It co
 | Red Hat Enterprise Linux (RHEL) | 9.4                                          |
 | CentOS                          | 9-Stream                                     |
 | AlmaLinux                       | 9.4 (Seafoam Ocelot)                         |
-| Fedora                          | 38, 39, 40                                   |
+| Fedora                          | 38, 39, 40, 41                               |
 | Alpine Linux                    | 3.20.2                                       |
 | Rocky Linux                     | 9.4                                          |
 | Raspberry Pi OS                 | Kernel Version: 6.6 w/ Debian 12 (Bookworm)  |
@@ -140,7 +140,7 @@ Please make sure you understand these commands before you run them.
         </chapter>
    </tab>
    <tab title="Fedora">
-      <chapter title="38, 39, 40">
+      <chapter title="38, 39, 40, 41">
          <code-block lang="shell">
              sudo yum install wireguard-tools net-tools git -y && \
              git clone https://github.com/donaldzou/WGDashboard.git && \
@@ -148,10 +148,7 @@ Please make sure you understand these commands before you run them.
              chmod +x ./wgd.sh && \
              ./wgd.sh install && \
              sudo echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf && \
-             sudo sysctl -p /etc/sysctl.conf && \
-             firewall-cmd --add-port=10086/tcp --permanent && \
-             firewall-cmd --add-port=51820/udp --permanent && \
-             firewall-cmd --reload
+             sudo sysctl -p /etc/sysctl.conf
          </code-block>
       </chapter>
    </tab>
