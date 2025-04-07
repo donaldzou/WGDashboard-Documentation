@@ -40,6 +40,7 @@
             <toc-element topic="Handshake-to-Server.md"/>
             <toc-element topic="Validate-Authentication.md">
             </toc-element>
+            <toc-element topic="Require-Authentication.md"/>
             <toc-element topic="Authenticate.md"/>
             <toc-element topic="Sign-Out.md"/>
             <toc-element topic="Get-WGDashboard-Configuration.md"/>
@@ -48,12 +49,13 @@
             <toc-element topic="Get-WGDashboard-Update.md"/>
             <toc-element topic="Get-WireGuard-Configurations.md"/>
             <toc-element topic="Get-WireGuard-Configuration-Peers-Information.md"/>
+            <toc-element topic="Get-WireGuard-Configuration-Raw-File-Content.md"/>
+            <toc-element topic="Get-WireGuard-Configuration-Backup.md"/>
+            <toc-element topic="Get-All-WireGuard-Configuration-Backup.md"/>
             <toc-element topic="Add-WireGuard-Configuration.md"/>
             <toc-element topic="Toggle-WireGuard-Configuration.md"/>
             <toc-element topic="Update-WireGuard-Configuration.md"/>
             <toc-element topic="Delete-WireGuard-Configuration.md"/>
-            <toc-element topic="Get-WireGuard-Configuration-Backup.md"/>
-            <toc-element topic="Get-All-WireGuard-Configuration-Backup.md"/>
             <toc-element topic="Delete-WireGuard-Configuration-Backup.md"/>
             <toc-element topic="Get-WGDashboard-API-Keys.md"/>
             <toc-element topic="Add-WGDashboard-API-Key.md"/>

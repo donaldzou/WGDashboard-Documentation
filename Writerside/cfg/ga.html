@@ -42,7 +42,7 @@ function initGenAiChatbot() {
     STARTING_MESSAGE: "Hello! How can I help you today?",
     BUTTON_BACKGROUND_COLOR: "#ff875b",
     BUTTON_TEXT_COLOR: undefined,
-    RENDER_TARGET_ID: undefined,
+    RENDER_TARGET_ID: "",
   };
 
   // Inject config into iframe src
@@ -134,5 +134,17 @@ function initGenAiChatbot() {
 
 window.addEventListener("load", function(){
   initGenAiChatbot();
+	let img = document.createElement("img")
+	img.classList.add('toc-item')
+	img.style.paddingLeft = '16px'
+	img.src = 'https://hitscounter.dev/api/hit?url=https%3A%2F%2Fdonaldzou.dev%2FWGDashboard-Documentation&label=Visitor&icon=book-fill&color=%23ff6c52'
+	img.alt = 'Badge';
+  let a = document.createElement('a')
+	a.href = 'https://hitscounter.dev'
+	a.target = '_blank'
+	a.appendChild(img)
+  
+  let ele = document.querySelector('.toc')
+	ele.appendChild(a);
 })
 </script>
