@@ -7,9 +7,6 @@
     <section-starting-page>
         <title>
             🏠 Welcome to WGDashboard Documentation
-	        <card image="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/PoweredByDO/DO_Powered_by_Badge_blue.svg">
-		        Hi!
-	        </card>
         </title>
         <description>
             I'll be my best to keep this up-to-date :smile:
@@ -17,8 +14,8 @@
 	    
 
         <spotlight>
-	        <card href="Features.md" summary="What is WGDashboard?"/>
-	        <card href="overview.md" summary="Check out what's changed in the latest version"/>
+	        <a href="Features.md" summary="What is WGDashboard?"/>
+	        <a href="overview.md" summary="Check out what's changed in the latest version"/>
         </spotlight>
         <primary>
             <title>Get Started w/ Step 1, 2 and 3</title>
