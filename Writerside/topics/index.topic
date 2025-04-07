@@ -7,14 +7,18 @@
     <section-starting-page>
         <title>
             🏠 Welcome to WGDashboard Documentation
+	        <card image="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/PoweredByDO/DO_Powered_by_Badge_blue.svg">
+		        Hi!
+	        </card>
         </title>
         <description>
             I'll be my best to keep this up-to-date :smile:
         </description>
+	    
 
         <spotlight>
-            <a href="Features.md" summary="What is WGDashboard?"/>
-            <a href="overview.md" summary="Check out what's changed in the latest version" />
+	        <card href="Features.md" summary="What is WGDashboard?"/>
+	        <card href="overview.md" summary="Check out what's changed in the latest version"/>
         </spotlight>
         <primary>
             <title>Get Started w/ Step 1, 2 and 3</title>
@@ -35,6 +39,16 @@
             <a href="Sponsors.md" summary="Thanks to our sponsors and people who love this project!"/>
             <a href="https://github.com/donaldzou/WGDashboard/issues/new/choose" summary="Click here to raise a GitHub ticket and I'll be on my way ;)">Need help?</a>
         </secondary>
+	    <misc>
+		    <cards narrow="false">
+			    <card
+					   image="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" 
+					    href="https://www.digitalocean.com/">
+				    This project is supported by DigitalOcean
+			    </card>
+		    </cards>
+	    
+	    </misc>
     </section-starting-page>
 
 </topic>
