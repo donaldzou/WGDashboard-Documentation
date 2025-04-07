@@ -147,6 +147,18 @@ window.addEventListener("load", function(){
   let ele = document.querySelector('.toc')
 	ele.appendChild(a);
   
-	document.querySelector('img[src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg"]').style.padding = '2rem'
+    let e = document.querySelector('p[data-test="starting-page-subtitle"]')
+	
+	if (e){
+		e.parentElement.innerHTML = e.parentElement.innerHTML + `
+			<div style="margin-top: 2rem">
+				<hr>
+				<h1 style="font-size: 1.5rem !important; margin-bottom: 0.5rem">This project is supported by</h1>
+				 <a href="https://www.digitalocean.com/">
+				    <img alt="" src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="201px">
+				 </a>
+			</div>
+		`
+	}
 })
 </script>

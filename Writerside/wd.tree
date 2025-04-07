@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="wd"
-                 name="WGDashboard Documentation"
+                 name="WGDashboard"
                  start-page="index.topic">
 
     <toc-element topic="index.topic"/>
