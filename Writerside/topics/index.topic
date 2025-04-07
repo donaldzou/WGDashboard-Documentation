@@ -40,8 +40,13 @@
             <a href="https://github.com/donaldzou/WGDashboard/issues/new/choose" summary="Click here to raise a GitHub ticket and I'll be on my way ;)">Need help?</a>
         </secondary>
 	    <misc>
+		    
 		    <cards narrow="false">
+			    <title>
+				    Sponsors
+			    </title>
 			    <card
+					    summary="#DoforOpenSource"
 					   image="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" 
 					    href="https://www.digitalocean.com/">
 				    This project is supported by DigitalOcean
