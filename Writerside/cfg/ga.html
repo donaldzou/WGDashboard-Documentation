@@ -133,32 +133,71 @@ function initGenAiChatbot() {
 }
 
 window.addEventListener("load", function(){
-  initGenAiChatbot();
+	initGenAiChatbot();
 	let img = document.createElement("img")
 	img.classList.add('toc-item')
 	img.style.paddingLeft = '16px'
 	img.src = 'https://hitscounter.dev/api/hit?url=https%3A%2F%2Fdonaldzou.dev%2FWGDashboard-Documentation&label=Visitor&icon=book-fill&color=%23ff6c52'
 	img.alt = 'Badge';
-  let a = document.createElement('a')
+	let a = document.createElement('a')
 	a.href = 'https://hitscounter.dev'
 	a.target = '_blank'
 	a.appendChild(img)
-  
-  let ele = document.querySelector('.toc')
-	ele.appendChild(a);
-  
-    let e = document.querySelector('p[data-test="starting-page-subtitle"]')
 	
+	let ele = document.querySelector('.toc')
+	ele.appendChild(a);
+	
+	let e = document.querySelector('.wh-header__switchers');
+	let pageBadge = document.createElement("div");
+	pageBadge.style.display = 'flex'
+	pageBadge.style.marginRight = '1rem'
 	if (e){
-		e.parentElement.innerHTML = e.parentElement.innerHTML + `
-			<div style="margin-top: 2rem">
-				<hr>
-				<h1 style="font-size: 1.5rem !important; margin-bottom: 0.5rem">This project is supported by</h1>
-				 <a href="https://m.do.co/c/a84cb9aac585">
-				    <img alt="" src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="201px">
-				 </a>
-			</div>
-		`
+		e.parentElement.insertBefore(pageBadge, e);
 	}
+	
+	
+	let body = document.querySelector("body");
+	const config = { childList: true, subtree: true };
+	let currentUrl = "";
+	
+	let insertDOLogo = false;
+	let insertPageBadge = false;
+	
+	const callback = (mutationList, observer) => {
+		if (!window.location.href.includes(currentUrl) || !currentUrl){
+			console.log("URL Changed");
+			currentUrl = window.location.href;
+			insertDOLogo = false;
+			insertPageBadge = false;
+		}
+		
+		if (currentUrl.includes('index_topic.html')){
+			pageBadge.innerHTML = '';
+			if (!insertDOLogo){
+				let e = document.querySelector('p[data-test="starting-page-subtitle"]')
+				if (e){
+					e.parentElement.innerHTML += `
+						<div style="margin-top: 2rem">
+							<hr>
+							<h1 style="font-size: 1.5rem !important; margin-bottom: 0.5rem">This project is supported by</h1>
+							 <a href="https://m.do.co/c/a84cb9aac585">
+							    <img alt="" src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="201px">
+							 </a>
+						</div>
+					`;
+					insertDOLogo = true;
+				}
+			}
+		}else{
+			if (!insertPageBadge){
+				pageBadge.innerHTML = `
+					<img alt="Badge" src="https://hitscounter.dev/api/hit?url=${encodeURIComponent(window.location.href)}&label=Visits&icon=eye-fill&color=%231fbba1" />
+				`
+				insertPageBadge = true
+			}
+		}
+	};
+	const observer = new MutationObserver(callback);
+	observer.observe(body, config);
 })
 </script>
