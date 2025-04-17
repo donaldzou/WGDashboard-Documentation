@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,8 +128,7 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/overview.md&quot;,
-      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/📝-Requirements.md&quot;
+      &quot;/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/overview.md&quot;
     ]
   }
 }</component>
@@ -187,6 +184,7 @@
       <workItem from="1743964027717" duration="2632000" />
       <workItem from="1744010798780" duration="2409000" />
       <workItem from="1744014840271" duration="4664000" />
+      <workItem from="1744116937319" duration="4994000" />
     </task>
     <servers />
   </component>

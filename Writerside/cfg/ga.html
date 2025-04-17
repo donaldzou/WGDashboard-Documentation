@@ -191,7 +191,8 @@ window.addEventListener("load", function(){
 		}else{
 			if (!insertPageBadge){
 				pageBadge.innerHTML = `
-					<img alt="Badge" src="https://hitscounter.dev/api/hit?url=${encodeURIComponent(window.location.href)}&label=Visits&icon=eye-fill&color=%231fbba1" />
+					<a href="https://hitscounter.dev">
+					<img alt="Badge" src="https://hitscounter.dev/api/hit?url=${encodeURIComponent(window.location.href)}&label=Visits&icon=eye-fill&color=%231fbba1" /></a>
 				`
 				insertPageBadge = true
 			}
