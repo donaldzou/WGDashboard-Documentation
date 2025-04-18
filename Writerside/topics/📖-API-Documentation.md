@@ -59,8 +59,3 @@ There are 2 types of URL format
 2. Regular URL with a parameter in the path
    	- For example: `/api/deletePeers/<configName>`.
 	- **Currently, `configName` is the only URL parameter. To use it, simply replace it with an existing WireGuard configuration name. Such as `wg0`**
-
-
-## Now you're ready
-
-Please visit this page for details of [](API-Endpoints.md)

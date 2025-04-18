@@ -21,6 +21,7 @@
         <toc-element topic="Add-WireGuard-Configuration-Guide.md"/>
         <toc-element topic="Add-WireGuard-Configuration-Peers-Guide.md"/>
         <toc-element topic="Reset-WGDashboard-Password.md"/>
+        <toc-element topic="Email-Service.md"/>
     </toc-element>
     <toc-element topic="Frequently-Asked-Questions-FAQ.md">
         <toc-element topic="WireGuard-Configuration-Examples.md"/>
@@ -36,6 +37,7 @@
         <toc-element topic="Case-Study-2-Split-Tunnel-with-WireGuard.md"/>
     </toc-element>
     <toc-element topic="📖-API-Documentation.md">
+        <toc-element topic="Endpoints.md"/>
         <toc-element topic="API-Endpoints.md">
             <toc-element topic="Handshake-to-Server.md"/>
             <toc-element topic="Validate-Authentication.md">
