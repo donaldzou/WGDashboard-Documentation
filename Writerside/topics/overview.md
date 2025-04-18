@@ -1,7 +1,6 @@
 # 📣 What's New: v4.1
 
 <video src="https://www.youtube.com/watch?v=0mwzd5Gr2eU"/>
-
 ## 🎉 New Features
 - **Multi-Language Support**: Now WGDashboard support the following languages on its user interface, big thanks to our user's contribution!
   - **Chinese Traditional**

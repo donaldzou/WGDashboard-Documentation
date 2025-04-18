@@ -11,10 +11,9 @@
         <description>
             I'll be my best to keep this up-to-date :smile:
         </description>
-
         <spotlight>
-            <a href="Features.md" summary="What is WGDashboard?"/>
-            <a href="overview.md" summary="Check out what's changed in the latest version" />
+	        <a href="Features.md" summary="What is WGDashboard?"/>
+	        <a href="overview.md" summary="Check out what's changed in the latest version"/>
         </spotlight>
         <primary>
             <title>Get Started w/ Step 1, 2 and 3</title>
@@ -32,9 +31,8 @@
             <a href="📖-API-Documentation.md" summary="Want to integrate WGDashboard with other tools? Check this out!"/>
             <a href="🔍-Screenshot.md" summary="Take a peek of what WGDashboard looks like"/>
             <a href="Case-Study.md" summary="Sometimes I will post some useful case study related to WireGuard and WGDashboard"/>
-            <a href="Sponsors.md" summary="Thanks to our sponsors and people who love this project!"/>
-            <a href="https://github.com/donaldzou/WGDashboard/issues/new/choose" summary="Click here to raise a GitHub ticket and I'll be on my way ;)">Need help?</a>
+	        <a href="https://github.com/donaldzou/WGDashboard/issues/new/choose" summary="Click here to raise a GitHub ticket and I'll be on my way ;)">Need help?</a>
+	        <a href="Sponsors.md" summary="Thanks to our sponsors and people who love this project!"/>
         </secondary>
     </section-starting-page>
-
 </topic>

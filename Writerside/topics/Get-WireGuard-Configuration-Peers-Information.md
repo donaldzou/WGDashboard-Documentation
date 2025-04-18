@@ -10,7 +10,7 @@
 |---------------------|--------|
 | `configurationName` | string |
 
-### Response
+## Response
 
 `200 - OK`
 
