@@ -1,47 +1,39 @@
-# 📣 What's New: v4.1
+# 📣 What's New: v4.2.0
 
 <video src="https://www.youtube.com/watch?v=0mwzd5Gr2eU"/>
+
 ## 🎉 New Features
-- **Multi-Language Support**: Now WGDashboard support the following languages on its user interface, big thanks to our user's contribution!
-  - **Chinese Traditional**
-  - **Chinese Simplified**
-  - **Czech** (@jursed)
-  - **Dutch** (@DaanSelen)
-  - **English**
-  - **German** (@orangeferdi)
-  - **Italian** (@3vis97)
-  - **Russian** (Pixnet)
-  - **Ukrainian** (@shuricksumy)
-
-> If you would like to contribute, please follow the instructions on [Localization of WGDashboard](https://github.com/donaldzou/WGDashboard/issues/397). Thanks in advance!
-
-- **Backup & Restore WireGuard Configurations**: Now you can back up your configurations, restore it after a change made to the configuration. **You can also restore it even after deletion.**
-- **Delete & Rename WireGuard Configuration:** Now you can delete and rename configuration within WGDashboard
-- **Toggle WireGuard Configuration After Startup:** Now you can set WireGuard configurations to be turned on after starting WGDashboard in **Settings**
-- **Delete & Download Peers in bulk**
-- **Frontend Display of Peer's Configuration File**
-- **Added Support on AlmaLinux and Pi OS**
-- **Added OpenStreetMap on Ping and Traceroute Tool**
+- Since the release of v4.1.0, there are more display languages added by our beloved contributors, and now we have **20** display languages!
+    - New display languages:
+        - **Arabic** from [@sobhydo](https://github.com/sobhydo)
+        - **Belarusian** from [@Bardatsky](https://github.com/Bardatsky)
+        - **Farsi** from [@mahdiMGF2](https://github.com/mahdiMGF2)
+        - **Japanese** from [@Jumala9163](https://github.com/Jumala9163)
+        - **Korean** from [@wdk-kr](https://github.com/wdk-kr)
+        - **Thai** from [@karorogunso](https://github.com/karorogunso)
+    > If you would like to contribute, please follow the instructions on [Localization of WGDashboard](https://github.com/donaldzou/WGDashboard/issues/397). Thanks in advance!
+- **Support AmneziaWG**: Tested with Kernel Version on Ubuntu 22.04 and Go Version on Docker
+- **Edit Raw WireGuard Configuration**: You can now edit the configuration file directly from WGDashboard
+- **System Status**: You're now able to view your system's CPU / Memory / Disk / Network usage
+- **Share Peer w/ Email**: You're now able to connect your email account via SMTP to WGDashboard, visit [](Email-Service.md) for more information
+- **Upload Existing Configuration**: You can now upload a `.conf` when creating your configuration
+- **Download Backup**
 
 ## 🛠️ Some Adjustments
-- **Updated Docker configuration**
-- **Updates on API endpoints**
+- Added support to Ubuntu 24.10
 - UI Adjustments
-- Added version number in navbar
-- Added WGDashboard host and port settings
-- Added peer delete confirmation
-- Added domain support in DNS field for peers
+  - Added Peer's endpoint back to the UI
+  - Added tooltips to Peer's dropdown
+  - Added dismiss to notification
+- API Adjustment: From now on, API Documentation will be hosted on Postman.
+  - Adding Peer: It will now generate key / IP address if not provided
+- Dropping `ifcfg`
 
 ## 🧐 Bugs Fixed
-- Mobile UI issues in #353
-- Removed WireGuard configuration error alert from Gunicorn start in #328
-- Sometimes restrict peer might not be success in #357
-- Weird SQLite error causing WGDashboard to crash in #366
+- `auth_req` is not working [#522](https://github.com/donaldzou/WGDashboard/issues/522)
+- Accept duplicate entry in WireGuard Configuration due to WireGuard edit the file [#497](https://github.com/donaldzou/WGDashboard/issues/497)
+- Backup peers [#332](https://github.com/donaldzou/WGDashboard/issues/322)
+- When using `%i` in Post/Pre script will cause Python error [#493](https://github.com/donaldzou/WGDashboard/issues/493)
+- And many other bugs...
 
-## 🗂️ User Guides
-Will continue to finish the [](User-Guides.md) sections
-
-## 🥘 Experimental Features
-- **Cross-Server Access**: Now you can access other servers that installed `v4` of WGDashboard through API key.
-- **Desktop App**: Thanks to **Cross-Server Access**, you can now download an ElectronJS based desktop app of WGDashboard, and use that to access WGDashboard on different servers.
-> For more information, please visit [](🥘-Experimental-Features.md)
+> I'm planning to take things slow after this update, to think about what's the future about this project and try to make it as stable as possible, while keeping it **simple**.

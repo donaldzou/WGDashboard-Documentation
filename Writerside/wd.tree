@@ -8,7 +8,9 @@
 
     <toc-element topic="index.topic"/>
     <toc-element topic="overview.md"/>
-    <toc-element topic="Features.md"/>
+    <toc-element topic="Features.md">
+        <toc-element topic="Change-Language.md"/>
+    </toc-element>
     <toc-element topic="📝-Requirements.md"/>
     <toc-element topic="🛠-Install.md">
         <toc-element topic="Host-WGDashboard-WireGuard-with-DigitalOcean.md"/>
@@ -82,6 +84,11 @@
     </toc-element>
     <toc-element topic="🔍-Screenshot.md"/>
     <toc-element topic="🕰️-Changelogs.md">
+        <toc-element topic="v4-1-4.md"/>
+        <toc-element topic="v4-1-3.md"/>
+        <toc-element topic="v4-1-2.md"/>
+        <toc-element topic="v4-1-1.md"/>
+        <toc-element topic="v4-1-0.md"/>
         <toc-element topic="v4-0-4.md"/>
         <toc-element topic="v4-0-3.md"/>
         <toc-element topic="v4-0-2.md"/>
