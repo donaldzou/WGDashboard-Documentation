@@ -2,7 +2,7 @@
 
 To add a peer, simply click "+ Peer" button in your configuration
 
-![add-peers-button.png](../images/user-guides/add-peers-button.png)
+![add-peers-button.png](https://wgdashboard-resources.tor1.cdn.digitaloceanspaces.com/Documentation%20Images/user-guides/add-peers-button.png)
 
 Once you clicked the button, you will see a form similar to adding a configuration, and will need to input the following fields.
 

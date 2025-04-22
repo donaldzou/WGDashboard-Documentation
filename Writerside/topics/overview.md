@@ -1,6 +1,6 @@
 # 📣 What's New: v4.2.0
 
-<video src="https://www.youtube.com/watch?v=0mwzd5Gr2eU"/>
+<img src="https://wgdashboard-resources.tor1.cdn.digitaloceanspaces.com/Releases/v4.2.0.png" style="block">
 
 ## 🎉 New Features
 - Since the release of v4.1.0, there are more display languages added by our beloved contributors, and now we have **20** display languages!

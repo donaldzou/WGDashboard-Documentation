@@ -4,7 +4,7 @@
 
 Client located in Hong Kong can only connect to a Hong Kong Server via WireGuard, but needed to route the traffic to their US Server.
 
-<img src="2-hop.png" alt="" />
+<img src="https://wgdashboard-resources.tor1.cdn.digitaloceanspaces.com/Documentation%20Images/case-study/2-hop.png" alt="" />
 
 ## Solution
 
