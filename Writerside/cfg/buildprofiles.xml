@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE buildprofiles SYSTEM "https://resources.jetbrains.com/writerside/1.0/build-profiles.dtd">
-<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd" 
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <variables>
         <header-logo>
-            favicon.png
+            https://wgdashboard-resources.tor1.cdn.digitaloceanspaces.com/Logos/Logo-2-Rounded-512x512.png
         </header-logo>
-
         <custom-favicons>
-            favicon.png
+            https://wgdashboard-resources.tor1.cdn.digitaloceanspaces.com/Logos/Logo-2-128x128.png
         </custom-favicons>
-        <analytics-head-script-file>
-            ga.html
-        </analytics-head-script-file>
+        
+        <analytics-head-script-file>ga.html</analytics-head-script-file>
         <algolia-id>I5B701TD0E</algolia-id>
         <algolia-index>wgdashboard_doc_index</algolia-index>
         <noindex-content>false</noindex-content>
@@ -24,16 +22,11 @@
         <variables>
             <noindex-content>false</noindex-content>
         </variables>
-        <sitemap priority="1" change-frequency="daily"/>
+        <sitemap priority="1" change-frequency="daily" />
     </build-profile>
     <footer>
         <copyright>2021 - 2024 Donald Zou</copyright>
         <social type="email" href="donaldzou@live.hk">Contact me through email</social>
         <social type="linkedin" href="https://www.linkedin.com/in/donaldzou/">LinkedIn</social>
     </footer>
-    <build-profile instance="ar">
-        <variables>
-            <noindex-content>true</noindex-content>
-        </variables>
-    </build-profile>
 </buildprofiles>

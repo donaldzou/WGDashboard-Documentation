@@ -2,7 +2,7 @@
 
 To add a new WireGuard Configuration, simply click the big "+" button on the top right of the Home page
 
-![add-configuration-button.png](../images/user-guides/add-configuration-button.png)
+![add-configuration-button.png](https://wgdashboard-resources.tor1.cdn.digitaloceanspaces.com/Documentation%20Images/user-guides/add-configuration-button.png)
 
 Then you will see a form, with the following fields need to input. Specifications came from [Some Unofficial WireGuard Documentation](https://github.com/pirate/wireguard-docs)
 

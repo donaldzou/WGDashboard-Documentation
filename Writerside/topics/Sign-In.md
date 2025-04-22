@@ -4,6 +4,6 @@ To sign in to WGDashboard, enter the username in the **Username** field, passwor
 
 > By default, both **Username** and **Password** is `admin`
 
-![](../images/user-guides/sign-in.png)
+![](https://wgdashboard-resources.tor1.cdn.digitaloceanspaces.com/Documentation%20Images/user-guides/sign-in.png)
 
 

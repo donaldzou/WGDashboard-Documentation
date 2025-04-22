@@ -8,7 +8,9 @@
 
     <toc-element topic="index.topic"/>
     <toc-element topic="overview.md"/>
-    <toc-element topic="Features.md"/>
+    <toc-element topic="Features.md">
+        <toc-element topic="Change-Language.md"/>
+    </toc-element>
     <toc-element topic="📝-Requirements.md"/>
     <toc-element topic="🛠-Install.md">
         <toc-element topic="Host-WGDashboard-WireGuard-with-DigitalOcean.md"/>
@@ -21,6 +23,7 @@
         <toc-element topic="Add-WireGuard-Configuration-Guide.md"/>
         <toc-element topic="Add-WireGuard-Configuration-Peers-Guide.md"/>
         <toc-element topic="Reset-WGDashboard-Password.md"/>
+        <toc-element topic="Email-Service.md"/>
     </toc-element>
     <toc-element topic="Frequently-Asked-Questions-FAQ.md">
         <toc-element topic="WireGuard-Configuration-Examples.md"/>
@@ -36,6 +39,7 @@
         <toc-element topic="Case-Study-2-Split-Tunnel-with-WireGuard.md"/>
     </toc-element>
     <toc-element topic="📖-API-Documentation.md">
+        <toc-element topic="Endpoints.md"/>
         <toc-element topic="API-Endpoints.md">
             <toc-element topic="Handshake-to-Server.md"/>
             <toc-element topic="Validate-Authentication.md">
@@ -80,6 +84,11 @@
     </toc-element>
     <toc-element topic="🔍-Screenshot.md"/>
     <toc-element topic="🕰️-Changelogs.md">
+        <toc-element topic="v4-1-4.md"/>
+        <toc-element topic="v4-1-3.md"/>
+        <toc-element topic="v4-1-2.md"/>
+        <toc-element topic="v4-1-1.md"/>
+        <toc-element topic="v4-1-0.md"/>
         <toc-element topic="v4-0-4.md"/>
         <toc-element topic="v4-0-3.md"/>
         <toc-element topic="v4-0-2.md"/>

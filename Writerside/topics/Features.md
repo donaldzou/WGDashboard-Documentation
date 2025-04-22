@@ -1,6 +1,7 @@
 # 💡 Features
 
-<video src="https://www.youtube.com/watch?v=0mwzd5Gr2eU"/>
+<inline-frame width="100%" height="500px" src="https://www.youtube.com/embed/0mwzd5Gr2eU?si=RNqfYD6nZxn0GkDP"/>
+
 
 - Automatically look for existing WireGuard configuration under `/etc/wireguard`
 - Easy to use interface, provided credential and TOTP protection to the dashboard
@@ -13,3 +14,4 @@
     - Schedule jobs to delete / restrict peer when conditions are met
 - View real time peer status
 - Testing tool: Ping and Traceroute to your peer
+- [](Change-Language.md)
