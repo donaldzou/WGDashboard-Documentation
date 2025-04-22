@@ -78,7 +78,7 @@ The template utilize the Jinja template engine to generate an HTML body for your
   
 So if I have the following template
 
-```plain text
+```
 Hi,
 
 Your WireGuard configuration is ready with the name "{{ peer.name }}", and its allowed IP address is: {{ peer.allowed_ip }}.
@@ -97,7 +97,7 @@ Donald Zou
 
 The result will be like this:
 
-```Plain Text
+```
 Hi,
 
 Your WireGuard configuration is ready with the name "", and its allowed IP address is: 10.0.0.3/32, 2001:db8:64:49::3/128.
