@@ -13,6 +13,7 @@
         - **Thai** from [@karorogunso](https://github.com/karorogunso)
     > If you would like to contribute, please follow the instructions on [Localization of WGDashboard](https://github.com/donaldzou/WGDashboard/issues/397). Thanks in advance!
 - **Support AmneziaWG**: Tested with Kernel Version on Ubuntu 22.04 and Go Version on Docker
+  - **Note**: You'll need to install AWG on your own since it does not have a unified install method liek WG. Follow this [link](https://github.com/amnezia-vpn/amneziawg-linux-kernel-module) for more information.
 - **Edit Raw WireGuard Configuration**: You can now edit the configuration file directly from WGDashboard
 - **System Status**: You're now able to view your system's CPU / Memory / Disk / Network usage
 - **Share Peer w/ Email**: You're now able to connect your email account via SMTP to WGDashboard, visit [](Email-Service.md) for more information
