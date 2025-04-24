@@ -16,7 +16,8 @@
 	        <a href="overview.md" summary="Check out what's changed in the latest version"/>
         </spotlight>
         <primary>
-            <title>Get Started w/ Step 1, 2 and 3</title>
+            <title>Demo &amp; Get Started w/ Step 1, 2 and 3</title>
+	        <a href="Demo.md" summary="Try out WGDashboard before install"/>
             <a href="📝-Requirements.md" summary="Step 1 - Make sure your system meet the requirements"/>
             <a href="🛠-Install.md" summary="Step 2 - Now you can follow me to install WGDashboard"/>
             <a href="🪜-Usage.md" summary="Step 3 - Enjoy WGDashboard :)"/>
