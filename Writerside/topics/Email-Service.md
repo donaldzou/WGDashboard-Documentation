@@ -6,12 +6,16 @@ Starting v4.2.0, you'll be able to share your peers with email. To enable it, si
 
 1. Scroll down to the **Email Account** section
 2. Fill in the following fields
-   1. Server
-   2. Port
-   3. Encryption
-   4. Username (Your email address)
-   5. Password
-   6. Send From
+
+    | Field      | Example                                                                                                             |
+    |------------|---------------------------------------------------------------------------------------------------------------------|
+    | Server     | `smtp.qq.com`                                                                                                       |
+    | Port       | `567`                                                                                                               |
+    | Encryption |                                                                                                                     |
+    | Username   | `example@qq.com` or `username` from your mail service provider                                                      |
+    | Password   |                                                                                                                     |
+    | Send From  | Email address you want to send from: `example@qq.com`. Or if you want a name with it: `Donald Zou <example@qq.com>` |
+
 3. Once everything is filled, you should see a green **Ready** top right of the form
 4. Try to send a test email and see if everything works.
 5. If yes, you can start editing the **Email Body Template**! Please read the following paragraph for more information.
