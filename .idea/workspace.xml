@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages">
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/Case-Study-2-Split-Tunnel-with-WireGuard.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/wd.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/wd.tree" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,14 +22,53 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="openbsd-support" />
+        <entry key="$PROJECT_DIR$" value="v4.2-dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;donaldzou&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/donaldzou/WGDashboard-Documentation.git&quot;,
+    &quot;accountId&quot;: &quot;baa8db9c-ddc6-4e3b-bf21-c95d6ebf890c&quot;
+  }
+}</component>
   <component name="InstanceColorv3">
     <option name="map">
       <map>
+        <entry key="$PROJECT_DIR$/Writerside/ar.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="2" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="225" />
+                  <option name="darkBlue" value="225" />
+                  <option name="darkGreen" value="149" />
+                  <option name="darkRed" value="56" />
+                  <option name="green" value="149" />
+                  <option name="red" value="56" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="234" />
+                  <option name="darkBlue" value="234" />
+                  <option name="darkGreen" value="197" />
+                  <option name="darkRed" value="81" />
+                  <option name="green" value="197" />
+                  <option name="red" value="81" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Writerside/wd.tree">
           <value>
             <ColorState>
@@ -82,8 +119,45 @@
     "Writerside.Web Archive (wd).executor": "Run",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/images",
-    "settings.editor.selected.configurable": "fileTemplates",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.json.schema",
+    "vue.rearranger.settings.migration": "true",
     "writerside.last.selected.productWGDashboard-Documentation": "wd"
+  },
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Access-Remote-Server.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Add-WireGuard-Configuration-Guide.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Add-WireGuard-Configuration-Peers-Guide.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Case-Study-1-1-Multi-Hop-and-Hop-Again-Connection.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Case-Study-1-Multi-Hop-Connection.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Case-Study-2-Split-Tunnel-with-WireGuard.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Demo.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Email-Service.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Endpoints.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Features.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Frequently-Asked-Questions-FAQ.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Reset-WGDashboard-Password.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Run-WGDashboard-as-a-System-Service.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Sign-In.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/Use-SSL-TLS-with-WGDashboard.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/User-Guides.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/What-is-WireGuard-What-is-WGDashboard.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/WireGuard-Configuration-Examples.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/overview.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/✂️-Dashboard-Configuration.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/❓-Update.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/🐬-Docker-Solutions.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/📖-API-Documentation.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/🔍-Screenshot.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/🛠-Install.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/🥘-Experimental-Features.md",
+      "/Users/donaldzou/OneDrive/UWO/WGDashboard-Documentation/Writerside/topics/🪜-Usage.md"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -95,7 +169,7 @@
       <recent name="$PROJECT_DIR$/Writerside/images/case-study" />
     </key>
   </component>
-  <component name="RunManager" selected="Writerside.PDF (wd)">
+  <component name="RunManager" selected="Writerside.Web Archive (wd)">
     <configuration name="PDF (wd)" type="StardustRunConfiguration" factoryName="build-pdf">
       <option name="addCover" value="true" />
       <option name="copyright" />
@@ -117,7 +191,40 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-PY-243.23654.177" />
+        <option value="bundled-python-sdk-91d3a02ef49d-43b77aa2d136-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.23654.177" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32bed0ad-2b71-4d1a-8277-d63a8faa5c1b" name="Changes" comment="Added languages" />
+      <created>1742630032970</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742630032970</updated>
+      <workItem from="1742630034111" duration="5060000" />
+      <workItem from="1743840384894" duration="652000" />
+      <workItem from="1743964027717" duration="2632000" />
+      <workItem from="1744010798780" duration="2409000" />
+      <workItem from="1744014840271" duration="4664000" />
+      <workItem from="1744116937319" duration="4994000" />
+      <workItem from="1745555726155" duration="3000" />
+      <workItem from="1745566549453" duration="409000" />
+      <workItem from="1745567006774" duration="4000" />
+      <workItem from="1747471455268" duration="11000" />
+      <workItem from="1747808943381" duration="3000" />
+      <workItem from="1747821763442" duration="1976000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update workflow" />
     <MESSAGE value="Upload images" />

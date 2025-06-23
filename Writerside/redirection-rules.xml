@@ -44,4 +44,24 @@
         </description>
         <accepts>Add-WireGuard-Configuration-Guide.html</accepts>
     </rule>
+    <rule id="4bc44f86">
+        <description>Created after removal of "Empty MD Topic" from WGDashboard Documentation</description>
+        <accepts>Empty-MD-Topic.html</accepts>
+    </rule>
+    <rule id="5b7073c5">
+        <description>Created after removal of "API Reference" from WGDashboard Documentation</description>
+        <accepts>API_Reference.html</accepts>
+    </rule>
+    <rule id="5067c50d">
+        <description>Created after removal of "Handshake" from WGDashboard Documentation</description>
+        <accepts>Handshake.html</accepts>
+    </rule>
+    <rule id="3a4b5167">
+        <description>Created after removal of "API Reference" from WGDashboard Documentation</description>
+        <accepts>API_Reference2.html</accepts>
+    </rule>
+    <rule id="35cc3b84">
+        <description>Created after removal of "New Endpoint" from WGDashboard Documentation</description>
+        <accepts>New-Endpoint.html</accepts>
+    </rule>
 </rules>

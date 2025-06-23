@@ -1,14 +1,31 @@
 # 🛠 Install
 
-## Host WGDashboard & WireGuard with DigitalOcean
+> **For AmneziaWG Users**
+> 
+> Starting from v4.2.0, WGDashboard support AmneziaWG, but since it has completely installation method than WireGuard, we decided **not to include** in our installation described below, you'll need to follow the AmneziaWG official documentation to install: [Link](https://github.com/amnezia-vpn/amneziawg-linux-kernel-module)
 
-WGDashboard is now available as a **1-Click** app on DigitalOcean! 
+There are 4 options to install WGDashboard
 
-[Instruction to host](Host-WGDashboard-WireGuard-with-DigitalOcean.md)
+## Option 1: Host WGDashboard & WireGuard with DigitalOcean
 
-## Commands to install WGDashboard
+WGDashboard is now available as a **1-Click** app on DigitalOcean! **[Follow this instruction to host](Host-WGDashboard-WireGuard-with-DigitalOcean.md)**
 
-These commands are tested by myself in each OS. It contains commands to install WireGuard, Git, Net Tools, and even Python on some OS.
+## Option 2: Install WGDashboard with a command
+
+These commands are tested by myself in each operating system listed below. It contains commands to install WireGuard, Git, Net Tools, and even Python on some OS.
+
+| Operating System                | Version(s)                                   |
+|---------------------------------|----------------------------------------------|
+| Ubuntu                          | 20.04 (LTS), 22.04 (LTS), 24.04 (LTS), 24.10 |
+| Debian                          | 12.6, 11.10                                  |
+| Red Hat Enterprise Linux (RHEL) | 9.4                                          |
+| CentOS                          | 9-Stream                                     |
+| AlmaLinux                       | 9.4 (Seafoam Ocelot)                         |
+| Fedora                          | 38, 39, 40, 41                               |
+| Alpine Linux                    | 3.20.2                                       |
+| Rocky Linux                     | 9.4                                          |
+| Raspberry Pi OS                 | Kernel Version: 6.6 w/ Debian 12 (Bookworm)  |
+
 
 <warning>
 Please make sure you understand these commands before you run them.
@@ -16,7 +33,7 @@ Please make sure you understand these commands before you run them.
 
 <tabs>
    <tab title="Ubuntu">
-      <chapter title="20.04 LTS">
+      <chapter title="20.04 (LTS)">
          <code-block lang="shell">
              sudo add-apt-repository ppa:deadsnakes/ppa -y && \
              sudo apt-get update -y && \
@@ -29,7 +46,7 @@ Please make sure you understand these commands before you run them.
              sudo sysctl -p
          </code-block>
       </chapter>
-      <chapter title="22.04 LTS and 24.02 LTS">
+      <chapter title="22.04 (LTS), 24.04 (LTS) and 24.10">
          <code-block lang="shell">
              sudo apt-get update -y && \
              sudo apt install wireguard-tools net-tools --no-install-recommends -y && \
@@ -127,22 +144,19 @@ Please make sure you understand these commands before you run them.
         </chapter>
    </tab>
    <tab title="Fedora">
-   <chapter title="40, 39 and 38">
-      <code-block lang="shell">
-          sudo yum install wireguard-tools net-tools git -y && \
-          git clone https://github.com/donaldzou/WGDashboard.git && \
-          cd ./WGDashboard/src && \
-          chmod +x ./wgd.sh && \
-          ./wgd.sh install && \
-          sudo echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf && \
-          sudo sysctl -p /etc/sysctl.conf && \
-          firewall-cmd --add-port=10086/tcp --permanent && \
-          firewall-cmd --add-port=51820/udp --permanent && \
-          firewall-cmd --reload
-      </code-block>
-   </chapter>
+      <chapter title="38, 39, 40, 41">
+         <code-block lang="shell">
+             sudo yum install wireguard-tools net-tools git -y && \
+             git clone https://github.com/donaldzou/WGDashboard.git && \
+             cd ./WGDashboard/src && \
+             chmod +x ./wgd.sh && \
+             ./wgd.sh install && \
+             sudo echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf && \
+             sudo sysctl -p /etc/sysctl.conf
+         </code-block>
+      </chapter>
    </tab>
-    <tab title="Alpine Linux">
+   <tab title="Alpine Linux">
 		<chapter title="3.20.2">
 			<code-block lang="shell">
                setup-interfaces -a ; \
@@ -190,12 +204,12 @@ Please make sure you understand these commands before you run them.
    </tab>
 </tabs>
 
-## For Proxmox Virtual Environment
+## Option 3: Install with Proxmox Virtual Environment
 
 Please visit this [community script](https://community-scripts.github.io/ProxmoxVE/scripts?id=wireguard) to install.
 
 
-## Manually install WGDashboard
+## Option 4: Manually install WGDashboard
 
 > To ensure a smooth installation process, please make sure you have the following installed:
 > - Python 3.10 or above

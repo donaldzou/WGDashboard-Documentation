@@ -1,20 +1,19 @@
 # Access Remote Server
 
-![access-remote-server.png](../images/user-guides/access-remote-server.png)
+<img src="https://wgdashboard-resources.tor1.cdn.digitaloceanspaces.com/Documentation%20Images/user-guides/access-remote-server.png" style="block" alt=""/>
 
 ## Enable
 
 To access remote server, simply toggle the **switch** under **Sign In** button in the [](Sign-In.md) page
 
-<video src="../images/user-guides/enable-access-remote-server.mp4" 
+<video src="https://wgdashboard-resources.tor1.cdn.digitaloceanspaces.com/Documentation%20Images/user-guides/enable-access-remote-server.mp4" 
 preview-src="../images/user-guides/sign-in.png"/>
 
 ## Add Remote Server
 
 To add remote server, simply toggle the switch, click **+ Server** button, fill in the address and API Key.
 
-<video src="../images/user-guides/add-remote-server.mp4" 
-preview-src="../images/user-guides/sign-in.png"/>
+<video src="https://wgdashboard-resources.tor1.cdn.digitaloceanspaces.com/Documentation%20Images/user-guides/add-remote-server.mp4" preview-src="../images/user-guides/sign-in.png"/>
 
 ### Enter Remote Server
 

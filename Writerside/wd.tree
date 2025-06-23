@@ -3,17 +3,24 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="wd"
-                 name="WGDashboard Documentation"
+                 name="WGDashboard"
                  start-page="index.topic">
 
     <toc-element topic="index.topic"/>
     <toc-element topic="overview.md"/>
-    <toc-element topic="Features.md"/>
+    <toc-element topic="Features.md">
+        <toc-element topic="Change-Language.md"/>
+    </toc-element>
+    <toc-element topic="Demo.md"/>
     <toc-element topic="📝-Requirements.md"/>
     <toc-element topic="🛠-Install.md">
         <toc-element topic="Host-WGDashboard-WireGuard-with-DigitalOcean.md"/>
     </toc-element>
-    <toc-element topic="🪜-Usage.md"/>
+    <toc-element topic="🪜-Usage.md">
+        <toc-element topic="Run-WGDashboard-as-a-System-Service.md"/>
+        <toc-element topic="Use-SSL-TLS-with-WGDashboard.md"/>
+    </toc-element>
+    <toc-element topic="❓-Update.md"/>
     <toc-element topic="User-Guides.md">
         <toc-element topic="Sign-In.md">
         </toc-element>
@@ -21,13 +28,13 @@
         <toc-element topic="Add-WireGuard-Configuration-Guide.md"/>
         <toc-element topic="Add-WireGuard-Configuration-Peers-Guide.md"/>
         <toc-element topic="Reset-WGDashboard-Password.md"/>
+        <toc-element topic="Email-Service.md"/>
     </toc-element>
     <toc-element topic="Frequently-Asked-Questions-FAQ.md">
         <toc-element topic="WireGuard-Configuration-Examples.md"/>
         <toc-element topic="What-is-WireGuard-What-is-WGDashboard.md"/>
     </toc-element>
     <toc-element topic="✂️-Dashboard-Configuration.md"/>
-    <toc-element topic="❓-Update.md"/>
     <toc-element topic="🐬-Docker-Solutions.md"/>
     <toc-element topic="🥘-Experimental-Features.md"/>
     <toc-element topic="Case-Study.md">
@@ -36,10 +43,12 @@
         <toc-element topic="Case-Study-2-Split-Tunnel-with-WireGuard.md"/>
     </toc-element>
     <toc-element topic="📖-API-Documentation.md">
+        <toc-element topic="Endpoints.md"/>
         <toc-element topic="API-Endpoints.md">
             <toc-element topic="Handshake-to-Server.md"/>
             <toc-element topic="Validate-Authentication.md">
             </toc-element>
+            <toc-element topic="Require-Authentication.md"/>
             <toc-element topic="Authenticate.md"/>
             <toc-element topic="Sign-Out.md"/>
             <toc-element topic="Get-WGDashboard-Configuration.md"/>
@@ -48,12 +57,13 @@
             <toc-element topic="Get-WGDashboard-Update.md"/>
             <toc-element topic="Get-WireGuard-Configurations.md"/>
             <toc-element topic="Get-WireGuard-Configuration-Peers-Information.md"/>
+            <toc-element topic="Get-WireGuard-Configuration-Raw-File-Content.md"/>
+            <toc-element topic="Get-WireGuard-Configuration-Backup.md"/>
+            <toc-element topic="Get-All-WireGuard-Configuration-Backup.md"/>
             <toc-element topic="Add-WireGuard-Configuration.md"/>
             <toc-element topic="Toggle-WireGuard-Configuration.md"/>
             <toc-element topic="Update-WireGuard-Configuration.md"/>
             <toc-element topic="Delete-WireGuard-Configuration.md"/>
-            <toc-element topic="Get-WireGuard-Configuration-Backup.md"/>
-            <toc-element topic="Get-All-WireGuard-Configuration-Backup.md"/>
             <toc-element topic="Delete-WireGuard-Configuration-Backup.md"/>
             <toc-element topic="Get-WGDashboard-API-Keys.md"/>
             <toc-element topic="Add-WGDashboard-API-Key.md"/>
@@ -78,6 +88,11 @@
     </toc-element>
     <toc-element topic="🔍-Screenshot.md"/>
     <toc-element topic="🕰️-Changelogs.md">
+        <toc-element topic="v4-1-4.md"/>
+        <toc-element topic="v4-1-3.md"/>
+        <toc-element topic="v4-1-2.md"/>
+        <toc-element topic="v4-1-1.md"/>
+        <toc-element topic="v4-1-0.md"/>
         <toc-element topic="v4-0-4.md"/>
         <toc-element topic="v4-0-3.md"/>
         <toc-element topic="v4-0-2.md"/>

@@ -1,0 +1,32 @@
+openapi: 3.1.0
+info:
+    title: WGDashboard API Endpoints
+    contact:
+        name: Donald Zou
+        url: https://github.com/donaldzou/WGDashboard
+        email: donaldzou@live.hk
+    license:
+        name: Apache 2.0
+        url: https://www.apache.org/licenses/LICENSE-2.0.html
+    version: 4.2.0
+paths:
+    /handshake:
+        get:
+            summary: Handshake to server
+            description: This endpoint is designed for a simple handshake when using API key to connect.
+            responses:
+                200:
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    data:
+                                        type: string,
+                                        example: null
+                                    message:
+                                        type: string
+                                        example: null
+                                    email:
+                                        type: string
+                                        example: "john@example.com"
